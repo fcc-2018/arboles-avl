@@ -4,6 +4,8 @@
 #include "grafo.h"
 #include "pila.h"
 
+
+
 /*!
  * \file arbol.h
  * Definción de clase Arbol e implementación de sus métodos
@@ -28,14 +30,15 @@
 class Arbol: public Grafo{
     public:
         /*!
-         * @brief Constructor de Arbol
+         * @brief Constructor de la clase, se asume que la raíz del árbol es el primer
+         * vértice en la lista de adyacencia.
          * */
         Arbol(): Grafo() {}
 
 		    /*!
          * @brief Inserta un dato en el árbol 
          * @param dato número a insertar 
-         * @return Nivel en el que fue insertado el nodo
+         * @return Nivel en el que fué insertado el nodo
          * */
         int insertar(int dato);
 
@@ -46,7 +49,7 @@ class Arbol: public Grafo{
         void mostrar(ostream & out);
 
         /*!
-         * @brief Muestra el árbol de manera vertical
+         * @brief Muestra el árbol verticalmente
          * */
         void recorrer();
 
@@ -83,7 +86,7 @@ class Arbol: public Grafo{
 
         /*!
          * @brief Calcula el grado del árbol, máximo número de hijos en cada nodo
-         * @return grado
+         * @return grado del árbol
          * */
         int grado();
 
@@ -256,10 +259,8 @@ class Arbol: public Grafo{
          *
          * @param raiz puntero a la raíz del árbol a recorrer
          * @param lista puntero a lista de vertices (donde se guardarán los vértices visitados en orden)
-         * @param nivel ?
-         * @return nivel ? 
          * */
-        int __inorden__(Vertice * raiz, Lista<Vertice*> * lista, int nivel);
+        void __inorden__(Vertice * raiz, Lista<Vertice*> * lista);
 
         /*!
          * @brief Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente,
@@ -285,22 +286,73 @@ class Arbol: public Grafo{
         int __grado__(Vertice* raiz);
        
         /*!
-         * @brief Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente
-         * @param raiz puntero a vértice raíz del árbol
-         * @param lista puntero a lista de vértices (donde se guardarán los vértices visitados en orden)
+         * @brief Obtiene la altura de un árbol recursivamente
+         * @param v puntero a vértice raíz del árbol
+         * @return altura del árbol 0 si es hoja 
          * */
         int __altura__(Vertice * v);
-
+        
+        /*!
+         * @brief Obtiene el nivel de un nodo en el árbol
+         * @param raiz puntero a raíz del árbol donde se buscará el nodo
+         * @param vert puntero a vértice que se encontrará su nivel
+         * @param lvl nivel actual en el subárbol
+         * @return nivel del nodo apuntado por vert
+         * */
         int __nivel__(Vertice * raiz, Vertice * vert, int lvl);
+
+        /*!
+         * @brief Obtiene las hojas de un árbol
+         * @param raiz puntero a raíz del subárbol 
+         * @param lista puntero a lista de vértices donde se guardarán los vértices hojas
+         * */
         void __hojas__(Vertice * raiz, Lista<Vertice*> * lista);
+
+        /*!
+         * @brief Obtiene los hijos de un nodo dado
+         * @param raiz del árbol donde se buscará el nodo
+         * @param padre puntero al nodo que se quieren obtener los nodos hijos
+         * @param lista puntero a lista de vértices donde se guardarán los hijos del nodo
+         * */
         void __hijos__(Vertice * raiz, Vertice * padre, Lista<Vertice*> * lista);
+
+        /*!
+         * @brief Obtiene el padre de un nodo dado
+         * @param raiz puntero a la raíz del subárbol
+         * @param padre doble puntero a un vértice donde se pondrá la direccion de memoria del padre
+         * */
         void __padre__(Vertice * raiz, Vertice * hijo, Vertice ** padre);
-            void ordenar_lista_de_adyacentes(Lista<Vertice*> * lista);
+        
+        /*!
+         * @brief Ordena una lista de vértices en orden ascendente
+         * @param lista puntero a lista de vertices a ordenar
+         * */    
+        void ordenar_lista_de_adyacentes(Lista<Vertice*> * lista);
+
+        /*!
+         * @brief Obtiene los hijos de un vértice en orden ascendente
+         * @param padre vértice padre
+         * @return Arreglo de vértices de longitud 2, hijos[0] hijo izquierdo de padre, hijos[1] hijo derecho de padre
+         * */
         Vertice ** obtener_hijos(Vertice * padre);
-        //bool todos_cumplen_con(bool (*funcion_callback)(Vertice*));
+
+        /*!
+         * @brief Verifica que todos los vértices en el árbol cumplen 
+         * una condición dada por una función de callback
+         * @param funcion_callback función que verifica una condición en un solo vértice
+         * @return true si todos los vértices pasan la prueba false si no.
+         * */
         bool todos_cumplen_con(bool (*funcion_callback)(Vertice*));
-        bool __todos_cumplen_con__(bool (*funcion_callback)(Vertice*),Vertice*);
-            // Vertice * raiz = primer vertice en la lista de vertices
+
+        /*!
+         * @brief Método auxiliar para todos_cumplen_con() verifica la condición en
+         * cada nodo del árbol recursivamente
+         * @param funcion_callback función que verifica una condición en un solo vértice
+         * @param vert puntero a vértice raíz del subárbol
+         * @return true si los nodos en el subárbol cumplen la condicion, false en caso contrario.
+         * */
+
+        bool __todos_cumplen_con__(bool (*funcion_callback)(Vertice*),Vertice* vert);
 };
 
 Vertice * Arbol::hermano(int buscar){
@@ -468,34 +520,22 @@ Lista<Vertice*> * Arbol::inorden(){
 	// si no hay vertices
 	if(vertices.vacia()) return recorrido;
 	// llamar a la funcion recursiva de preorden
-	__inorden__(vertices.primero(), recorrido, 0);
-	return recorrido;
+	__inorden__(vertices.primero(), recorrido);
 }
 
 // funcion recursiva que hace el recorrido en inorden del arbol
-int Arbol::__inorden__(Vertice * raiz, Lista<Vertice*> * lista, int nivel){
+void Arbol::__inorden__(Vertice * raiz, Lista<Vertice*> * lista){
 
-	if(raiz == NULL) return nivel;
+	if(raiz == NULL) return;
 	Vertice ** hijos = obtener_hijos(raiz);
 
-	nivel = __inorden__(hijos[0], lista, nivel);
+	__inorden__(hijos[0], lista, nivel);
 	lista->insertar_final(raiz);
-	nivel = __inorden__(hijos[1], lista, nivel);
-	return nivel+1;
+	__inorden__(hijos[1], lista, nivel);
+  
 }
 
-/*
-// verifica que todos los vertices cumplen
-// con una funcion condicion pasada por parametro
-// si algun vertice no cumple... retorna false
-// si todos cumplen retorna true
-bool Arbol::todos_cumplen_con(bool (*func_condicion)(Vertice * vert)){
-	for(Lista<Vertice*>::iterator i = vertices.begin(); i != vertices.end(); i++)
-		if(!func_condicion(*i))
-			return false;
-	return true;
-}
-*/
+
 
 // verifica que todos los vertices cumplen
 // con una funcion condicion pasada por parametro
@@ -543,7 +583,7 @@ void Arbol::__postorden__(Vertice * raiz, Lista<Vertice*> * lista){
 
 int Arbol::peso(){
 	Lista<Vertice*> *relleno = new Lista<Vertice*>;
-	return __inorden__(vertices.primero(),relleno,0);
+	return vertices.tamanio();
 }
 
 int Arbol::grado(){
@@ -947,53 +987,6 @@ Lista<Vertice*> * Arbol::antecesores(string nombre){
 	return camino;
 }
 
-/*
-Lista<Vertice*> * Arbol::antecesores(string nombre){
-	// lista donde se guardaran los antecesores
-	Lista<Vertice*> * lista = new Lista<Vertice*>;
-	// obtener la direccion del vertice de origen
-	Vertice * nodo = get_vertice(nombre),
-			* actual = vertices.primero();
-	// si no existe el vertice ...
-	if(nodo == NULL || vertices.tamanio() == 1) return lista;
-	// super bandera
-	bool encontrado = false;
-	// para guardar el arreglo de hijos de cada nodo
-	Vertice ** hijos;
-	// para obtener los sucesores hacemos una busqueda
-	// del nodo, guardando los nodos visitados en cada iteracion
-	while(!encontrado && actual != NULL){
-		// hijos del nodo actual izq = hijos[0], der = hijos[1]
-		hijos = obtener_hijos(actual);
-		// si el dato actual es menor al dato buscado
-		if(actual->dato < nodo->dato){
-			// guardar el nodo actual como posible antecesor
-			lista->insertar_final(actual);
-			// ir al hijo derecho del nodo actual
-			actual = hijos[1];
-		} else if(actual->dato == nodo->dato){
-			// lo encontramos!
-			encontrado = true;
-		} else {
-			// el dato actual es mayor al dato buscado
-			lista->insertar_final(actual);
-			// ir al hijo izquierdo del nodo actual
-			actual = hijos[0];
-		}
-		// eliminar el arreglo de apuntadores a hijos
-		// para reusar la variable hijos
-		delete [] hijos;
-	}
-
-	// si no se encontro el nodo en el arbol
-	if(actual == NULL)
-		// eliminar todos los nodos de la lista de antecesores
-		while(!lista->vacia())
-			lista->suprimir_final();
-
-	return lista;
-}
-*/
 
 // Funcion que retorna la lista con los descendientes
 // del vertice dado
