@@ -4,7 +4,7 @@ digraph "ArbolAVL"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="ArbolAVL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node1 [label="Arbol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbol.html",tooltip="Implementación de un arbol binario basada en un grafo con listas de adyacencia. "];
+  Node1 [label="Arbol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbol.html",tooltip="Implementación de un árbol binario con listas de adyacencia.   "];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node2 [label="Grafo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGrafo.html"];
 }

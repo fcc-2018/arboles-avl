@@ -6,7 +6,7 @@ digraph "Menu"
   Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arbol" ,fontname="Helvetica"];
   Node2 [label="ArbolAVL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbolAVL.html",tooltip="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued..."];
   Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Arbol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbol.html",tooltip="Implementación de un arbol binario basada en un grafo con listas de adyacencia. "];
+  Node3 [label="Arbol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbol.html",tooltip="Implementación de un árbol binario con listas de adyacencia.   "];
   Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="Grafo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGrafo.html"];
   Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vertices" ,fontname="Helvetica"];

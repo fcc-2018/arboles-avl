@@ -3,7 +3,7 @@
 
 /*!
  * \file arbolAVL.hpp
- * @brief Cabecera de la clase ArbolABL e implementación de sus métodos
+ * @brief Cabecera de la clase ArbolAVL e implementación de sus métodos
  * 
  * Archivo de cabecera que contiene la clase ArbolAVL. Esta clase es utilizada
  * para construir árboles binarios *balanceados* los cuales se dice que están
@@ -105,7 +105,7 @@ class ArbolAVL : public Arbol{
      * que empieza con el vértice raíz y termina con el nuevo vértice insertado.
      * Ejemplo. Supóngase el siguiente árbol
      * <br>
-     * ![Árbol de ejemplo 1](../img/ex1.png)
+     * ![Árbol de ejemplo 1](./img/ex1.png)
      * <br>
      * Si suponemos que el vértice \f$d\f$ es el último se ha ingresado, entonces las
      * comparaciones se harían en el siguiente orden:
@@ -155,7 +155,7 @@ class ArbolAVL : public Arbol{
      * - El vertice \f$X\f$ ahora será padre del vértice \f$R\f$, y \f$R\f$ será
      * su hijo izquierdo
      * <br>
-     * ![Ilustración de la rotación derecha](../img/rot_der.png)
+     * ![Ilustración de la rotación derecha](./img/rot_der.png)
      * @param raiz puntero al vertice raiz del subárbol especificado
      * @param hijoDer puntero al vertice del hijo derecho de la raiz dada
      * */
@@ -171,7 +171,7 @@ class ArbolAVL : public Arbol{
      * - El vertice \f$X\f$ ahora será padre del vértice \f$R\f$, y \f$R\f$ será
      * su hijo derecho
      * <br>
-     * ![Ilustración de la rotación izquierda](../img/rot_izq.png)
+     * ![Ilustración de la rotación izquierda](./img/rot_izq.png)
      * @param raiz puntero al vertice raiz del subárbol especificado
      * @param hijoIzq puntero al vertice del hijo izquierdo de la raiz dada
      * */
@@ -208,7 +208,7 @@ class ArbolAVL : public Arbol{
      * Dados un vértice R raíz de todo el subárbol y un vértice X hijo derecho
      * de la raíz. Se tiene la siguiente ilustración
      * <br>
-     * ![Ilustración de la rotación doble izquierda](../img/rot_d_izq.png)
+     * ![Ilustración de la rotación doble izquierda](./img/rot_d_izq.png)
      * @param raiz puntero al vertice raiz del subárbol especificado
      * @param hijoDer puntero al vertice del hijo derecho de la raiz dada
      * */
@@ -225,7 +225,7 @@ class ArbolAVL : public Arbol{
      * Dados un vértice R raíz de todo el subárbol y un vértice X hijo izquierdo
      * de la raíz. Se tiene la siguiente ilustración
      * <br>
-     * ![Ilustración de la rotación doble derecha](../img/rot_d_der.png)
+     * ![Ilustración de la rotación doble derecha](./img/rot_d_der.png)
      * @param raiz puntero al vertice raiz del subárbol especificado
      * @param hijoIzq puntero al vertice del hijo izquierdo de la raiz dada
      * */

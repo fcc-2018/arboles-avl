@@ -69,7 +69,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implementación de un arbol binario basada en un grafo con listas de adyacencia.  
+<p>Implementación de un árbol binario con listas de adyacencia. <br />
+  
  <a href="classArbol.html#details">Más...</a></p>
 
 <p><code>#include &lt;<a class="el" href="arbol_8h_source.html">arbol.h</a>&gt;</code></p>
@@ -90,7 +91,7 @@ Diagrama de colaboración para Arbol:</div>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a4f5d3e25a0e1a40cb09cefa39378b7be"><td class="memItemLeft" align="right" valign="top"><a id="a4f5d3e25a0e1a40cb09cefa39378b7be"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a4f5d3e25a0e1a40cb09cefa39378b7be">Arbol</a> ()</td></tr>
-<tr class="memdesc:a4f5d3e25a0e1a40cb09cefa39378b7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase, se asume que la raíz del árbol es el primer vértice en la lista de adyacencia. <br /></td></tr>
+<tr class="memdesc:a4f5d3e25a0e1a40cb09cefa39378b7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a4f5d3e25a0e1a40cb09cefa39378b7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af332559b5f9d894ecc6a707bb1550ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#af332559b5f9d894ecc6a707bb1550ae2">insertar</a> (int dato)</td></tr>
 <tr class="memdesc:af332559b5f9d894ecc6a707bb1550ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un dato en el árbol.  <a href="#af332559b5f9d894ecc6a707bb1550ae2">Más...</a><br /></td></tr>
@@ -106,44 +107,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a0ae46c572d300cd4a5f27b7d00a1a14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metodo recursivo auxiliar para <a class="el" href="classArbol.html#a5bd356760f63521e8578a83613aa4792" title="Muestra el árbol verticalmente. ">recorrer()</a>  <a href="#a0ae46c572d300cd4a5f27b7d00a1a14e">Más...</a><br /></td></tr>
 <tr class="separator:a0ae46c572d300cd4a5f27b7d00a1a14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ffdc60ce8f2267366681cc94cf6beea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea">preorden</a> ()</td></tr>
-<tr class="memdesc:a0ffdc60ce8f2267366681cc94cf6beea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en preorden y los inserta en una lista.  <a href="#a0ffdc60ce8f2267366681cc94cf6beea">Más...</a><br /></td></tr>
+<tr class="memdesc:a0ffdc60ce8f2267366681cc94cf6beea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en preorden e inserta los vertices obtenidos en una lista.  <a href="#a0ffdc60ce8f2267366681cc94cf6beea">Más...</a><br /></td></tr>
 <tr class="separator:a0ffdc60ce8f2267366681cc94cf6beea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a0c3cf2d7f3e92a5c8e5504947dab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5">inorden</a> ()</td></tr>
-<tr class="memdesc:a80a0c3cf2d7f3e92a5c8e5504947dab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en inorden y los inserta en una lista.  <a href="#a80a0c3cf2d7f3e92a5c8e5504947dab5">Más...</a><br /></td></tr>
+<tr class="memdesc:a80a0c3cf2d7f3e92a5c8e5504947dab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en inorden e inserta los vertices obtenidos en una lista.  <a href="#a80a0c3cf2d7f3e92a5c8e5504947dab5">Más...</a><br /></td></tr>
 <tr class="separator:a80a0c3cf2d7f3e92a5c8e5504947dab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a126e7d801dbe214ac39f183c26e9135d"><td class="memItemLeft" align="right" valign="top"><a id="a126e7d801dbe214ac39f183c26e9135d"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d">postorden</a> ()</td></tr>
-<tr class="memdesc:a126e7d801dbe214ac39f183c26e9135d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en inorden. <br /></td></tr>
+<tr class="memitem:a126e7d801dbe214ac39f183c26e9135d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d">postorden</a> ()</td></tr>
+<tr class="memdesc:a126e7d801dbe214ac39f183c26e9135d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre el árbol en inorden e inserta los vertices obtenidos en una lista.  <a href="#a126e7d801dbe214ac39f183c26e9135d">Más...</a><br /></td></tr>
 <tr class="separator:a126e7d801dbe214ac39f183c26e9135d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9051a6b4120b42ff8d046f41ab73dbaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a9051a6b4120b42ff8d046f41ab73dbaa">peso</a> ()</td></tr>
 <tr class="memdesc:a9051a6b4120b42ff8d046f41ab73dbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el número de nodos en el árbol.  <a href="#a9051a6b4120b42ff8d046f41ab73dbaa">Más...</a><br /></td></tr>
 <tr class="separator:a9051a6b4120b42ff8d046f41ab73dbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99e608849650b891c34852a81f93d4ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a99e608849650b891c34852a81f93d4ab">grado</a> ()</td></tr>
-<tr class="memdesc:a99e608849650b891c34852a81f93d4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el grado del árbol, máximo número de hijos en cada nodo.  <a href="#a99e608849650b891c34852a81f93d4ab">Más...</a><br /></td></tr>
+<tr class="memdesc:a99e608849650b891c34852a81f93d4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo.  <a href="#a99e608849650b891c34852a81f93d4ab">Más...</a><br /></td></tr>
 <tr class="separator:a99e608849650b891c34852a81f93d4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb8c26e9021a1418de71ad6014351cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf">padre</a> (int hijo)</td></tr>
-<tr class="memdesc:abcb8c26e9021a1418de71ad6014351cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo.  <a href="#abcb8c26e9021a1418de71ad6014351cf">Más...</a><br /></td></tr>
+<tr class="memdesc:abcb8c26e9021a1418de71ad6014351cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo a partir del valor de uno de sus hijos.  <a href="#abcb8c26e9021a1418de71ad6014351cf">Más...</a><br /></td></tr>
 <tr class="separator:abcb8c26e9021a1418de71ad6014351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53527e7a8999ceda0b8a0fa25a3f357c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a53527e7a8999ceda0b8a0fa25a3f357c">padre</a> (string hijo)</td></tr>
-<tr class="memdesc:a53527e7a8999ceda0b8a0fa25a3f357c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo.  <a href="#a53527e7a8999ceda0b8a0fa25a3f357c">Más...</a><br /></td></tr>
+<tr class="memdesc:a53527e7a8999ceda0b8a0fa25a3f357c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo a partir del nombre de uno de sus hijos.  <a href="#a53527e7a8999ceda0b8a0fa25a3f357c">Más...</a><br /></td></tr>
 <tr class="separator:a53527e7a8999ceda0b8a0fa25a3f357c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3395234bc7b7a91d2880e10367039284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a3395234bc7b7a91d2880e10367039284">padre</a> (<a class="el" href="classVertice.html">Vertice</a> *hijo)</td></tr>
-<tr class="memdesc:a3395234bc7b7a91d2880e10367039284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo.  <a href="#a3395234bc7b7a91d2880e10367039284">Más...</a><br /></td></tr>
+<tr class="memdesc:a3395234bc7b7a91d2880e10367039284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo a partir de un puntero a uno de sus hijos.  <a href="#a3395234bc7b7a91d2880e10367039284">Más...</a><br /></td></tr>
 <tr class="separator:a3395234bc7b7a91d2880e10367039284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2bfb4e9bab05342fb7d627fe3916183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ac2bfb4e9bab05342fb7d627fe3916183">hijos</a> (int <a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf">padre</a>)</td></tr>
-<tr class="memdesc:ac2bfb4e9bab05342fb7d627fe3916183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un vértice.  <a href="#ac2bfb4e9bab05342fb7d627fe3916183">Más...</a><br /></td></tr>
+<tr class="memdesc:ac2bfb4e9bab05342fb7d627fe3916183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un vértice a partir del valor de su nodo padre.  <a href="#ac2bfb4e9bab05342fb7d627fe3916183">Más...</a><br /></td></tr>
 <tr class="separator:ac2bfb4e9bab05342fb7d627fe3916183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac799e737e25e07d285d2bb29ba950b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ac799e737e25e07d285d2bb29ba950b5c">hijos</a> (string <a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf">padre</a>)</td></tr>
-<tr class="memdesc:ac799e737e25e07d285d2bb29ba950b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un vértice.  <a href="#ac799e737e25e07d285d2bb29ba950b5c">Más...</a><br /></td></tr>
+<tr class="memdesc:ac799e737e25e07d285d2bb29ba950b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un vértice a partir del nombre de su nodo padre.  <a href="#ac799e737e25e07d285d2bb29ba950b5c">Más...</a><br /></td></tr>
 <tr class="separator:ac799e737e25e07d285d2bb29ba950b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54203315682d5c39015ae7d871223b66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a54203315682d5c39015ae7d871223b66">hojas</a> ()</td></tr>
-<tr class="memdesc:a54203315682d5c39015ae7d871223b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene las hojas del árbol.  <a href="#a54203315682d5c39015ae7d871223b66">Más...</a><br /></td></tr>
+<tr class="memdesc:a54203315682d5c39015ae7d871223b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene las hojas del árbol (nodos con 0 hijos)  <a href="#a54203315682d5c39015ae7d871223b66">Más...</a><br /></td></tr>
 <tr class="separator:a54203315682d5c39015ae7d871223b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba59969b2a10294fb79e583a8e9471c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#aba59969b2a10294fb79e583a8e9471c5">cont_hojas</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz)</td></tr>
 <tr class="memdesc:aba59969b2a10294fb79e583a8e9471c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el número de hojas en el árbol.  <a href="#aba59969b2a10294fb79e583a8e9471c5">Más...</a><br /></td></tr>
 <tr class="separator:aba59969b2a10294fb79e583a8e9471c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ae16f1a68c5e5afd08be20dcbf5717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a59ae16f1a68c5e5afd08be20dcbf5717">hermano</a> (int buscar)</td></tr>
-<tr class="memdesc:a59ae16f1a68c5e5afd08be20dcbf5717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el hermano de un vértice.  <a href="#a59ae16f1a68c5e5afd08be20dcbf5717">Más...</a><br /></td></tr>
+<tr class="memdesc:a59ae16f1a68c5e5afd08be20dcbf5717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el hermano de un vértice (nodo con el mismo padre)  <a href="#a59ae16f1a68c5e5afd08be20dcbf5717">Más...</a><br /></td></tr>
 <tr class="separator:a59ae16f1a68c5e5afd08be20dcbf5717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ccdbb79a82bf19a24449acaea6c413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a14ccdbb79a82bf19a24449acaea6c413">es_lleno</a> ()</td></tr>
 <tr class="memdesc:a14ccdbb79a82bf19a24449acaea6c413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si el árbol cumple las condiciones de un árbol lleno, es decir cada nodo debe tener 0 o 2 hijos.  <a href="#a14ccdbb79a82bf19a24449acaea6c413">Más...</a><br /></td></tr>
@@ -152,19 +152,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a9e472df85f3bb1aa5c90f8157ad6ff22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si el árbol cumple las condiciones de un árbol perfecto/lleno ( árbol lleno con todas sus hojas en el mismo nivel )  <a href="#a9e472df85f3bb1aa5c90f8157ad6ff22">Más...</a><br /></td></tr>
 <tr class="separator:a9e472df85f3bb1aa5c90f8157ad6ff22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98151655f0dab81b40d34f87fbbd90cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a98151655f0dab81b40d34f87fbbd90cd">altura</a> (int dato)</td></tr>
-<tr class="memdesc:a98151655f0dab81b40d34f87fbbd90cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo.  <a href="#a98151655f0dab81b40d34f87fbbd90cd">Más...</a><br /></td></tr>
+<tr class="memdesc:a98151655f0dab81b40d34f87fbbd90cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)  <a href="#a98151655f0dab81b40d34f87fbbd90cd">Más...</a><br /></td></tr>
 <tr class="separator:a98151655f0dab81b40d34f87fbbd90cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a79cb43ca30b5120f1a8ebe3afbe22c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a7a79cb43ca30b5120f1a8ebe3afbe22c">altura</a> (string nombre)</td></tr>
-<tr class="memdesc:a7a79cb43ca30b5120f1a8ebe3afbe22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo.  <a href="#a7a79cb43ca30b5120f1a8ebe3afbe22c">Más...</a><br /></td></tr>
+<tr class="memdesc:a7a79cb43ca30b5120f1a8ebe3afbe22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)  <a href="#a7a79cb43ca30b5120f1a8ebe3afbe22c">Más...</a><br /></td></tr>
 <tr class="separator:a7a79cb43ca30b5120f1a8ebe3afbe22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8928b4c72e2d484ef75cf3633c22ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a9f8928b4c72e2d484ef75cf3633c22ce">altura</a> (<a class="el" href="classVertice.html">Vertice</a> *<a class="el" href="classnodo.html">nodo</a>)</td></tr>
-<tr class="memdesc:a9f8928b4c72e2d484ef75cf3633c22ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo.  <a href="#a9f8928b4c72e2d484ef75cf3633c22ce">Más...</a><br /></td></tr>
+<tr class="memdesc:a9f8928b4c72e2d484ef75cf3633c22ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)  <a href="#a9f8928b4c72e2d484ef75cf3633c22ce">Más...</a><br /></td></tr>
 <tr class="separator:a9f8928b4c72e2d484ef75cf3633c22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd2dd2f8012067c1a2d77fd14c64546"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#accd2dd2f8012067c1a2d77fd14c64546">nivel</a> (int dato)</td></tr>
-<tr class="memdesc:accd2dd2f8012067c1a2d77fd14c64546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el nivel donde se encuentra un nodo.  <a href="#accd2dd2f8012067c1a2d77fd14c64546">Más...</a><br /></td></tr>
+<tr class="memdesc:accd2dd2f8012067c1a2d77fd14c64546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1)  <a href="#accd2dd2f8012067c1a2d77fd14c64546">Más...</a><br /></td></tr>
 <tr class="separator:accd2dd2f8012067c1a2d77fd14c64546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8a414e8e3f45bf90c481649928a86d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a3a8a414e8e3f45bf90c481649928a86d">nivel</a> (string nombre)</td></tr>
-<tr class="memdesc:a3a8a414e8e3f45bf90c481649928a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el nivel donde se encuentra un nodo.  <a href="#a3a8a414e8e3f45bf90c481649928a86d">Más...</a><br /></td></tr>
+<tr class="memdesc:a3a8a414e8e3f45bf90c481649928a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1)  <a href="#a3a8a414e8e3f45bf90c481649928a86d">Más...</a><br /></td></tr>
 <tr class="separator:a3a8a414e8e3f45bf90c481649928a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ff5e2f436a1e83e24cbdd0b2cc827b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ac7ff5e2f436a1e83e24cbdd0b2cc827b">antecesores</a> (int dato)</td></tr>
 <tr class="memdesc:ac7ff5e2f436a1e83e24cbdd0b2cc827b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los antecesores de un nodo.  <a href="#ac7ff5e2f436a1e83e24cbdd0b2cc827b">Más...</a><br /></td></tr>
@@ -240,34 +240,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hay_camino</b> (<a cl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Métodos protegidos</h2></td></tr>
 <tr class="memitem:a707f748c57d51f6b63fe1a605476e49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a707f748c57d51f6b63fe1a605476e49d">__preorden__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
-<tr class="memdesc:a707f748c57d51f6b63fe1a605476e49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en preorden (Visitar, Izquierda, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea" title="Recorre el árbol en preorden y los inserta en una lista. ">preorden()</a>  <a href="#a707f748c57d51f6b63fe1a605476e49d">Más...</a><br /></td></tr>
+<tr class="memdesc:a707f748c57d51f6b63fe1a605476e49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en preorden (Visitar, Izquierda, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea" title="Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. ">preorden()</a>  <a href="#a707f748c57d51f6b63fe1a605476e49d">Más...</a><br /></td></tr>
 <tr class="separator:a707f748c57d51f6b63fe1a605476e49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3dc89f7db1fb9b54bcc2489eb1d9542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ae3dc89f7db1fb9b54bcc2489eb1d9542">__inorden__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
-<tr class="memdesc:ae3dc89f7db1fb9b54bcc2489eb1d9542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en inorden (Izquierda, Visitar, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5" title="Recorre el árbol en inorden y los inserta en una lista. ">inorden()</a>  <a href="#ae3dc89f7db1fb9b54bcc2489eb1d9542">Más...</a><br /></td></tr>
+<tr class="memdesc:ae3dc89f7db1fb9b54bcc2489eb1d9542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en inorden (Izquierda, Visitar, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">inorden()</a>  <a href="#ae3dc89f7db1fb9b54bcc2489eb1d9542">Más...</a><br /></td></tr>
 <tr class="separator:ae3dc89f7db1fb9b54bcc2489eb1d9542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4cc9147a79d74956413a233df1dbe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#aea4cc9147a79d74956413a233df1dbe0">__postorden__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
-<tr class="memdesc:aea4cc9147a79d74956413a233df1dbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d" title="Recorre el árbol en inorden. ">postorden()</a>  <a href="#aea4cc9147a79d74956413a233df1dbe0">Más...</a><br /></td></tr>
+<tr class="memdesc:aea4cc9147a79d74956413a233df1dbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">postorden()</a>  <a href="#aea4cc9147a79d74956413a233df1dbe0">Más...</a><br /></td></tr>
 <tr class="separator:aea4cc9147a79d74956413a233df1dbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e00baa76d846e9e586e7d179ec51907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a1e00baa76d846e9e586e7d179ec51907">__camino__</a> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; **camino)</td></tr>
 <tr class="memdesc:a1e00baa76d846e9e586e7d179ec51907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el camino entre 2 vértices en el árbol, método auxiliar de <a class="el" href="classArbol.html#accfa606c5f5e67b6ab18c4490075cf39" title="Obtiene el un camino entre dos vértices en el árbol. ">camino_entre()</a>  <a href="#a1e00baa76d846e9e586e7d179ec51907">Más...</a><br /></td></tr>
 <tr class="separator:a1e00baa76d846e9e586e7d179ec51907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3077ad7b0c57ed7c98baa7fcd8aab47"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ad3077ad7b0c57ed7c98baa7fcd8aab47">__grado__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz)</td></tr>
-<tr class="memdesc:ad3077ad7b0c57ed7c98baa7fcd8aab47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el grado de un árbol de manera recursiva.  <a href="#ad3077ad7b0c57ed7c98baa7fcd8aab47">Más...</a><br /></td></tr>
+<tr class="memdesc:ad3077ad7b0c57ed7c98baa7fcd8aab47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el grado de un árbol, método auxiliar de <a class="el" href="classArbol.html#a99e608849650b891c34852a81f93d4ab" title="Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. ">grado()</a>  <a href="#ad3077ad7b0c57ed7c98baa7fcd8aab47">Más...</a><br /></td></tr>
 <tr class="separator:ad3077ad7b0c57ed7c98baa7fcd8aab47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34b0a58f349a2f8153911ad4821a9b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#ab34b0a58f349a2f8153911ad4821a9b9">__altura__</a> (<a class="el" href="classVertice.html">Vertice</a> *v)</td></tr>
-<tr class="memdesc:ab34b0a58f349a2f8153911ad4821a9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la altura de un árbol recursivamente.  <a href="#ab34b0a58f349a2f8153911ad4821a9b9">Más...</a><br /></td></tr>
+<tr class="memdesc:ab34b0a58f349a2f8153911ad4821a9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la altura de un árbol recursivamente, auxiliar de <a class="el" href="classArbol.html#a98151655f0dab81b40d34f87fbbd90cd" title="Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) ...">altura()</a>  <a href="#ab34b0a58f349a2f8153911ad4821a9b9">Más...</a><br /></td></tr>
 <tr class="separator:ab34b0a58f349a2f8153911ad4821a9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479d9841f100bf75b87fb2155b66d591"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a479d9841f100bf75b87fb2155b66d591">__nivel__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classVertice.html">Vertice</a> *vert, int lvl)</td></tr>
-<tr class="memdesc:a479d9841f100bf75b87fb2155b66d591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el nivel de un nodo en el árbol.  <a href="#a479d9841f100bf75b87fb2155b66d591">Más...</a><br /></td></tr>
+<tr class="memdesc:a479d9841f100bf75b87fb2155b66d591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el nivel de un nodo en el árbol, auxiliar de <a class="el" href="classArbol.html#accd2dd2f8012067c1a2d77fd14c64546" title="Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) ...">nivel()</a>  <a href="#a479d9841f100bf75b87fb2155b66d591">Más...</a><br /></td></tr>
 <tr class="separator:a479d9841f100bf75b87fb2155b66d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad97c679cb368931b2c6894b3dbcb60f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#aad97c679cb368931b2c6894b3dbcb60f">__hojas__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
-<tr class="memdesc:aad97c679cb368931b2c6894b3dbcb60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene las hojas de un árbol.  <a href="#aad97c679cb368931b2c6894b3dbcb60f">Más...</a><br /></td></tr>
+<tr class="memdesc:aad97c679cb368931b2c6894b3dbcb60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene las hojas de un árbol, auxiliar de <a class="el" href="classArbol.html#a54203315682d5c39015ae7d871223b66" title="Obtiene las hojas del árbol (nodos con 0 hijos) ">hojas()</a>  <a href="#aad97c679cb368931b2c6894b3dbcb60f">Más...</a><br /></td></tr>
 <tr class="separator:aad97c679cb368931b2c6894b3dbcb60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3da012e6667062976bca9f78efef7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a1e3da012e6667062976bca9f78efef7e">__hijos__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classVertice.html">Vertice</a> *<a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf">padre</a>, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
-<tr class="memdesc:a1e3da012e6667062976bca9f78efef7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un nodo dado.  <a href="#a1e3da012e6667062976bca9f78efef7e">Más...</a><br /></td></tr>
+<tr class="memdesc:a1e3da012e6667062976bca9f78efef7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene los hijos de un nodo dado, auxiliar de <a class="el" href="classArbol.html#ac2bfb4e9bab05342fb7d627fe3916183" title="Obtiene los hijos de un vértice a partir del valor de su nodo padre. ">hijos()</a>  <a href="#a1e3da012e6667062976bca9f78efef7e">Más...</a><br /></td></tr>
 <tr class="separator:a1e3da012e6667062976bca9f78efef7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495a7502a29e01ce7fa168daca651b1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#a495a7502a29e01ce7fa168daca651b1f">__padre__</a> (<a class="el" href="classVertice.html">Vertice</a> *raiz, <a class="el" href="classVertice.html">Vertice</a> *hijo, <a class="el" href="classVertice.html">Vertice</a> **<a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf">padre</a>)</td></tr>
-<tr class="memdesc:a495a7502a29e01ce7fa168daca651b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo dado.  <a href="#a495a7502a29e01ce7fa168daca651b1f">Más...</a><br /></td></tr>
+<tr class="memdesc:a495a7502a29e01ce7fa168daca651b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el padre de un nodo dado, auxiliar de <a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf" title="Obtiene el padre de un nodo a partir del valor de uno de sus hijos. ">padre()</a>  <a href="#a495a7502a29e01ce7fa168daca651b1f">Más...</a><br /></td></tr>
 <tr class="separator:a495a7502a29e01ce7fa168daca651b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7dff584795382d8e8a1a4694d0ac4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbol.html#aeb7dff584795382d8e8a1a4694d0ac4e">ordenar_lista_de_adyacentes</a> (<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> *&gt; *lista)</td></tr>
 <tr class="memdesc:aeb7dff584795382d8e8a1a4694d0ac4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena una lista de vértices en orden ascendente.  <a href="#aeb7dff584795382d8e8a1a4694d0ac4e">Más...</a><br /></td></tr>
@@ -296,9 +296,26 @@ Otros miembros heredados</h2></td></tr>
 <tr class="separator:a67e71aebff46a360d82771b825f71263 inherit pro_attribs_classGrafo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>Implementación de un arbol binario basada en un grafo con listas de adyacencia. </p>
+<div class="textblock"><p>Implementación de un árbol binario con listas de adyacencia. <br />
+ </p>
+<p>Es una representación de un árbol binario basada en listas de adyacencia, usa la clase <a class="el" href="classVertice.html">Vertice</a> y la clase <a class="el" href="classLista.html">Lista</a> para construir la siguiente estructura: <br />
+ <a class="el" href="classLista.html">Lista</a>( <br />
+ [<a class="el" href="classVertice.html">Vertice</a> A] -&gt; <a class="el" href="classLista.html">Lista</a>([B] -&gt; [C]) -&gt; <br />
+ [<a class="el" href="classVertice.html">Vertice</a> B] -&gt; <a class="el" href="classLista.html">Lista([D])</a> -&gt; <br />
+ [<a class="el" href="classVertice.html">Vertice</a> C] -&gt; <a class="el" href="classLista.html">Lista()</a> -&gt; <br />
+ [<a class="el" href="classVertice.html">Vertice</a> D] -&gt; <a class="el" href="classLista.html">Lista()</a> <br />
+ )</p>
+<p>En todo el código de la clase se asume que el primer vértice en la lista de adyacencia es la raíz del árbol.</p>
+<p>Al insertar un nodo la clase <a class="el" href="classArbol.html" title="Implementación de un árbol binario con listas de adyacencia.   ">Arbol</a>, agrega un nuevo nodo a la lista de adyacencia prinipal e inicializa el nuevo nodo con una lista de adyacencia propia.</p>
+<p>Para acceder a los vértices/nodos del árbol exiten dos maneras:</p><ul>
+<li>1. Utilizar <a class="el" href="classLista_1_1iterator.html">Lista::iterator</a> para recorrer la lista de adyacencia de manera lineal (Esta forma es heredada de <a class="el" href="classGrafo.html">Grafo</a>)</li>
+<li>2. Utilizar el metodo <a class="el" href="classArbol.html#a18066699977ab8095398d026ef2a13ac" title="Obtiene los hijos de un vértice en orden ascendente. ">obtener_hijos(Vertice* raiz)</a> en un vértice raíz y acceder a sus hijos izquierdo y derecho (Forma de árbol binario)</li>
+</ul>
+<p>Los métodos de la clase con nombre de la forma: __nombre__ son metodos recursivos que recorren el árbol respetando su estructura, (Forma 2). Es decir se llama al metodo <a class="el" href="classArbol.html#a18066699977ab8095398d026ef2a13ac" title="Obtiene los hijos de un vértice en orden ascendente. ">obtener_hijos(Vertice*raiz)</a> y se utilizan sus hijos (izquierdo o derecho) para continuar con el recorrido del arbol.</p>
+<p>Cada método recursivo cuenta con un método más seguro, (no recursivo) que acepta menos parámetros y cuenta con más validaciones, que hacen más fácil la correción de errores y las llamadas a los métodos más limpias.</p>
+<p>A menos que se esté completamente seguro de como funciona el método recursivo, se recomienda utilizar los <b>métodos intermediarios</b> (métodos sin __ en el principio de su nombre). </p>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00030">30</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00066">66</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 </div><h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a id="ab34b0a58f349a2f8153911ad4821a9b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab34b0a58f349a2f8153911ad4821a9b9">&#9670;&nbsp;</a></span>__altura__()</h2>
@@ -324,7 +341,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene la altura de un árbol recursivamente. </p>
+<p>Obtiene la altura de un árbol recursivamente, auxiliar de <a class="el" href="classArbol.html#a98151655f0dab81b40d34f87fbbd90cd" title="Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) ...">altura()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>puntero a vértice raíz del árbol </td></tr>
@@ -332,8 +349,9 @@ Otros miembros heredados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>altura del árbol 0 si es hoja </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a98151655f0dab81b40d34f87fbbd90cd" title="Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) ...">altura()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00939">939</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00992">992</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -386,8 +404,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#accfa606c5f5e67b6ab18c4490075cf39" title="Obtiene el un camino entre dos vértices en el árbol. ">camino_entre()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00879">879</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00932">932</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -415,16 +434,17 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene el grado de un árbol de manera recursiva. </p>
+<p>Obtiene el grado de un árbol, método auxiliar de <a class="el" href="classArbol.html#a99e608849650b891c34852a81f93d4ab" title="Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. ">grado()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a vértice raíz del árbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int número más grande de hijos en nodos del árbol </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>número más grande de hijos en nodos del árbol </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a99e608849650b891c34852a81f93d4ab" title="Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. ">grado()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00595">595</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00648">648</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +488,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene los hijos de un nodo dado. </p>
+<p>Obtiene los hijos de un nodo dado, auxiliar de <a class="el" href="classArbol.html#ac2bfb4e9bab05342fb7d627fe3916183" title="Obtiene los hijos de un vértice a partir del valor de su nodo padre. ">hijos()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>del árbol donde se buscará el nodo </td></tr>
@@ -477,8 +497,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#ac2bfb4e9bab05342fb7d627fe3916183" title="Obtiene los hijos de un vértice a partir del valor de su nodo padre. ">hijos()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00390">390</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00443">443</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +537,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene las hojas de un árbol. </p>
+<p>Obtiene las hojas de un árbol, auxiliar de <a class="el" href="classArbol.html#a54203315682d5c39015ae7d871223b66" title="Obtiene las hojas del árbol (nodos con 0 hijos) ">hojas()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a raíz del subárbol </td></tr>
@@ -524,8 +545,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a54203315682d5c39015ae7d871223b66" title="Obtiene las hojas del árbol (nodos con 0 hijos) ">hojas()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00471">471</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00524">524</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +585,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Recorre un árbol en inorden (Izquierda, Visitar, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5" title="Recorre el árbol en inorden y los inserta en una lista. ">inorden()</a> </p>
+<p>Recorre un árbol en inorden (Izquierda, Visitar, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">inorden()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a la raíz del árbol a recorrer </td></tr>
@@ -571,8 +593,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">inorden()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00529">529</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00582">582</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +639,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene el nivel de un nodo en el árbol. </p>
+<p>Obtiene el nivel de un nodo en el árbol, auxiliar de <a class="el" href="classArbol.html#accd2dd2f8012067c1a2d77fd14c64546" title="Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) ...">nivel()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a raíz del árbol donde se buscará el nodo </td></tr>
@@ -626,8 +649,9 @@ Otros miembros heredados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>nivel del nodo apuntado por vert </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#accd2dd2f8012067c1a2d77fd14c64546" title="Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) ...">nivel()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00963">963</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01016">1016</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +695,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtiene el padre de un nodo dado. </p>
+<p>Obtiene el padre de un nodo dado, auxiliar de <a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf" title="Obtiene el padre de un nodo a partir del valor de uno de sus hijos. ">padre()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a la raíz del subárbol </td></tr>
@@ -679,8 +703,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#abcb8c26e9021a1418de71ad6014351cf" title="Obtiene el padre de un nodo a partir del valor de uno de sus hijos. ">padre()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00429">429</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00482">482</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +743,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d" title="Recorre el árbol en inorden. ">postorden()</a> </p>
+<p>Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">postorden()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a vértice raíz del árbol </td></tr>
@@ -726,8 +751,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a126e7d801dbe214ac39f183c26e9135d" title="Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. ">postorden()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00577">577</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00630">630</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +791,7 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Recorre un árbol en preorden (Visitar, Izquierda, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea" title="Recorre el árbol en preorden y los inserta en una lista. ">preorden()</a> </p>
+<p>Recorre un árbol en preorden (Visitar, Izquierda, Derecha) recursivamente, método auxiliar de <a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea" title="Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. ">preorden()</a> </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">raiz</td><td>puntero a la raíz del árbol a recorrer </td></tr>
@@ -773,8 +799,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea" title="Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. ">preorden()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00506">506</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00559">559</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -821,8 +848,9 @@ Otros miembros heredados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>true si los nodos en el subárbol cumplen la condicion, false en caso contrario. </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#aba4b09fef18152beb43e04fee7394f34" title="Verifica que todos los vértices en el árbol cumplen. una condición dada por una función de callback...">todos_cumplen_con()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00550">550</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00603">603</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -842,16 +870,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula la altura de un nodo. </p>
+<p>Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">dato</td><td>valor numérico del nodo </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int altura </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>altura del nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00911">911</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00964">964</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -871,16 +899,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula la altura de un nodo. </p>
+<p>Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">nombre</td><td>nombre del vértice </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int altura </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>altura del nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00917">917</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00970">970</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -900,16 +928,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula la altura de un nodo. </p>
+<p>Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodo</td><td>puntero al nodo </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int altura </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>altura del nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00929">929</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00982">982</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +966,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices previos al nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00980">980</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01033">1033</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +995,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices antecesores al nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00984">984</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01037">1037</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1035,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices en el camnino de o a d </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00864">864</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00917">917</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1075,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices en el camnino de origen a destino </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00868">868</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00921">921</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1104,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices hijos </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00442">442</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00495">495</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1133,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices descendientes al nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00995">995</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01048">1048</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1162,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices descendientes al nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01001">1001</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01054">1054</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1154,9 +1182,9 @@ Otros miembros heredados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Verifica si el árbol cumple las condiciones de un árbol perfecto/lleno ( árbol lleno con todas sus hojas en el mismo nivel ) </p>
-<dl class="section return"><dt>Devuelve</dt><dd>true si es perfecto, false en caso contrario </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd><em>true</em> si es perfecto, <em>false</em> en caso contrario </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00847">847</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00900">900</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1176,9 +1204,9 @@ Otros miembros heredados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Verifica si el árbol cumple las condiciones de un árbol lleno, es decir cada nodo debe tener 0 o 2 hijos. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>true si el árbol es lleno, false en caso contrario </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd><em>true</em> si el árbol es lleno, <em>false</em> en caso contrario. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00835">835</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00888">888</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1197,10 +1225,10 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula el grado del árbol, máximo número de hijos en cada nodo. </p>
+<p>Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>grado del árbol </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00591">591</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00644">644</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1248,7 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene el hermano de un vértice. </p>
+<p>Obtiene el hermano de un vértice (nodo con el mismo padre) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">buscar</td><td>valor numérico del hermano del vértice buscar </td></tr>
@@ -1229,7 +1257,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>puntero a vértice hermano </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00359">359</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00412">412</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1277,7 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene los hijos de un vértice. </p>
+<p>Obtiene los hijos de un vértice a partir del valor de su nodo padre. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">padre</td><td>valor numérico del vértice padre </td></tr>
@@ -1258,7 +1286,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices hijos </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00378">378</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00431">431</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1306,7 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene los hijos de un vértice. </p>
+<p>Obtiene los hijos de un vértice a partir del nombre de su nodo padre. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">padre</td><td>nombre del vértice padre </td></tr>
@@ -1287,7 +1315,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices hijos </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00382">382</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00435">435</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1306,10 +1334,10 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene las hojas del árbol. </p>
+<p>Obtiene las hojas del árbol (nodos con 0 hijos) </p>
 <dl class="section return"><dt>Devuelve</dt><dd>lista de punteros a vértices hojas </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00463">463</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00516">516</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1328,10 +1356,10 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Recorre el árbol en inorden y los inserta en una lista. </p>
+<p>Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. </p>
 <dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classLista.html">Lista</a> de punteros a vértices del arbol en inorden </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00519">519</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00572">572</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1352,6 +1380,7 @@ Otros miembros heredados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inserta un dato en el árbol. </p>
+<p>Busca un vertice con un espacio vacio y que cumpla con el orden en el arbol, raiz &lt; hijo derecho, raiz &gt; hijo izquierdo</p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">dato</td><td>número a insertar </td></tr>
@@ -1360,7 +1389,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Nivel en el que fué insertado el nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00754">754</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00807">807</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1417,7 @@ Otros miembros heredados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00691">691</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00744">744</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1408,16 +1437,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula el nivel donde se encuentra un nodo. </p>
+<p>Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">dato</td><td>valor numérico del nodo </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int nivel </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>nivel del nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00951">951</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01004">1004</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1437,16 +1466,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcula el nivel donde se encuentra un nodo. </p>
+<p>Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">nombre</td><td>nombre del nodo </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>int nivel </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>nivel del nodo </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00955">955</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l01008">1008</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1512,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Arreglo de vértices de longitud 2, hijos[0] hijo izquierdo de padre, hijos[1] hijo derecho de padre </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00614">614</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00667">667</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1518,8 +1547,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classVertice.html">Vertice</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00659">659</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00712">712</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1539,16 +1569,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene el padre de un nodo. </p>
+<p>Obtiene el padre de un nodo a partir del valor de uno de sus hijos. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hijo</td><td>valor numérico del vértice hijo </td></tr>
+    <tr><td class="paramname">hijo</td><td>valor numérico de un vértice hijo </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>puntero a vértice padre o NULL si el hijo no existe </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00405">405</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00458">458</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1568,16 +1598,16 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene el padre de un nodo. </p>
+<p>Obtiene el padre de un nodo a partir del nombre de uno de sus hijos. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hijo</td><td>nombre del vértice hijo </td></tr>
+    <tr><td class="paramname">hijo</td><td>nombre de un vértice hijo </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>puntero a vértice padre o NULL si el hijo no existe </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00410">410</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00463">463</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1627,7 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtiene el padre de un nodo. </p>
+<p>Obtiene el padre de un nodo a partir de un puntero a uno de sus hijos. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">hijo</td><td>puntero a vértice hijo </td></tr>
@@ -1606,7 +1636,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>puntero a vértice padre </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00420">420</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00473">473</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1658,29 @@ Otros miembros heredados</h2></td></tr>
 <p>Calcula el número de nodos en el árbol. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>numero de nodos </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00586">586</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00639">639</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+
+</div>
+</div>
+<a id="a126e7d801dbe214ac39f183c26e9135d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126e7d801dbe214ac39f183c26e9135d">&#9670;&nbsp;</a></span>postorden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; * Arbol::postorden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. </p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classLista.html">Lista</a> de punteros a vertices del arbol en postorden </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00618">618</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1647,10 +1699,10 @@ Otros miembros heredados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Recorre el árbol en preorden y los inserta en una lista. </p>
+<p>Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. </p>
 <dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classLista.html">Lista</a> de punteros a vértices del árbol en preorden </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00494">494</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00547">547</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1688,8 +1740,9 @@ Otros miembros heredados</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbol.html#a5bd356760f63521e8578a83613aa4792" title="Muestra el árbol verticalmente. ">recorrer()</a> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00803">803</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00856">856</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1779,7 @@ Otros miembros heredados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>true si todos los vértices pasan la prueba false si no. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00546">546</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="arbol_8h_source.html#l00599">599</a> del archivo <a class="el" href="arbol_8h_source.html">arbol.h</a>.</p>
 
 </div>
 </div>

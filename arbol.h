@@ -8,7 +8,7 @@
 
 /*!
  * \file arbol.h
- * Definción de clase Arbol e implementación de sus métodos
+ * \brief Definción de clase Arbol e implementación de sus métodos
  * */
 
 
@@ -25,18 +25,57 @@
 
 /*!
  * @class Arbol
- * @brief Implementación de un arbol binario basada en un grafo con listas de adyacencia
+ * @brief Implementación de un árbol binario con listas de adyacencia.
+ * <br>
+ * 
+ * Es una representación de un árbol binario basada en listas de 
+ * adyacencia, usa la clase Vertice y la clase Lista para construir la siguiente estructura:
+ *  <br>
+ * Lista( <br>
+ *  [Vertice A] -> Lista([B] -> [C]) -> <br>
+ *  [Vertice B] -> Lista([D]) -> <br> 
+ *  [Vertice C] -> Lista() -> <br> 
+ *  [Vertice D] -> Lista() <br>
+ * )
+ * 
+ * En todo el código de la clase se asume que el primer vértice en la lista de adyacencia
+ * es la raíz del árbol.
+ * 
+ * Al insertar un nodo la clase Arbol, agrega un nuevo nodo a la lista de adyacencia
+ * prinipal e inicializa el nuevo nodo con una lista de adyacencia propia.
+ * 
+ * Para acceder a los vértices/nodos del árbol exiten dos maneras:
+ * - 1. Utilizar Lista::iterator para recorrer la lista de adyacencia de manera lineal (Esta forma es heredada de Grafo)
+ * - 2. Utilizar el metodo obtener_hijos(Vertice* raiz) en un vértice raíz y acceder a sus hijos izquierdo y derecho (Forma de árbol binario)
+ * 
+ * Los métodos de la clase con nombre de la forma: \__nombre__ son metodos recursivos
+ * que recorren el árbol respetando su estructura, (Forma 2).
+ * Es decir se llama al metodo obtener_hijos(Vertice*raiz) y se utilizan sus hijos (izquierdo o derecho) para continuar 
+ * con el recorrido del arbol.
+ * 
+ * Cada método recursivo cuenta con un método más seguro, (no recursivo) que acepta menos parámetros y cuenta con 
+ * más validaciones, que hacen más fácil la correción de errores y las llamadas a los métodos más limpias.
+ * 
+ * A menos que se esté completamente seguro de como funciona el método recursivo, se recomienda utilizar los __métodos 
+ * intermediarios__ (métodos sin __ en el principio de su nombre).
+ * 
+ * 
+ * 
+ * 
  * */
 class Arbol: public Grafo{
     public:
         /*!
-         * @brief Constructor de la clase, se asume que la raíz del árbol es el primer
-         * vértice en la lista de adyacencia.
+         * @brief Constructor
          * */
         Arbol(): Grafo() {}
 
-		    /*!
-         * @brief Inserta un dato en el árbol 
+		/*!
+         * @brief Inserta un dato en el árbol
+         * 
+         * Busca un vertice con un espacio vacio y que cumpla con el orden en el arbol,
+         * raiz < hijo derecho, raiz > hijo izquierdo
+         *  
          * @param dato número a insertar 
          * @return Nivel en el que fué insertado el nodo
          * */
@@ -57,24 +96,25 @@ class Arbol: public Grafo{
          * @brief Metodo recursivo auxiliar para recorrer()
          * @param raiz puntero a la raíz del arbol a mostrar
          * @param cont contador del nivel del nodo actual (cont = 0)
+         * @see recorrer()
          * */
         void recorrer(Vertice *raiz,int cont);
 
         /*!
-         * @brief Recorre el árbol en preorden y los inserta en una lista
+         * @brief Recorre el árbol en preorden e inserta los vertices obtenidos en una lista
          * @return Lista de punteros a vértices del árbol en preorden
          * */
         Lista<Vertice*> * preorden();
 
         /*!
-         * @brief Recorre el árbol en inorden y los inserta en una lista
+         * @brief Recorre el árbol en inorden e inserta los vertices obtenidos en una lista
          * @return Lista de punteros a vértices del arbol en inorden
          * */
         Lista<Vertice*> * inorden();
 
         /*!
-         * @brief Recorre el árbol en inorden
-         *
+         * @brief Recorre el árbol en inorden e inserta los vertices obtenidos en una lista
+         * @return Lista de punteros a vertices del arbol en postorden
          * */
         Lista<Vertice*> * postorden();
 
@@ -85,41 +125,41 @@ class Arbol: public Grafo{
         int peso();
 
         /*!
-         * @brief Calcula el grado del árbol, máximo número de hijos en cada nodo
+         * @brief Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo
          * @return grado del árbol
          * */
         int grado();
 
         /*!
-         * @brief Obtiene el padre de un nodo
-         * @param hijo valor numérico del vértice hijo
+         * @brief Obtiene el padre de un nodo a partir del valor de uno de sus hijos
+         * @param hijo valor numérico de un vértice hijo
          * @return puntero a vértice padre o NULL si el hijo no existe
          * */
         Vertice * padre(int hijo);
 
         /*!
-         * @brief Obtiene el padre de un nodo
-         * @param hijo nombre del vértice hijo
+         * @brief Obtiene el padre de un nodo a partir del nombre de uno de sus hijos
+         * @param hijo nombre de un vértice hijo
          * @return puntero a vértice padre o NULL si el hijo no existe
          * */
         Vertice * padre(string hijo);
 
         /*!
-         * @brief Obtiene el padre de un nodo
+         * @brief Obtiene el padre de un nodo a partir de un puntero a uno de sus hijos
          * @param hijo puntero a vértice hijo
          * @return puntero a vértice padre
          * */
         Vertice * padre(Vertice * hijo);
         
         /*!
-         * @brief Obtiene los hijos de un vértice
+         * @brief Obtiene los hijos de un vértice a partir del valor de su nodo padre
          * @param padre valor numérico del vértice padre
          * @return lista de punteros a vértices hijos
          * */
         Lista<Vertice*> * hijos(int padre);
 
         /*!
-         * @brief Obtiene los hijos de un vértice
+         * @brief Obtiene los hijos de un vértice a partir del nombre de su nodo padre
          * @param padre nombre del vértice padre
          * @return lista de punteros a vértices hijos
          * */
@@ -127,7 +167,7 @@ class Arbol: public Grafo{
         Lista<Vertice*> * hijos(string padre);
 
         /*!
-         * @brief Obtiene las hojas del árbol
+         * @brief Obtiene las hojas del árbol (nodos con 0 hijos)
          * @return lista de punteros a vértices hojas
          * */
 
@@ -142,7 +182,7 @@ class Arbol: public Grafo{
         int cont_hojas(Vertice *raiz);
  
         /*!
-         * @brief Obtiene el hermano de un vértice
+         * @brief Obtiene el hermano de un vértice (nodo con el mismo padre)
          * @param buscar valor numérico del hermano del vértice buscar
          * @return puntero a vértice hermano
          * */
@@ -152,7 +192,7 @@ class Arbol: public Grafo{
         /*!
          * @brief Verifica si el árbol cumple las condiciones de un árbol lleno,
          * es decir cada nodo debe tener 0 o 2 hijos.
-         * @return true si el árbol es lleno, false en caso contrario
+         * @return *true* si el árbol es lleno, *false* en caso contrario.
          * */
 
         bool es_lleno();
@@ -160,42 +200,42 @@ class Arbol: public Grafo{
         /*!
          * @brief Verifica si el árbol cumple las condiciones de un árbol perfecto/lleno 
          * ( árbol lleno con todas sus hojas en el mismo nivel )
-         * @return true si es perfecto, false en caso contrario
+         * @return *true* si es perfecto, *false* en caso contrario
          * */
         bool es_completo_o_perfecto();
 
         /*!
-         * @brief Calcula la altura de un nodo
+         * @brief Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)
          * @param dato valor numérico del nodo
-         * @return int altura 
+         * @return altura del nodo
          * */
         int altura(int dato);
  
         /*!
-         * @brief Calcula la altura de un nodo
+         * @brief Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)
          * @param nombre nombre del vértice
-         * @return int altura 
+         * @return altura del nodo
          * */
         int altura(string nombre);
 
         /*!
-         * @brief Calcula la altura de un nodo
+         * @brief Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja)
          * @param nodo puntero al nodo
-         * @return int altura
+         * @return altura del nodo
          * */
         int altura(Vertice * nodo);
 
         /*!
-         * @brief Calcula el nivel donde se encuentra un nodo
+         * @brief Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1)
          * @param dato valor numérico del nodo
-         * @return int nivel
+         * @return nivel del nodo
          * */
         int nivel(int dato);
 
         /*!
-         * @brief Calcula el nivel donde se encuentra un nodo
+         * @brief Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1)
          * @param nombre nombre del nodo
-         * @return int nivel
+         * @return nivel del nodo
          * */
         int nivel(string nombre);
 
@@ -243,6 +283,7 @@ class Arbol: public Grafo{
          * */
         Lista<Vertice*> * camino_entre(string origen, string destino);
    protected:
+
         // los metodos que de la forma: __metodo__ son recursivos
         
         /*!
@@ -250,6 +291,7 @@ class Arbol: public Grafo{
          * método auxiliar de preorden()
          * @param raiz puntero a la raíz del árbol a recorrer
          * @param lista puntero a lista de vértices (donde se guardarán los vértices visitados en orden)
+         * @see preorden()
          **/
         void __preorden__(Vertice * raiz, Lista<Vertice*> * lista);
 
@@ -259,6 +301,7 @@ class Arbol: public Grafo{
          *
          * @param raiz puntero a la raíz del árbol a recorrer
          * @param lista puntero a lista de vertices (donde se guardarán los vértices visitados en orden)
+         * @see inorden()
          * */
         void __inorden__(Vertice * raiz, Lista<Vertice*> * lista);
 
@@ -267,6 +310,7 @@ class Arbol: public Grafo{
          * método auxiliar de postorden()
          * @param raiz puntero a vértice raíz del árbol
          * @param lista puntero a lista de vértices (donde se guardarán los vértices visitados en orden)
+         * @see postorden()
          * */
         void __postorden__(Vertice * raiz, Lista<Vertice*> * lista);
         
@@ -275,57 +319,65 @@ class Arbol: public Grafo{
          * @param origen puntero a vértice de inicial del camino
          * @param destino puntero a vértice final del camino
          * @param camino doble puntero a lista de vértices donde se guardarán los nodos en orden
+         * @see camino_entre()
          * */
         void __camino__(Vertice* origen, Vertice* destino, Lista<Vertice*> **camino);
 
         /*!
-         * @brief Obtiene el grado de un árbol de manera recursiva
+         * @brief Obtiene el grado de un árbol, método auxiliar de grado()
          * @param raiz puntero a vértice raíz del árbol
-         * @return int número más grande de hijos en nodos del árbol
+         * @return número más grande de hijos en nodos del árbol
+         * @see grado()
          * */
         int __grado__(Vertice* raiz);
        
         /*!
-         * @brief Obtiene la altura de un árbol recursivamente
+         * @brief Obtiene la altura de un árbol recursivamente, auxiliar de altura()
          * @param v puntero a vértice raíz del árbol
          * @return altura del árbol 0 si es hoja 
+         * @see altura()
          * */
         int __altura__(Vertice * v);
         
         /*!
-         * @brief Obtiene el nivel de un nodo en el árbol
+         * @brief Obtiene el nivel de un nodo en el árbol, auxiliar de nivel()
          * @param raiz puntero a raíz del árbol donde se buscará el nodo
          * @param vert puntero a vértice que se encontrará su nivel
          * @param lvl nivel actual en el subárbol
          * @return nivel del nodo apuntado por vert
+         * @see nivel()
          * */
         int __nivel__(Vertice * raiz, Vertice * vert, int lvl);
 
         /*!
-         * @brief Obtiene las hojas de un árbol
+         * @brief Obtiene las hojas de un árbol, auxiliar de hojas()
          * @param raiz puntero a raíz del subárbol 
          * @param lista puntero a lista de vértices donde se guardarán los vértices hojas
+         * @see hojas()
          * */
         void __hojas__(Vertice * raiz, Lista<Vertice*> * lista);
 
         /*!
-         * @brief Obtiene los hijos de un nodo dado
+         * @brief Obtiene los hijos de un nodo dado, auxiliar de hijos()
          * @param raiz del árbol donde se buscará el nodo
          * @param padre puntero al nodo que se quieren obtener los nodos hijos
          * @param lista puntero a lista de vértices donde se guardarán los hijos del nodo
+         * @see hijos()
          * */
         void __hijos__(Vertice * raiz, Vertice * padre, Lista<Vertice*> * lista);
 
         /*!
-         * @brief Obtiene el padre de un nodo dado
+         * @brief Obtiene el padre de un nodo dado, auxiliar de padre()
          * @param raiz puntero a la raíz del subárbol
          * @param padre doble puntero a un vértice donde se pondrá la direccion de memoria del padre
+         * @see padre()
          * */
         void __padre__(Vertice * raiz, Vertice * hijo, Vertice ** padre);
         
         /*!
          * @brief Ordena una lista de vértices en orden ascendente
          * @param lista puntero a lista de vertices a ordenar
+         * @see Vertice
          * */    
         void ordenar_lista_de_adyacentes(Lista<Vertice*> * lista);
 
@@ -350,14 +402,15 @@ class Arbol: public Grafo{
          * @param funcion_callback función que verifica una condición en un solo vértice
          * @param vert puntero a vértice raíz del subárbol
          * @return true si los nodos en el subárbol cumplen la condicion, false en caso contrario.
+         * @see todos_cumplen_con()
          * */
 
         bool __todos_cumplen_con__(bool (*funcion_callback)(Vertice*),Vertice* vert);
 };
 
-
+// Obtiene el hermano de un nodo
 Vertice * Arbol::hermano(int buscar){
-
+    // encontrar el padre del nodo, y obtener la direccion
 	Vertice * _padre = padre(buscar),
 			* vert = get_vertice(to_string(buscar));
 

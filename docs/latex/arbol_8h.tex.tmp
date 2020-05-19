@@ -1,5 +1,10 @@
 \hypertarget{arbol_8h}{}\section{Referencia del Archivo arbol.\+h}
 \label{arbol_8h}\index{arbol.\+h@{arbol.\+h}}
+
+
+Definción de clase \hyperlink{classArbol}{Arbol} e implementación de sus métodos.  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
@@ -13,7 +18,8 @@ Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classArbol}{Arbol}
-\begin{DoxyCompactList}\small\item\em Implementación de un arbol binario basada en un grafo con listas de adyacencia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Implementación de un árbol binario con listas de adyacencia. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Funciones}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,4 +29,5 @@ bool {\bfseries dos\+\_\+o\+\_\+cero\+\_\+hijos} (\hyperlink{classVertice}{Verti
 
 
 \subsection{Descripción detallada}
-Definción de clase \hyperlink{classArbol}{Arbol} e implementación de sus métodos 
+Definción de clase \hyperlink{classArbol}{Arbol} e implementación de sus métodos. 
+

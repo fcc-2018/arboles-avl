@@ -2,7 +2,8 @@
 \label{classArbol}\index{Arbol@{Arbol}}
 
 
-Implementación de un arbol binario basada en un grafo con listas de adyacencia.  
+Implementación de un árbol binario con listas de adyacencia. ~\newline
+  
 
 
 
@@ -22,7 +23,7 @@ Diagrama de colaboración para Arbol\+:
 \item 
 \mbox{\Hypertarget{classArbol_a4f5d3e25a0e1a40cb09cefa39378b7be}\label{classArbol_a4f5d3e25a0e1a40cb09cefa39378b7be}} 
 \hyperlink{classArbol_a4f5d3e25a0e1a40cb09cefa39378b7be}{Arbol} ()
-\begin{DoxyCompactList}\small\item\em Constructor de la clase, se asume que la raíz del árbol es el primer vértice en la lista de adyacencia. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_af332559b5f9d894ecc6a707bb1550ae2}{insertar} (int dato)
 \begin{DoxyCompactList}\small\item\em Inserta un dato en el árbol. \end{DoxyCompactList}\item 
 void \hyperlink{classArbol_a61749974f55056420f4e5a76eb664809}{mostrar} (ostream \&out)
@@ -33,46 +34,45 @@ void \hyperlink{classArbol_a5bd356760f63521e8578a83613aa4792}{recorrer} ()
 void \hyperlink{classArbol_a0ae46c572d300cd4a5f27b7d00a1a14e}{recorrer} (\hyperlink{classVertice}{Vertice} $\ast$raiz, int cont)
 \begin{DoxyCompactList}\small\item\em Metodo recursivo auxiliar para \hyperlink{classArbol_a5bd356760f63521e8578a83613aa4792}{recorrer()} \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_a0ffdc60ce8f2267366681cc94cf6beea}{preorden} ()
-\begin{DoxyCompactList}\small\item\em Recorre el árbol en preorden y los inserta en una lista. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_a80a0c3cf2d7f3e92a5c8e5504947dab5}{inorden} ()
-\begin{DoxyCompactList}\small\item\em Recorre el árbol en inorden y los inserta en una lista. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classArbol_a126e7d801dbe214ac39f183c26e9135d}\label{classArbol_a126e7d801dbe214ac39f183c26e9135d}} 
+\begin{DoxyCompactList}\small\item\em Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_a126e7d801dbe214ac39f183c26e9135d}{postorden} ()
-\begin{DoxyCompactList}\small\item\em Recorre el árbol en inorden. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a9051a6b4120b42ff8d046f41ab73dbaa}{peso} ()
 \begin{DoxyCompactList}\small\item\em Calcula el número de nodos en el árbol. \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a99e608849650b891c34852a81f93d4ab}{grado} ()
-\begin{DoxyCompactList}\small\item\em Calcula el grado del árbol, máximo número de hijos en cada nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. \end{DoxyCompactList}\item 
 \hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre} (int hijo)
-\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo a partir del valor de uno de sus hijos. \end{DoxyCompactList}\item 
 \hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArbol_a53527e7a8999ceda0b8a0fa25a3f357c}{padre} (string hijo)
-\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo a partir del nombre de uno de sus hijos. \end{DoxyCompactList}\item 
 \hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArbol_a3395234bc7b7a91d2880e10367039284}{padre} (\hyperlink{classVertice}{Vertice} $\ast$hijo)
-\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo a partir de un puntero a uno de sus hijos. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}{hijos} (int \hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre})
-\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un vértice. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un vértice a partir del valor de su nodo padre. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_ac799e737e25e07d285d2bb29ba950b5c}{hijos} (string \hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre})
-\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un vértice. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un vértice a partir del nombre de su nodo padre. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_a54203315682d5c39015ae7d871223b66}{hojas} ()
-\begin{DoxyCompactList}\small\item\em Obtiene las hojas del árbol. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene las hojas del árbol (nodos con 0 hijos) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_aba59969b2a10294fb79e583a8e9471c5}{cont\+\_\+hojas} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
 \begin{DoxyCompactList}\small\item\em Calcula el número de hojas en el árbol. \end{DoxyCompactList}\item 
 \hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArbol_a59ae16f1a68c5e5afd08be20dcbf5717}{hermano} (int buscar)
-\begin{DoxyCompactList}\small\item\em Obtiene el hermano de un vértice. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el hermano de un vértice (nodo con el mismo padre) \end{DoxyCompactList}\item 
 bool \hyperlink{classArbol_a14ccdbb79a82bf19a24449acaea6c413}{es\+\_\+lleno} ()
 \begin{DoxyCompactList}\small\item\em Verifica si el árbol cumple las condiciones de un árbol lleno, es decir cada nodo debe tener 0 o 2 hijos. \end{DoxyCompactList}\item 
 bool \hyperlink{classArbol_a9e472df85f3bb1aa5c90f8157ad6ff22}{es\+\_\+completo\+\_\+o\+\_\+perfecto} ()
 \begin{DoxyCompactList}\small\item\em Verifica si el árbol cumple las condiciones de un árbol perfecto/lleno ( árbol lleno con todas sus hojas en el mismo nivel ) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a98151655f0dab81b40d34f87fbbd90cd}{altura} (int dato)
-\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a7a79cb43ca30b5120f1a8ebe3afbe22c}{altura} (string nombre)
-\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a9f8928b4c72e2d484ef75cf3633c22ce}{altura} (\hyperlink{classVertice}{Vertice} $\ast$\hyperlink{classnodo}{nodo})
-\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_accd2dd2f8012067c1a2d77fd14c64546}{nivel} (int dato)
-\begin{DoxyCompactList}\small\item\em Calcula el nivel donde se encuentra un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a3a8a414e8e3f45bf90c481649928a86d}{nivel} (string nombre)
-\begin{DoxyCompactList}\small\item\em Calcula el nivel donde se encuentra un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_ac7ff5e2f436a1e83e24cbdd0b2cc827b}{antecesores} (int dato)
 \begin{DoxyCompactList}\small\item\em Obtiene los antecesores de un nodo. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_aa975d5d9cf5fcfc392a8200bd0078d1c}{antecesores} (string nombre)
@@ -97,17 +97,17 @@ void \hyperlink{classArbol_aea4cc9147a79d74956413a233df1dbe0}{\+\_\+\+\_\+postor
 void \hyperlink{classArbol_a1e00baa76d846e9e586e7d179ec51907}{\+\_\+\+\_\+camino\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$origen, \hyperlink{classVertice}{Vertice} $\ast$destino, \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$$>$ $\ast$$\ast$camino)
 \begin{DoxyCompactList}\small\item\em Obtiene el camino entre 2 vértices en el árbol, método auxiliar de \hyperlink{classArbol_accfa606c5f5e67b6ab18c4490075cf39}{camino\+\_\+entre()} \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_ad3077ad7b0c57ed7c98baa7fcd8aab47}{\+\_\+\+\_\+grado\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
-\begin{DoxyCompactList}\small\item\em Obtiene el grado de un árbol de manera recursiva. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el grado de un árbol, método auxiliar de \hyperlink{classArbol_a99e608849650b891c34852a81f93d4ab}{grado()} \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_ab34b0a58f349a2f8153911ad4821a9b9}{\+\_\+\+\_\+altura\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$v)
-\begin{DoxyCompactList}\small\item\em Obtiene la altura de un árbol recursivamente. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene la altura de un árbol recursivamente, auxiliar de \hyperlink{classArbol_a98151655f0dab81b40d34f87fbbd90cd}{altura()} \end{DoxyCompactList}\item 
 int \hyperlink{classArbol_a479d9841f100bf75b87fb2155b66d591}{\+\_\+\+\_\+nivel\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$vert, int lvl)
-\begin{DoxyCompactList}\small\item\em Obtiene el nivel de un nodo en el árbol. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el nivel de un nodo en el árbol, auxiliar de \hyperlink{classArbol_accd2dd2f8012067c1a2d77fd14c64546}{nivel()} \end{DoxyCompactList}\item 
 void \hyperlink{classArbol_aad97c679cb368931b2c6894b3dbcb60f}{\+\_\+\+\_\+hojas\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$$>$ $\ast$lista)
-\begin{DoxyCompactList}\small\item\em Obtiene las hojas de un árbol. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene las hojas de un árbol, auxiliar de \hyperlink{classArbol_a54203315682d5c39015ae7d871223b66}{hojas()} \end{DoxyCompactList}\item 
 void \hyperlink{classArbol_a1e3da012e6667062976bca9f78efef7e}{\+\_\+\+\_\+hijos\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$\hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre}, \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$$>$ $\ast$lista)
-\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un nodo dado. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los hijos de un nodo dado, auxiliar de \hyperlink{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}{hijos()} \end{DoxyCompactList}\item 
 void \hyperlink{classArbol_a495a7502a29e01ce7fa168daca651b1f}{\+\_\+\+\_\+padre\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$hijo, \hyperlink{classVertice}{Vertice} $\ast$$\ast$\hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre})
-\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo dado. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el padre de un nodo dado, auxiliar de \hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre()} \end{DoxyCompactList}\item 
 void \hyperlink{classArbol_aeb7dff584795382d8e8a1a4694d0ac4e}{ordenar\+\_\+lista\+\_\+de\+\_\+adyacentes} (\hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$$>$ $\ast$lista)
 \begin{DoxyCompactList}\small\item\em Ordena una lista de vértices en orden ascendente. \end{DoxyCompactList}\item 
 \hyperlink{classVertice}{Vertice} $\ast$$\ast$ \hyperlink{classArbol_a18066699977ab8095398d026ef2a13ac}{obtener\+\_\+hijos} (\hyperlink{classVertice}{Vertice} $\ast$\hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre})
@@ -120,9 +120,34 @@ bool \hyperlink{classArbol_a60b71d79b81a3a1083709ec264332975}{\+\_\+\+\_\+todos\
 
 
 \subsection{Descripción detallada}
-Implementación de un arbol binario basada en un grafo con listas de adyacencia. 
+Implementación de un árbol binario con listas de adyacencia. ~\newline
+ 
 
-Definición en la línea 30 del archivo arbol.\+h.
+Es una representación de un árbol binario basada en listas de adyacencia, usa la clase \hyperlink{classVertice}{Vertice} y la clase \hyperlink{classLista}{Lista} para construir la siguiente estructura\+: ~\newline
+ \hyperlink{classLista}{Lista}( ~\newline
+ \mbox{[}\hyperlink{classVertice}{Vertice} A\mbox{]} -\/$>$ \hyperlink{classLista}{Lista}(\mbox{[}B\mbox{]} -\/$>$ \mbox{[}C\mbox{]}) -\/$>$ ~\newline
+ \mbox{[}\hyperlink{classVertice}{Vertice} B\mbox{]} -\/$>$ \hyperlink{classLista}{Lista(\mbox{[}\+D\mbox{]})} -\/$>$ ~\newline
+ \mbox{[}\hyperlink{classVertice}{Vertice} C\mbox{]} -\/$>$ \hyperlink{classLista}{Lista()} -\/$>$ ~\newline
+ \mbox{[}\hyperlink{classVertice}{Vertice} D\mbox{]} -\/$>$ \hyperlink{classLista}{Lista()} ~\newline
+ )
+
+En todo el código de la clase se asume que el primer vértice en la lista de adyacencia es la raíz del árbol.
+
+Al insertar un nodo la clase \hyperlink{classArbol}{Arbol}, agrega un nuevo nodo a la lista de adyacencia prinipal e inicializa el nuevo nodo con una lista de adyacencia propia.
+
+Para acceder a los vértices/nodos del árbol exiten dos maneras\+:
+\begin{DoxyItemize}
+\item 1. Utilizar \hyperlink{classLista_1_1iterator}{Lista\+::iterator} para recorrer la lista de adyacencia de manera lineal (Esta forma es heredada de \hyperlink{classGrafo}{Grafo})
+\item 2. Utilizar el metodo \hyperlink{classArbol_a18066699977ab8095398d026ef2a13ac}{obtener\+\_\+hijos(\+Vertice$\ast$ raiz)} en un vértice raíz y acceder a sus hijos izquierdo y derecho (Forma de árbol binario)
+\end{DoxyItemize}
+
+Los métodos de la clase con nombre de la forma\+: \+\_\+\+\_\+nombre\+\_\+\+\_\+ son metodos recursivos que recorren el árbol respetando su estructura, (Forma 2). Es decir se llama al metodo \hyperlink{classArbol_a18066699977ab8095398d026ef2a13ac}{obtener\+\_\+hijos(\+Vertice$\ast$raiz)} y se utilizan sus hijos (izquierdo o derecho) para continuar con el recorrido del arbol.
+
+Cada método recursivo cuenta con un método más seguro, (no recursivo) que acepta menos parámetros y cuenta con más validaciones, que hacen más fácil la correción de errores y las llamadas a los métodos más limpias.
+
+A menos que se esté completamente seguro de como funciona el método recursivo, se recomienda utilizar los {\bfseries métodos intermediarios} (métodos sin \+\_\+\+\_\+ en el principio de su nombre). 
+
+Definición en la línea 66 del archivo arbol.\+h.
 
 
 
@@ -135,7 +160,7 @@ Definición en la línea 30 del archivo arbol.\+h.
 
 
 
-Obtiene la altura de un árbol recursivamente. 
+Obtiene la altura de un árbol recursivamente, auxiliar de \hyperlink{classArbol_a98151655f0dab81b40d34f87fbbd90cd}{altura()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -145,9 +170,12 @@ Obtiene la altura de un árbol recursivamente.
 \begin{DoxyReturn}{Devuelve}
 altura del árbol 0 si es hoja 
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a98151655f0dab81b40d34f87fbbd90cd}{altura()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 939 del archivo arbol.\+h.
+Definición en la línea 992 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a1e00baa76d846e9e586e7d179ec51907}\label{classArbol_a1e00baa76d846e9e586e7d179ec51907}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+camino\+\_\+\+\_\+@{\+\_\+\+\_\+camino\+\_\+\+\_\+}}
@@ -168,9 +196,12 @@ Obtiene el camino entre 2 vértices en el árbol, método auxiliar de \hyperlink
 {\em camino} & doble puntero a lista de vértices donde se guardarán los nodos en orden \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_accfa606c5f5e67b6ab18c4490075cf39}{camino\+\_\+entre()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 879 del archivo arbol.\+h.
+Definición en la línea 932 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_ad3077ad7b0c57ed7c98baa7fcd8aab47}\label{classArbol_ad3077ad7b0c57ed7c98baa7fcd8aab47}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+grado\+\_\+\+\_\+@{\+\_\+\+\_\+grado\+\_\+\+\_\+}}
@@ -180,7 +211,7 @@ Definición en la línea 879 del archivo arbol.\+h.
 
 
 
-Obtiene el grado de un árbol de manera recursiva. 
+Obtiene el grado de un árbol, método auxiliar de \hyperlink{classArbol_a99e608849650b891c34852a81f93d4ab}{grado()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -188,11 +219,14 @@ Obtiene el grado de un árbol de manera recursiva.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int número más grande de hijos en nodos del árbol 
+número más grande de hijos en nodos del árbol 
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a99e608849650b891c34852a81f93d4ab}{grado()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 595 del archivo arbol.\+h.
+Definición en la línea 648 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a1e3da012e6667062976bca9f78efef7e}\label{classArbol_a1e3da012e6667062976bca9f78efef7e}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+hijos\+\_\+\+\_\+@{\+\_\+\+\_\+hijos\+\_\+\+\_\+}}
@@ -202,7 +236,7 @@ Definición en la línea 595 del archivo arbol.\+h.
 
 
 
-Obtiene los hijos de un nodo dado. 
+Obtiene los hijos de un nodo dado, auxiliar de \hyperlink{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}{hijos()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -213,9 +247,12 @@ Obtiene los hijos de un nodo dado.
 {\em lista} & puntero a lista de vértices donde se guardarán los hijos del nodo \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}{hijos()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 390 del archivo arbol.\+h.
+Definición en la línea 443 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aad97c679cb368931b2c6894b3dbcb60f}\label{classArbol_aad97c679cb368931b2c6894b3dbcb60f}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+hojas\+\_\+\+\_\+@{\+\_\+\+\_\+hojas\+\_\+\+\_\+}}
@@ -225,7 +262,7 @@ Definición en la línea 390 del archivo arbol.\+h.
 
 
 
-Obtiene las hojas de un árbol. 
+Obtiene las hojas de un árbol, auxiliar de \hyperlink{classArbol_a54203315682d5c39015ae7d871223b66}{hojas()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -234,9 +271,12 @@ Obtiene las hojas de un árbol.
 {\em lista} & puntero a lista de vértices donde se guardarán los vértices hojas \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a54203315682d5c39015ae7d871223b66}{hojas()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 471 del archivo arbol.\+h.
+Definición en la línea 524 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_ae3dc89f7db1fb9b54bcc2489eb1d9542}\label{classArbol_ae3dc89f7db1fb9b54bcc2489eb1d9542}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+inorden\+\_\+\+\_\+@{\+\_\+\+\_\+inorden\+\_\+\+\_\+}}
@@ -255,9 +295,12 @@ Recorre un árbol en inorden (Izquierda, Visitar, Derecha) recursivamente, méto
 {\em lista} & puntero a lista de vertices (donde se guardarán los vértices visitados en orden) \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a80a0c3cf2d7f3e92a5c8e5504947dab5}{inorden()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 529 del archivo arbol.\+h.
+Definición en la línea 582 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a479d9841f100bf75b87fb2155b66d591}\label{classArbol_a479d9841f100bf75b87fb2155b66d591}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+nivel\+\_\+\+\_\+@{\+\_\+\+\_\+nivel\+\_\+\+\_\+}}
@@ -267,7 +310,7 @@ Definición en la línea 529 del archivo arbol.\+h.
 
 
 
-Obtiene el nivel de un nodo en el árbol. 
+Obtiene el nivel de un nodo en el árbol, auxiliar de \hyperlink{classArbol_accd2dd2f8012067c1a2d77fd14c64546}{nivel()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -281,9 +324,12 @@ Obtiene el nivel de un nodo en el árbol.
 \begin{DoxyReturn}{Devuelve}
 nivel del nodo apuntado por vert 
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_accd2dd2f8012067c1a2d77fd14c64546}{nivel()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 963 del archivo arbol.\+h.
+Definición en la línea 1016 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a495a7502a29e01ce7fa168daca651b1f}\label{classArbol_a495a7502a29e01ce7fa168daca651b1f}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+padre\+\_\+\+\_\+@{\+\_\+\+\_\+padre\+\_\+\+\_\+}}
@@ -293,7 +339,7 @@ Definición en la línea 963 del archivo arbol.\+h.
 
 
 
-Obtiene el padre de un nodo dado. 
+Obtiene el padre de un nodo dado, auxiliar de \hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre()} 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -302,9 +348,12 @@ Obtiene el padre de un nodo dado.
 {\em padre} & doble puntero a un vértice donde se pondrá la direccion de memoria del padre \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_abcb8c26e9021a1418de71ad6014351cf}{padre()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 429 del archivo arbol.\+h.
+Definición en la línea 482 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aea4cc9147a79d74956413a233df1dbe0}\label{classArbol_aea4cc9147a79d74956413a233df1dbe0}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+postorden\+\_\+\+\_\+@{\+\_\+\+\_\+postorden\+\_\+\+\_\+}}
@@ -323,9 +372,12 @@ Recorre un árbol en postorden (Izquierda, Derecha, Visitar) recursivamente, mé
 {\em lista} & puntero a lista de vértices (donde se guardarán los vértices visitados en orden) \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a126e7d801dbe214ac39f183c26e9135d}{postorden()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 577 del archivo arbol.\+h.
+Definición en la línea 630 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a707f748c57d51f6b63fe1a605476e49d}\label{classArbol_a707f748c57d51f6b63fe1a605476e49d}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+preorden\+\_\+\+\_\+@{\+\_\+\+\_\+preorden\+\_\+\+\_\+}}
@@ -344,9 +396,12 @@ Recorre un árbol en preorden (Visitar, Izquierda, Derecha) recursivamente, mét
 {\em lista} & puntero a lista de vértices (donde se guardarán los vértices visitados en orden) \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a0ffdc60ce8f2267366681cc94cf6beea}{preorden()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 506 del archivo arbol.\+h.
+Definición en la línea 559 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a60b71d79b81a3a1083709ec264332975}\label{classArbol_a60b71d79b81a3a1083709ec264332975}} 
 \index{Arbol@{Arbol}!\+\_\+\+\_\+todos\+\_\+cumplen\+\_\+con\+\_\+\+\_\+@{\+\_\+\+\_\+todos\+\_\+cumplen\+\_\+con\+\_\+\+\_\+}}
@@ -368,9 +423,12 @@ Método auxiliar para \hyperlink{classArbol_aba4b09fef18152beb43e04fee7394f34}{t
 \begin{DoxyReturn}{Devuelve}
 true si los nodos en el subárbol cumplen la condicion, false en caso contrario. 
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_aba4b09fef18152beb43e04fee7394f34}{todos\+\_\+cumplen\+\_\+con()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 550 del archivo arbol.\+h.
+Definición en la línea 603 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a98151655f0dab81b40d34f87fbbd90cd}\label{classArbol_a98151655f0dab81b40d34f87fbbd90cd}} 
 \index{Arbol@{Arbol}!altura@{altura}}
@@ -380,7 +438,7 @@ Definición en la línea 550 del archivo arbol.\+h.
 
 
 
-Calcula la altura de un nodo. 
+Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -388,11 +446,11 @@ Calcula la altura de un nodo.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int altura 
+altura del nodo 
 \end{DoxyReturn}
 
 
-Definición en la línea 911 del archivo arbol.\+h.
+Definición en la línea 964 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a7a79cb43ca30b5120f1a8ebe3afbe22c}\label{classArbol_a7a79cb43ca30b5120f1a8ebe3afbe22c}} 
 \index{Arbol@{Arbol}!altura@{altura}}
@@ -402,7 +460,7 @@ Definición en la línea 911 del archivo arbol.\+h.
 
 
 
-Calcula la altura de un nodo. 
+Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -410,11 +468,11 @@ Calcula la altura de un nodo.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int altura 
+altura del nodo 
 \end{DoxyReturn}
 
 
-Definición en la línea 917 del archivo arbol.\+h.
+Definición en la línea 970 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a9f8928b4c72e2d484ef75cf3633c22ce}\label{classArbol_a9f8928b4c72e2d484ef75cf3633c22ce}} 
 \index{Arbol@{Arbol}!altura@{altura}}
@@ -424,7 +482,7 @@ Definición en la línea 917 del archivo arbol.\+h.
 
 
 
-Calcula la altura de un nodo. 
+Calcula la altura de un nodo (longitud del camino mas largo desde el nodo y un nodo hoja) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -432,11 +490,11 @@ Calcula la altura de un nodo.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int altura 
+altura del nodo 
 \end{DoxyReturn}
 
 
-Definición en la línea 929 del archivo arbol.\+h.
+Definición en la línea 982 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_ac7ff5e2f436a1e83e24cbdd0b2cc827b}\label{classArbol_ac7ff5e2f436a1e83e24cbdd0b2cc827b}} 
 \index{Arbol@{Arbol}!antecesores@{antecesores}}
@@ -458,7 +516,7 @@ lista de punteros a vértices previos al nodo
 \end{DoxyReturn}
 
 
-Definición en la línea 980 del archivo arbol.\+h.
+Definición en la línea 1033 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aa975d5d9cf5fcfc392a8200bd0078d1c}\label{classArbol_aa975d5d9cf5fcfc392a8200bd0078d1c}} 
 \index{Arbol@{Arbol}!antecesores@{antecesores}}
@@ -480,7 +538,7 @@ lista de punteros a vértices antecesores al nodo
 \end{DoxyReturn}
 
 
-Definición en la línea 984 del archivo arbol.\+h.
+Definición en la línea 1037 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_accfa606c5f5e67b6ab18c4490075cf39}\label{classArbol_accfa606c5f5e67b6ab18c4490075cf39}} 
 \index{Arbol@{Arbol}!camino\+\_\+entre@{camino\+\_\+entre}}
@@ -504,7 +562,7 @@ lista de punteros a vértices en el camnino de o a d
 \end{DoxyReturn}
 
 
-Definición en la línea 864 del archivo arbol.\+h.
+Definición en la línea 917 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aef0f680828ac573af495b98d2eb09c12}\label{classArbol_aef0f680828ac573af495b98d2eb09c12}} 
 \index{Arbol@{Arbol}!camino\+\_\+entre@{camino\+\_\+entre}}
@@ -528,7 +586,7 @@ lista de punteros a vértices en el camnino de origen a destino
 \end{DoxyReturn}
 
 
-Definición en la línea 868 del archivo arbol.\+h.
+Definición en la línea 921 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aba59969b2a10294fb79e583a8e9471c5}\label{classArbol_aba59969b2a10294fb79e583a8e9471c5}} 
 \index{Arbol@{Arbol}!cont\+\_\+hojas@{cont\+\_\+hojas}}
@@ -550,7 +608,7 @@ lista de punteros a vértices hijos
 \end{DoxyReturn}
 
 
-Definición en la línea 442 del archivo arbol.\+h.
+Definición en la línea 495 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_acae8e9dfd17ae18e250d9029172e1c9e}\label{classArbol_acae8e9dfd17ae18e250d9029172e1c9e}} 
 \index{Arbol@{Arbol}!descendientes@{descendientes}}
@@ -572,7 +630,7 @@ lista de punteros a vértices descendientes al nodo
 \end{DoxyReturn}
 
 
-Definición en la línea 995 del archivo arbol.\+h.
+Definición en la línea 1048 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a790b07f284b14bd179499eb4a991ad86}\label{classArbol_a790b07f284b14bd179499eb4a991ad86}} 
 \index{Arbol@{Arbol}!descendientes@{descendientes}}
@@ -594,7 +652,7 @@ lista de punteros a vértices descendientes al nodo
 \end{DoxyReturn}
 
 
-Definición en la línea 1001 del archivo arbol.\+h.
+Definición en la línea 1054 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a9e472df85f3bb1aa5c90f8157ad6ff22}\label{classArbol_a9e472df85f3bb1aa5c90f8157ad6ff22}} 
 \index{Arbol@{Arbol}!es\+\_\+completo\+\_\+o\+\_\+perfecto@{es\+\_\+completo\+\_\+o\+\_\+perfecto}}
@@ -607,11 +665,11 @@ Definición en la línea 1001 del archivo arbol.\+h.
 Verifica si el árbol cumple las condiciones de un árbol perfecto/lleno ( árbol lleno con todas sus hojas en el mismo nivel ) 
 
 \begin{DoxyReturn}{Devuelve}
-true si es perfecto, false en caso contrario 
+{\itshape true} si es perfecto, {\itshape false} en caso contrario 
 \end{DoxyReturn}
 
 
-Definición en la línea 847 del archivo arbol.\+h.
+Definición en la línea 900 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a14ccdbb79a82bf19a24449acaea6c413}\label{classArbol_a14ccdbb79a82bf19a24449acaea6c413}} 
 \index{Arbol@{Arbol}!es\+\_\+lleno@{es\+\_\+lleno}}
@@ -624,11 +682,11 @@ Definición en la línea 847 del archivo arbol.\+h.
 Verifica si el árbol cumple las condiciones de un árbol lleno, es decir cada nodo debe tener 0 o 2 hijos. 
 
 \begin{DoxyReturn}{Devuelve}
-true si el árbol es lleno, false en caso contrario 
+{\itshape true} si el árbol es lleno, {\itshape false} en caso contrario. 
 \end{DoxyReturn}
 
 
-Definición en la línea 835 del archivo arbol.\+h.
+Definición en la línea 888 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a99e608849650b891c34852a81f93d4ab}\label{classArbol_a99e608849650b891c34852a81f93d4ab}} 
 \index{Arbol@{Arbol}!grado@{grado}}
@@ -638,14 +696,14 @@ Definición en la línea 835 del archivo arbol.\+h.
 
 
 
-Calcula el grado del árbol, máximo número de hijos en cada nodo. 
+Calcula el grado del árbol, es decir el número máximo de hijos en cada nodo. 
 
 \begin{DoxyReturn}{Devuelve}
 grado del árbol 
 \end{DoxyReturn}
 
 
-Definición en la línea 591 del archivo arbol.\+h.
+Definición en la línea 644 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a59ae16f1a68c5e5afd08be20dcbf5717}\label{classArbol_a59ae16f1a68c5e5afd08be20dcbf5717}} 
 \index{Arbol@{Arbol}!hermano@{hermano}}
@@ -655,7 +713,7 @@ Definición en la línea 591 del archivo arbol.\+h.
 
 
 
-Obtiene el hermano de un vértice. 
+Obtiene el hermano de un vértice (nodo con el mismo padre) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -667,7 +725,7 @@ puntero a vértice hermano
 \end{DoxyReturn}
 
 
-Definición en la línea 359 del archivo arbol.\+h.
+Definición en la línea 412 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}\label{classArbol_ac2bfb4e9bab05342fb7d627fe3916183}} 
 \index{Arbol@{Arbol}!hijos@{hijos}}
@@ -677,7 +735,7 @@ Definición en la línea 359 del archivo arbol.\+h.
 
 
 
-Obtiene los hijos de un vértice. 
+Obtiene los hijos de un vértice a partir del valor de su nodo padre. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -689,7 +747,7 @@ lista de punteros a vértices hijos
 \end{DoxyReturn}
 
 
-Definición en la línea 378 del archivo arbol.\+h.
+Definición en la línea 431 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_ac799e737e25e07d285d2bb29ba950b5c}\label{classArbol_ac799e737e25e07d285d2bb29ba950b5c}} 
 \index{Arbol@{Arbol}!hijos@{hijos}}
@@ -699,7 +757,7 @@ Definición en la línea 378 del archivo arbol.\+h.
 
 
 
-Obtiene los hijos de un vértice. 
+Obtiene los hijos de un vértice a partir del nombre de su nodo padre. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -711,7 +769,7 @@ lista de punteros a vértices hijos
 \end{DoxyReturn}
 
 
-Definición en la línea 382 del archivo arbol.\+h.
+Definición en la línea 435 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a54203315682d5c39015ae7d871223b66}\label{classArbol_a54203315682d5c39015ae7d871223b66}} 
 \index{Arbol@{Arbol}!hojas@{hojas}}
@@ -721,14 +779,14 @@ Definición en la línea 382 del archivo arbol.\+h.
 
 
 
-Obtiene las hojas del árbol. 
+Obtiene las hojas del árbol (nodos con 0 hijos) 
 
 \begin{DoxyReturn}{Devuelve}
 lista de punteros a vértices hojas 
 \end{DoxyReturn}
 
 
-Definición en la línea 463 del archivo arbol.\+h.
+Definición en la línea 516 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a80a0c3cf2d7f3e92a5c8e5504947dab5}\label{classArbol_a80a0c3cf2d7f3e92a5c8e5504947dab5}} 
 \index{Arbol@{Arbol}!inorden@{inorden}}
@@ -738,14 +796,14 @@ Definición en la línea 463 del archivo arbol.\+h.
 
 
 
-Recorre el árbol en inorden y los inserta en una lista. 
+Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. 
 
 \begin{DoxyReturn}{Devuelve}
 \hyperlink{classLista}{Lista} de punteros a vértices del arbol en inorden 
 \end{DoxyReturn}
 
 
-Definición en la línea 519 del archivo arbol.\+h.
+Definición en la línea 572 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_af332559b5f9d894ecc6a707bb1550ae2}\label{classArbol_af332559b5f9d894ecc6a707bb1550ae2}} 
 \index{Arbol@{Arbol}!insertar@{insertar}}
@@ -757,6 +815,8 @@ Definición en la línea 519 del archivo arbol.\+h.
 
 Inserta un dato en el árbol. 
 
+Busca un vertice con un espacio vacio y que cumpla con el orden en el arbol, raiz $<$ hijo derecho, raiz $>$ hijo izquierdo
+
 
 \begin{DoxyParams}{Parámetros}
 {\em dato} & número a insertar \\
@@ -767,7 +827,7 @@ Nivel en el que fué insertado el nodo
 \end{DoxyReturn}
 
 
-Definición en la línea 754 del archivo arbol.\+h.
+Definición en la línea 807 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a61749974f55056420f4e5a76eb664809}\label{classArbol_a61749974f55056420f4e5a76eb664809}} 
 \index{Arbol@{Arbol}!mostrar@{mostrar}}
@@ -786,7 +846,7 @@ Muestra el árbol de manera horizontal.
 \end{DoxyParams}
 
 
-Definición en la línea 691 del archivo arbol.\+h.
+Definición en la línea 744 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_accd2dd2f8012067c1a2d77fd14c64546}\label{classArbol_accd2dd2f8012067c1a2d77fd14c64546}} 
 \index{Arbol@{Arbol}!nivel@{nivel}}
@@ -796,7 +856,7 @@ Definición en la línea 691 del archivo arbol.\+h.
 
 
 
-Calcula el nivel donde se encuentra un nodo. 
+Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -804,11 +864,11 @@ Calcula el nivel donde se encuentra un nodo.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int nivel 
+nivel del nodo 
 \end{DoxyReturn}
 
 
-Definición en la línea 951 del archivo arbol.\+h.
+Definición en la línea 1004 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a3a8a414e8e3f45bf90c481649928a86d}\label{classArbol_a3a8a414e8e3f45bf90c481649928a86d}} 
 \index{Arbol@{Arbol}!nivel@{nivel}}
@@ -818,7 +878,7 @@ Definición en la línea 951 del archivo arbol.\+h.
 
 
 
-Calcula el nivel donde se encuentra un nodo. 
+Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -826,11 +886,11 @@ Calcula el nivel donde se encuentra un nodo.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-int nivel 
+nivel del nodo 
 \end{DoxyReturn}
 
 
-Definición en la línea 955 del archivo arbol.\+h.
+Definición en la línea 1008 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a18066699977ab8095398d026ef2a13ac}\label{classArbol_a18066699977ab8095398d026ef2a13ac}} 
 \index{Arbol@{Arbol}!obtener\+\_\+hijos@{obtener\+\_\+hijos}}
@@ -852,7 +912,7 @@ Arreglo de vértices de longitud 2, hijos\mbox{[}0\mbox{]} hijo izquierdo de pad
 \end{DoxyReturn}
 
 
-Definición en la línea 614 del archivo arbol.\+h.
+Definición en la línea 667 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aeb7dff584795382d8e8a1a4694d0ac4e}\label{classArbol_aeb7dff584795382d8e8a1a4694d0ac4e}} 
 \index{Arbol@{Arbol}!ordenar\+\_\+lista\+\_\+de\+\_\+adyacentes@{ordenar\+\_\+lista\+\_\+de\+\_\+adyacentes}}
@@ -869,9 +929,12 @@ Ordena una lista de vértices en orden ascendente.
 {\em lista} & puntero a lista de vertices a ordenar \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classVertice}{Vertice} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 659 del archivo arbol.\+h.
+Definición en la línea 712 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_abcb8c26e9021a1418de71ad6014351cf}\label{classArbol_abcb8c26e9021a1418de71ad6014351cf}} 
 \index{Arbol@{Arbol}!padre@{padre}}
@@ -881,11 +944,11 @@ Definición en la línea 659 del archivo arbol.\+h.
 
 
 
-Obtiene el padre de un nodo. 
+Obtiene el padre de un nodo a partir del valor de uno de sus hijos. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em hijo} & valor numérico del vértice hijo \\
+{\em hijo} & valor numérico de un vértice hijo \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
@@ -893,7 +956,7 @@ puntero a vértice padre o N\+U\+LL si el hijo no existe
 \end{DoxyReturn}
 
 
-Definición en la línea 405 del archivo arbol.\+h.
+Definición en la línea 458 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a53527e7a8999ceda0b8a0fa25a3f357c}\label{classArbol_a53527e7a8999ceda0b8a0fa25a3f357c}} 
 \index{Arbol@{Arbol}!padre@{padre}}
@@ -903,11 +966,11 @@ Definición en la línea 405 del archivo arbol.\+h.
 
 
 
-Obtiene el padre de un nodo. 
+Obtiene el padre de un nodo a partir del nombre de uno de sus hijos. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em hijo} & nombre del vértice hijo \\
+{\em hijo} & nombre de un vértice hijo \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
@@ -915,7 +978,7 @@ puntero a vértice padre o N\+U\+LL si el hijo no existe
 \end{DoxyReturn}
 
 
-Definición en la línea 410 del archivo arbol.\+h.
+Definición en la línea 463 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a3395234bc7b7a91d2880e10367039284}\label{classArbol_a3395234bc7b7a91d2880e10367039284}} 
 \index{Arbol@{Arbol}!padre@{padre}}
@@ -925,7 +988,7 @@ Definición en la línea 410 del archivo arbol.\+h.
 
 
 
-Obtiene el padre de un nodo. 
+Obtiene el padre de un nodo a partir de un puntero a uno de sus hijos. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -937,7 +1000,7 @@ puntero a vértice padre
 \end{DoxyReturn}
 
 
-Definición en la línea 420 del archivo arbol.\+h.
+Definición en la línea 473 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a9051a6b4120b42ff8d046f41ab73dbaa}\label{classArbol_a9051a6b4120b42ff8d046f41ab73dbaa}} 
 \index{Arbol@{Arbol}!peso@{peso}}
@@ -954,7 +1017,24 @@ numero de nodos
 \end{DoxyReturn}
 
 
-Definición en la línea 586 del archivo arbol.\+h.
+Definición en la línea 639 del archivo arbol.\+h.
+
+\mbox{\Hypertarget{classArbol_a126e7d801dbe214ac39f183c26e9135d}\label{classArbol_a126e7d801dbe214ac39f183c26e9135d}} 
+\index{Arbol@{Arbol}!postorden@{postorden}}
+\index{postorden@{postorden}!Arbol@{Arbol}}
+\subsubsection{\texorpdfstring{postorden()}{postorden()}}
+{\footnotesize\ttfamily \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ Arbol\+::postorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recorre el árbol en inorden e inserta los vertices obtenidos en una lista. 
+
+\begin{DoxyReturn}{Devuelve}
+\hyperlink{classLista}{Lista} de punteros a vertices del arbol en postorden 
+\end{DoxyReturn}
+
+
+Definición en la línea 618 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a0ffdc60ce8f2267366681cc94cf6beea}\label{classArbol_a0ffdc60ce8f2267366681cc94cf6beea}} 
 \index{Arbol@{Arbol}!preorden@{preorden}}
@@ -964,14 +1044,14 @@ Definición en la línea 586 del archivo arbol.\+h.
 
 
 
-Recorre el árbol en preorden y los inserta en una lista. 
+Recorre el árbol en preorden e inserta los vertices obtenidos en una lista. 
 
 \begin{DoxyReturn}{Devuelve}
 \hyperlink{classLista}{Lista} de punteros a vértices del árbol en preorden 
 \end{DoxyReturn}
 
 
-Definición en la línea 494 del archivo arbol.\+h.
+Definición en la línea 547 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_a0ae46c572d300cd4a5f27b7d00a1a14e}\label{classArbol_a0ae46c572d300cd4a5f27b7d00a1a14e}} 
 \index{Arbol@{Arbol}!recorrer@{recorrer}}
@@ -990,9 +1070,12 @@ Metodo recursivo auxiliar para \hyperlink{classArbol_a5bd356760f63521e8578a83613
 {\em cont} & contador del nivel del nodo actual (cont = 0) \\
 \hline
 \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbol_a5bd356760f63521e8578a83613aa4792}{recorrer()} 
+\end{DoxySeeAlso}
 
 
-Definición en la línea 803 del archivo arbol.\+h.
+Definición en la línea 856 del archivo arbol.\+h.
 
 \mbox{\Hypertarget{classArbol_aba4b09fef18152beb43e04fee7394f34}\label{classArbol_aba4b09fef18152beb43e04fee7394f34}} 
 \index{Arbol@{Arbol}!todos\+\_\+cumplen\+\_\+con@{todos\+\_\+cumplen\+\_\+con}}
@@ -1014,7 +1097,7 @@ true si todos los vértices pasan la prueba false si no.
 \end{DoxyReturn}
 
 
-Definición en la línea 546 del archivo arbol.\+h.
+Definición en la línea 599 del archivo arbol.\+h.
 
 
 
