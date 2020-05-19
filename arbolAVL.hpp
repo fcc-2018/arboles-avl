@@ -20,22 +20,22 @@
  * - Rotación simple izquierda. Esta rotación se aplica cuando \f$F_e(R) = -2\f$
  * y \f$F_e(I) = -1\f$
  * 
- * ![Ilustración de la rotación izquierda](../img/rot_izq.png)
+ * ![Ilustración de la rotación izquierda](./img/rot_izq.png)
  * 
  * - Rotación simple derecha. Esta rotación se aplica cuando \f$F_e(R) = 2\f$
  * y \f$F_e(D) = 1\f$
  * 
- * ![Ilustración de la rotación derecha](../img/rot_der.png)
+ * ![Ilustración de la rotación derecha](./img/rot_der.png)
  * 
  * - Rotación doble izquierda. Esta rotación se aplica cuando \f$F_e(R) = 2\f$
  * y \f$F_e(D) = -1\f$
  * 
- * ![Ilustración de la rotación doble izquierda](../img/rot_d_izq.png)
+ * ![Ilustración de la rotación doble izquierda](./img/rot_d_izq.png)
  * 
  * - Rotación doble derecha. Esta rotación se aplica cuando \f$F_e(R) = -2\f$
  * y \f$F_e(I) = 1\f$
  * 
- * ![Ilustración de la rotación doble derecha](../img/rot_d_der.png)
+ * ![Ilustración de la rotación doble derecha](./img/rot_d_der.png)
  * 
  * @see ArbolAVL
  * */
