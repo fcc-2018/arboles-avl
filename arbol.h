@@ -357,11 +357,7 @@ class Arbol: public Grafo{
 
 
 Vertice * Arbol::hermano(int buscar){
-  /*! @var Vertice* $_padre 
-   * puntero al padre del nodo con el valor buscar
-   * */
-  /**! \brief Vertice* puntero al padre del nodo con el valor buscar */
-  //! @brief Vertice* puntero al padre del nodo con el valor buscar
+
 	Vertice * _padre = padre(buscar),
 			* vert = get_vertice(to_string(buscar));
 
@@ -369,7 +365,8 @@ Vertice * Arbol::hermano(int buscar){
 	if(_padre == NULL){
 		return NULL;
 	} else {
-		Vertice ** hijos = obtener_hijos(_padre); /*!< Detailed description after the member */
+
+		Vertice ** hijos = obtener_hijos(_padre);
 		Vertice * izq = hijos[0], * der = hijos[1];
 		if(izq == vert)
 			return der;
@@ -534,9 +531,9 @@ void Arbol::__inorden__(Vertice * raiz, Lista<Vertice*> * lista){
 	if(raiz == NULL) return;
 	Vertice ** hijos = obtener_hijos(raiz);
 
-	__inorden__(hijos[0], lista, nivel);
+	__inorden__(hijos[0], lista);
 	lista->insertar_final(raiz);
-	__inorden__(hijos[1], lista, nivel);
+	__inorden__(hijos[1], lista);
   
 }
 

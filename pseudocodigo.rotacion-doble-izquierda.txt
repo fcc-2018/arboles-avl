@@ -1,0 +1,26 @@
+// Partiendo de un arbol de la forma:
+//    A      
+//      B
+//    C
+
+funcion rotacion_doble_a_la_izquierda(A):
+    B = A->der
+    C = B->izq
+
+    B->izq = C->der
+    C->der = B
+    A->der = C
+    // resultado:
+    //    A 
+    //      C
+    //        B
+
+    A->der = C->izq
+    C->izq = A
+    Si A == raiz
+        raiz = C
+    // resultado:
+    //     C
+    //   A   B 
+
+fin_funcion
