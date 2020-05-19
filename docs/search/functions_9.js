@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nivel',['nivel',['../classArbol.html#accd2dd2f8012067c1a2d77fd14c64546',1,'Arbol::nivel(int dato)'],['../classArbol.html#a3a8a414e8e3f45bf90c481649928a86d',1,'Arbol::nivel(string nombre)']]]
+  ['inorden',['inorden',['../classArbol.html#a80a0c3cf2d7f3e92a5c8e5504947dab5',1,'Arbol']]],
+  ['insertar',['insertar',['../classArbol.html#af332559b5f9d894ecc6a707bb1550ae2',1,'Arbol::insertar()'],['../classArbolAVL.html#a99512878bc14c77bf31ab7bf8dd6aa36',1,'ArbolAVL::insertar()']]]
 ];

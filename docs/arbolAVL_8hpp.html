@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arboles AVL: Referencia del Archivo arbolAVL.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arboles AVL
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Implementación de estructuras de datos básicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo arbolAVL.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Cabecera de la clase ArbolABL e implementación de sus métodos.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="arbol_8h_source.html">arbol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="testing_8h_source.html">testing.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para arbolAVL.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="arbolAVL_8hpp__incl.png" border="0" usemap="#arbolAVL_8hpp" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="arbolAVL_8hpp__dep__incl.png" border="0" usemap="#arbolAVL_8hppdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="arbolAVL_8hpp_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArbolAVL.html">ArbolAVL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pueda auto-balancear.  <a href="classArbolAVL.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Cabecera de la clase ArbolABL e implementación de sus métodos. </p>
+<p>Archivo de cabecera que contiene la clase <a class="el" href="classArbolAVL.html" title="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued...">ArbolAVL</a>. Esta clase es utilizada para construir árboles binarios <em>balanceados</em> los cuales se dice que están <em>balanceados</em> si su <b>factor de equilibrio</b> <img class="formulaInl" alt="$F_e = \{-1,0,1\}$" src="form_0.png"/>. <br />
+ Si el árbol no cuenta con dicho factor de equilibrio, es decir, <img class="formulaInl" alt="$F_e = \{ -2,2\}$" src="form_1.png"/>, se dice que el árbol está <em>desbalanceado</em>. <br />
+ Cuando el árbol está desbalanceado, según su <b>tipo de desbalance</b>, se aplica alguna de las cuatro rotaciones que se darán a continuación. Sean <img class="formulaInl" alt="$R$" src="form_2.png"/> un vértice raíz del subárbol en estudio, <img class="formulaInl" alt="$I$" src="form_3.png"/> el hijo izquierdo de la raíz y <img class="formulaInl" alt="$D$" src="form_4.png"/> el hijo derecho de la raíz. Tenemos las siguientes rotaciones según sus factores de equilibrios definidos por <img class="formulaInl" alt="$F_e$" src="form_5.png"/>:</p><ul>
+<li>Rotación simple izquierda. Esta rotación se aplica cuando <img class="formulaInl" alt="$F_e(R) = -2$" src="form_6.png"/> y <img class="formulaInl" alt="$F_e(I) = -1$" src="form_7.png"/></li>
+</ul>
+<div class="image">
+<img src="../img/rot_izq.png" alt="Ilustración de la rotación izquierda"/>
+</div>
+<ul>
+<li>Rotación simple derecha. Esta rotación se aplica cuando <img class="formulaInl" alt="$F_e(R) = 2$" src="form_8.png"/> y <img class="formulaInl" alt="$F_e(D) = 1$" src="form_9.png"/></li>
+</ul>
+<div class="image">
+<img src="../img/rot_der.png" alt="Ilustración de la rotación derecha"/>
+</div>
+<ul>
+<li>Rotación doble izquierda. Esta rotación se aplica cuando <img class="formulaInl" alt="$F_e(R) = 2$" src="form_8.png"/> y <img class="formulaInl" alt="$F_e(D) = -1$" src="form_10.png"/></li>
+</ul>
+<div class="image">
+<img src="../img/rot_d_izq.png" alt="Ilustración de la rotación doble izquierda"/>
+</div>
+<ul>
+<li>Rotación doble derecha. Esta rotación se aplica cuando <img class="formulaInl" alt="$F_e(R) = -2$" src="form_6.png"/> y <img class="formulaInl" alt="$F_e(I) = 1$" src="form_11.png"/></li>
+</ul>
+<div class="image">
+<img src="../img/rot_d_der.png" alt="Ilustración de la rotación doble derecha"/>
+</div>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="classArbolAVL.html" title="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued...">ArbolAVL</a> </dd></dl>
+
+<p class="definition">Definición en el archivo <a class="el" href="arbolAVL_8hpp_source.html">arbolAVL.hpp</a>.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

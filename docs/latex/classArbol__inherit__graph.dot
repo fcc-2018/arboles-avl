@@ -4,5 +4,7 @@ digraph "Arbol"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="Arbol",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node1 [label="Grafo",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="Grafo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGrafo.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ArbolAVL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArbolAVL.html",tooltip="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued..."];
 }

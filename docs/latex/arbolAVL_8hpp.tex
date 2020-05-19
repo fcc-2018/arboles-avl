@@ -1,0 +1,56 @@
+\hypertarget{arbolAVL_8hpp}{}\section{Referencia del Archivo arbol\+A\+V\+L.\+hpp}
+\label{arbolAVL_8hpp}\index{arbol\+A\+V\+L.\+hpp@{arbol\+A\+V\+L.\+hpp}}
+
+
+Cabecera de la clase Arbol\+A\+BL e implementación de sus métodos.  
+
+
+{\ttfamily \#include \char`\"{}arbol.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}testing.\+h\char`\"{}}\newline
+Dependencia gráfica adjunta para arbol\+A\+V\+L.\+hpp\+:
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
+% FIG 1
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classArbolAVL}{Arbol\+A\+VL}
+\begin{DoxyCompactList}\small\item\em Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pueda auto-\/balancear. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Cabecera de la clase Arbol\+A\+BL e implementación de sus métodos. 
+
+Archivo de cabecera que contiene la clase \hyperlink{classArbolAVL}{Arbol\+A\+VL}. Esta clase es utilizada para construir árboles binarios {\itshape balanceados} los cuales se dice que están {\itshape balanceados} si su {\bfseries factor de equilibrio} $F_e = \{-1,0,1\}$. ~\newline
+ Si el árbol no cuenta con dicho factor de equilibrio, es decir, $F_e = \{ -2,2\}$, se dice que el árbol está {\itshape desbalanceado}. ~\newline
+ Cuando el árbol está desbalanceado, según su {\bfseries tipo de desbalance}, se aplica alguna de las cuatro rotaciones que se darán a continuación. Sean $R$ un vértice raíz del subárbol en estudio, $I$ el hijo izquierdo de la raíz y $D$ el hijo derecho de la raíz. Tenemos las siguientes rotaciones según sus factores de equilibrios definidos por $F_e$\+:
+\begin{DoxyItemize}
+\item Rotación simple izquierda. Esta rotación se aplica cuando $F_e(R) = -2$ y $F_e(I) = -1$
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item Rotación simple derecha. Esta rotación se aplica cuando $F_e(R) = 2$ y $F_e(D) = 1$
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item Rotación doble izquierda. Esta rotación se aplica cuando $F_e(R) = 2$ y $F_e(D) = -1$
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item Rotación doble derecha. Esta rotación se aplica cuando $F_e(R) = -2$ y $F_e(I) = 1$
+\end{DoxyItemize}
+
+
+
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL}{Arbol\+A\+VL} 
+\end{DoxySeeAlso}

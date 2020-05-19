@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['obtener_5fhijos',['obtener_hijos',['../classArbol.html#a18066699977ab8095398d026ef2a13ac',1,'Arbol']]],
-  ['ordenar_5flista_5fde_5fadyacentes',['ordenar_lista_de_adyacentes',['../classArbol.html#aeb7dff584795382d8e8a1a4694d0ac4e',1,'Arbol']]]
+  ['mostrar',['mostrar',['../classArbol.html#a61749974f55056420f4e5a76eb664809',1,'Arbol']]]
 ];

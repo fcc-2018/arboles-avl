@@ -1,0 +1,88 @@
+\hypertarget{classGrafo}{}\section{Referencia de la Clase Grafo}
+\label{classGrafo}\index{Grafo@{Grafo}}
+
+
+Diagrama de herencias de Grafo
+% FIG 0
+
+
+Diagrama de colaboración para Grafo\+:
+% FIG 1
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGrafo_acffb2ecb4e945a429ee650ef86c50828}\label{classGrafo_acffb2ecb4e945a429ee650ef86c50828}} 
+int {\bfseries cardinalidad} ()
+\item 
+\mbox{\Hypertarget{classGrafo_a1b0368926f9523063c42373e7b85f71f}\label{classGrafo_a1b0368926f9523063c42373e7b85f71f}} 
+bool {\bfseries vacio} ()
+\item 
+\mbox{\Hypertarget{classGrafo_a7bfb0f93720820e9d0cb8091f32d69a7}\label{classGrafo_a7bfb0f93720820e9d0cb8091f32d69a7}} 
+bool {\bfseries comprobar\+\_\+adyacencia} (string origen, string destino)
+\item 
+\mbox{\Hypertarget{classGrafo_ade13f10eecc05a5a08ef43c26b53e248}\label{classGrafo_ade13f10eecc05a5a08ef43c26b53e248}} 
+bool {\bfseries insertar\+\_\+vertice} (string nombre)
+\item 
+\mbox{\Hypertarget{classGrafo_a45450097c4398a0539689245784adf4a}\label{classGrafo_a45450097c4398a0539689245784adf4a}} 
+bool {\bfseries insertar\+\_\+vertice} (string nombre, int dato)
+\item 
+\mbox{\Hypertarget{classGrafo_ae49d7c6c60a6b5bb1a7e66ef72144d36}\label{classGrafo_ae49d7c6c60a6b5bb1a7e66ef72144d36}} 
+void {\bfseries insertar\+\_\+arista} (\hyperlink{classVertice}{Vertice} $\ast$origen, \hyperlink{classVertice}{Vertice} $\ast$destino, float peso)
+\item 
+\mbox{\Hypertarget{classGrafo_a3d18ac8c9af95b06e7e17671b4d17b3c}\label{classGrafo_a3d18ac8c9af95b06e7e17671b4d17b3c}} 
+void {\bfseries lista\+\_\+adyacencia} ()
+\item 
+\mbox{\Hypertarget{classGrafo_a1c65e0f7cbbf74cd690b5eddf220728d}\label{classGrafo_a1c65e0f7cbbf74cd690b5eddf220728d}} 
+\hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ {\bfseries recorrido\+\_\+en\+\_\+anchura} (\hyperlink{classVertice}{Vertice} $\ast$origen)
+\item 
+\mbox{\Hypertarget{classGrafo_ae2773db77afaab3b02a8237b93091818}\label{classGrafo_ae2773db77afaab3b02a8237b93091818}} 
+\hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ {\bfseries recorrido\+\_\+en\+\_\+profundidad} (\hyperlink{classVertice}{Vertice} $\ast$origen)
+\item 
+\mbox{\Hypertarget{classGrafo_ac088cffbe30ed4c895ac831233251d99}\label{classGrafo_ac088cffbe30ed4c895ac831233251d99}} 
+\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries get\+\_\+vertice} (string nombre)
+\item 
+\mbox{\Hypertarget{classGrafo_a4baa752c1e6a7e6367672581525c3c19}\label{classGrafo_a4baa752c1e6a7e6367672581525c3c19}} 
+\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries get\+\_\+vertice\+\_\+inicial} ()
+\item 
+\mbox{\Hypertarget{classGrafo_aed632e897451b00634e8f1d8088c12c8}\label{classGrafo_aed632e897451b00634e8f1d8088c12c8}} 
+\hyperlink{classArista}{Arista} $\ast$ {\bfseries get\+\_\+arista} (\hyperlink{classVertice}{Vertice} $\ast$origen, \hyperlink{classVertice}{Vertice} $\ast$destino)
+\item 
+\mbox{\Hypertarget{classGrafo_a4bb5d2fe50503dd9f6c8042cee3e3631}\label{classGrafo_a4bb5d2fe50503dd9f6c8042cee3e3631}} 
+\hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ {\bfseries dijkstra} (\hyperlink{classVertice}{Vertice} $\ast$origen, \hyperlink{classVertice}{Vertice} $\ast$destino)
+\item 
+\mbox{\Hypertarget{classGrafo_a50fe04d01b2d34b777d8df0b827bedab}\label{classGrafo_a50fe04d01b2d34b777d8df0b827bedab}} 
+bool {\bfseries conexo} ()
+\item 
+\mbox{\Hypertarget{classGrafo_a40fa3c86b1e2890d4dad315bbd59d2d0}\label{classGrafo_a40fa3c86b1e2890d4dad315bbd59d2d0}} 
+bool {\bfseries dirigido} ()
+\item 
+\mbox{\Hypertarget{classGrafo_aa2ab9a12d473f6830af554efad5b438d}\label{classGrafo_aa2ab9a12d473f6830af554efad5b438d}} 
+\hyperlink{classGrafo}{Grafo} $\ast$ {\bfseries kruskal} ()
+\item 
+\mbox{\Hypertarget{classGrafo_a24cc1dad8b719978e5fcba8b0950c3f5}\label{classGrafo_a24cc1dad8b719978e5fcba8b0950c3f5}} 
+bool {\bfseries hay\+\_\+camino} (\hyperlink{classVertice}{Vertice} $\ast$origen, \hyperlink{classVertice}{Vertice} $\ast$destino)
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGrafo_af6719d649fae513eb84ef8bf502c1812}\label{classGrafo_af6719d649fae513eb84ef8bf502c1812}} 
+\hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{classGrafo_a69300beee0528e08e810d91b6f968d02}\label{classGrafo_a69300beee0528e08e810d91b6f968d02}} 
+\hyperlink{classLista}{Lista}$<$ \hyperlink{classArista}{Arista} $\ast$ $>$ {\bfseries aristas}
+\item 
+\mbox{\Hypertarget{classGrafo_a67e71aebff46a360d82771b825f71263}\label{classGrafo_a67e71aebff46a360d82771b825f71263}} 
+\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries vert\+Etiquetas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 65 del archivo grafo.\+h.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+grafo.\+h\end{DoxyCompactItemize}

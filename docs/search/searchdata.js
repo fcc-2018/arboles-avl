@@ -1,27 +1,33 @@
 var indexSectionsWithContent =
 {
-  0: "_acdeghimnoprt",
-  1: "a",
-  2: "a",
-  3: "_acdeghimnoprt",
-  4: "e"
+  0: "_abcdefghilmnoprtv",
+  1: "acegilmnopv",
+  2: "c",
+  3: "at",
+  4: "_abcdefghimnoprt",
+  5: "dp",
+  6: "e"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "pages"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables",
+  6: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "Todo",
   1: "Clases",
-  2: "Archivos",
-  3: "Funciones",
-  4: "Páginas"
+  2: "Namespaces",
+  3: "Archivos",
+  4: "Funciones",
+  5: "Variables",
+  6: "Páginas"
 };
 

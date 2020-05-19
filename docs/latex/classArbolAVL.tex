@@ -1,0 +1,490 @@
+\hypertarget{classArbolAVL}{}\section{Referencia de la Clase Arbol\+A\+VL}
+\label{classArbolAVL}\index{Arbol\+A\+VL@{Arbol\+A\+VL}}
+
+
+Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pueda auto-\/balancear.  
+
+
+
+
+{\ttfamily \#include $<$arbol\+A\+V\+L.\+hpp$>$}
+
+
+
+Diagrama de herencias de Arbol\+A\+VL
+% FIG 0
+
+
+Diagrama de colaboración para Arbol\+A\+VL\+:
+% FIG 1
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArbolAVL_afd1b81c0fb7bd76fc8b924f15ca7e926}\label{classArbolAVL_afd1b81c0fb7bd76fc8b924f15ca7e926}} 
+\hyperlink{classArbolAVL_afd1b81c0fb7bd76fc8b924f15ca7e926}{Arbol\+A\+VL} ()
+\begin{DoxyCompactList}\small\item\em Consturctor de \hyperlink{classArbolAVL}{Arbol\+A\+VL}. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a99512878bc14c77bf31ab7bf8dd6aa36}{insertar} (int dato)
+\begin{DoxyCompactList}\small\item\em Inserta un dato en el árbol. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_ac88b4af2e6b96775793a981baba0763a}{\+\_\+\+\_\+insertar\+\_\+\+\_\+} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$nuevo)
+\begin{DoxyCompactList}\small\item\em Método recursivo para insertar un dato en el árbol. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a498e8df16b6814ea1dad6bcdf274dc3f}{rotacion\+\_\+derecha} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Método preliminar para realizar la rotación derecha. Verifica que la raiz dada exista y que tenga un hijo derecho. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_aedfb7658eb4f826aeba3fb98f50483e6}{rotacion\+\_\+izquierda} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Método preliminar para realizar la rotación izquierda. Verifica que la raiz dada exista y que tenga un hijo izquierdo. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}{rotacion\+\_\+derecha} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$hijo\+Der)
+\begin{DoxyCompactList}\small\item\em Realiza la rotación derecha. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_abfaf2247b607b040e328391ec8621546}{rotacion\+\_\+izquierda} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$hijo\+Izq)
+\begin{DoxyCompactList}\small\item\em Realiza la rotación izquierda. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a0b4342509dd935785b6f54924e06afea}{rotacion\+\_\+doble\+\_\+izquierda} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Método preliminar para realizar la rotación doble izquierda. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_af75605601cca6de40f6e6f5b11bfce8e}{rotacion\+\_\+doble\+\_\+derecha} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Método preliminar para realizar la rotación doble derecha. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}{rotacion\+\_\+doble\+\_\+izquierda} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$hijo\+Der)
+\begin{DoxyCompactList}\small\item\em Realiza la rotación doble izquierda, que es una composición de dos rotaciones. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}{rotacion\+\_\+doble\+\_\+derecha} (\hyperlink{classVertice}{Vertice} $\ast$raiz, \hyperlink{classVertice}{Vertice} $\ast$hijo\+Izq)
+\begin{DoxyCompactList}\small\item\em Realiza la rotación doble derecha, que es una composición de dos rotaciones. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolAVL_ae47585dbdb912214f41eab88eb979e33}\label{classArbolAVL_ae47585dbdb912214f41eab88eb979e33}} 
+void \hyperlink{classArbolAVL_ae47585dbdb912214f41eab88eb979e33}{borrar} ()
+\begin{DoxyCompactList}\small\item\em Borra todos los vertices del árbol. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}{test} ()
+\begin{DoxyCompactList}\small\item\em Método que contiene ciertos valores ya definidos para probar el funcionamiento. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_ae6341a610967afe9a45c6fcddb68c4c9}{factores\+\_\+de\+\_\+equilibrio} (\hyperlink{classVertice}{Vertice} $\ast$r)
+\begin{DoxyCompactList}\small\item\em Mestra los factores de equilibrio de todos los vertices existentes actualmente en el subárbol dado. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} \end{DoxyCompactList}\item 
+void \hyperlink{classArbolAVL_aeb90eb1614513b7438f98a43766d573d}{test\+\_\+hardcore} (\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a, int $\ast$vector, int n, bool por\+Pasos)
+\begin{DoxyCompactList}\small\item\em Método que permite realizar las debidas pruebas del funcionamiento segun los valores dados a través del método \hyperlink{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}{test()}. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Realiza las debidas comparaciones para determinar si el árbol requiere ser balanceado. \end{DoxyCompactList}\item 
+int \hyperlink{classArbolAVL_a12f2ddd1c095720faf96b5685a94e13e}{factor\+\_\+de\+\_\+equilibrio} (\hyperlink{classVertice}{Vertice} $\ast$raiz)
+\begin{DoxyCompactList}\small\item\em Obtiene el factor de equilibrio de la raíz dada. \end{DoxyCompactList}\item 
+int \hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio} (\hyperlink{classVertice}{Vertice} $\ast$hijo\+Izq, \hyperlink{classVertice}{Vertice} $\ast$hijo\+Der)
+\begin{DoxyCompactList}\small\item\em Obtiene el factor de equilibrio de la raíz en base a sus vértices hijo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pueda auto-\/balancear. 
+
+Un Árbol A\+VL consiste en un árbol binario de búsqueda pero que cuenta con la cualidad de que siempre esta equilibrado. Esto último se debe a diferentes condiciones que se establecen para que el árbol se balancee en un momento determinado. ~\newline
+ La condición principal para determinar si un árbol está balanceado es observar si su {\bfseries factor de equilibrio} $F_e = \{-1,0,1\}$ (para más detalle, véase \hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio(\+Vertice$\ast$, Vertice$\ast$)}). En caso de que no se cumpla con la condición mencionada anteriormente, se dice que el árbol está {\itshape desbalanceado}. ~\newline
+ Cuando se busca balancear el árbol, se utiliza alguna de las rotaciones siguientes\+:
+\begin{DoxyItemize}
+\item Rotación simple izquierda (\hyperlink{classArbolAVL_abfaf2247b607b040e328391ec8621546}{rotacion\+\_\+izquierda(\+Vertice$\ast$, Vertice$\ast$)})
+\item Rotación simple derecha (\hyperlink{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}{rotacion\+\_\+derecha(\+Vertice$\ast$, Vertice$\ast$)})
+\item Rotación doble izquierda (\hyperlink{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}{rotacion\+\_\+doble\+\_\+izquierda(\+Vertice$\ast$, Vertice$\ast$)})
+\item Rotación doble derecha (\hyperlink{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}{rotacion\+\_\+doble\+\_\+derecha(\+Vertice$\ast$, Vertice$\ast$)})
+\end{DoxyItemize}
+
+Véase \hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol(\+Vertice$\ast$)} para saber el momento en el que se aplica una de las 4 rotaciones dadas. \begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio(\+Vertice$\ast$, Vertice$\ast$)} 
+
+\hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol(\+Vertice$\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 70 del archivo arbol\+A\+V\+L.\+hpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classArbolAVL_ac88b4af2e6b96775793a981baba0763a}\label{classArbolAVL_ac88b4af2e6b96775793a981baba0763a}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!\+\_\+\+\_\+insertar\+\_\+\+\_\+@{\+\_\+\+\_\+insertar\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+insertar\+\_\+\+\_\+@{\+\_\+\+\_\+insertar\+\_\+\+\_\+}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+insertar\+\_\+\+\_\+()}{\_\_insertar\_\_()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::\+\_\+\+\_\+insertar\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{nuevo }\end{DoxyParamCaption})}
+
+
+
+Método recursivo para insertar un dato en el árbol. 
+
+Inserta el vertice de la forma en que usualmente debería hacerse, buscando si el valor de dicho vertice es menor o mayor o igual al vertice \char`\"{}subraíz\char`\"{} en el que se encuentra. De ahí que se inserte en la izquierda/derecha, o bien, se busque en el subárbol izquierdo/derecho hasta encontrar un lugar vacío. ~\newline
+ Al final de realizar la inserción del vértice, se ejecuta la función \hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol(\+Vertice$\ast$)}. Esta realmente es la única diferencia con el método de insertar entre los árboles normales y los árboles A\+VL.
+
+Dentro de \hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol(\+Vertice$\ast$)} se comparan factores de equilibrio de los vértices del subárbol que solamente están contenidos en el {\itshape camino} que empieza con el vértice raíz y termina con el nuevo vértice insertado. Ejemplo. Supóngase el siguiente árbol ~\newline
+  ~\newline
+ Si suponemos que el vértice $d$ es el último se ha ingresado, entonces las comparaciones se harían en el siguiente orden\+:
+\begin{DoxyItemize}
+\item Se equilibra el subárbol con raíz $b$
+\item Se equilibra el subárbol con raíz $a$
+\end{DoxyItemize}
+
+Nótese que, como tal, no existe un camino del vértice $b$ al vértice $a$, ya que estamos hablando de que los árboles son {\itshape digrafos}. En este caso si existe una relación \{padre -\/$>$ hijo\} pero no una relación \{hijo -\/$>$ padre\}. Sin embargo, gracias a la recusrividad, es posible \char`\"{}seguir\char`\"{} este camino desde el vértice hijo hasta el vértice raíz. 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+{\em nuevo} & puntero al vertice nuevo que se busca insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}{equilibrar\+\_\+subarbol(\+Vertice$\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 555 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}\label{classArbolAVL_ad24ffafb198dac21a98ff19e8361fbd6}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!equilibrar\+\_\+subarbol@{equilibrar\+\_\+subarbol}}
+\index{equilibrar\+\_\+subarbol@{equilibrar\+\_\+subarbol}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{equilibrar\+\_\+subarbol()}{equilibrar\_subarbol()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::equilibrar\+\_\+subarbol (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Realiza las debidas comparaciones para determinar si el árbol requiere ser balanceado. 
+
+Este método, según los siguientes criterios, ejecutará las rotaciones especificadas en Arboles\+A\+VL. Sean R un vértice raíz de un subárbol, I el hijo izquierdo de la raíz y D el hijo derecho de la raíz. Tenemos\+:
+\begin{DoxyItemize}
+\item Si $F_e(R) = -2$ y $F_e(I) = -1$, entonces se realizará la rotación izquierda (Véase \hyperlink{classArbolAVL_abfaf2247b607b040e328391ec8621546}{rotacion\+\_\+izquierda(\+Vertice$\ast$, Vertice$\ast$)})
+\item Si $F_e(R) = 2$ y $F_e(D) = 1$, entonces se realizará la rotación derecha (Véase \hyperlink{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}{rotacion\+\_\+derecha(\+Vertice$\ast$, Vertice$\ast$)})
+\item Si $F_e(R) = 2$ y $F_e(D) = -1$, entonces se realizará la rotación doble izquierda (Véase \hyperlink{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}{rotacion\+\_\+doble\+\_\+izquierda(\+Vertice$\ast$, Vertice$\ast$)})
+\item Si $F_e(R) = -2$ y $F_e(I) = 1$, entonces se realizará la rotación doble derecha (Véase \hyperlink{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}{rotacion\+\_\+doble\+\_\+derecha(\+Vertice$\ast$, Vertice$\ast$)}) 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raíz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Definición en la línea 572 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a12f2ddd1c095720faf96b5685a94e13e}\label{classArbolAVL_a12f2ddd1c095720faf96b5685a94e13e}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!factor\+\_\+de\+\_\+equilibrio@{factor\+\_\+de\+\_\+equilibrio}}
+\index{factor\+\_\+de\+\_\+equilibrio@{factor\+\_\+de\+\_\+equilibrio}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{factor\+\_\+de\+\_\+equilibrio()}{factor\_de\_equilibrio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Arbol\+A\+V\+L\+::factor\+\_\+de\+\_\+equilibrio (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obtiene el factor de equilibrio de la raíz dada. 
+
+Comprueba que la raiz dada exista y que luego compara la altura de su hijo derecho y de su hijo izquierdo para determinar cual es factor de equilibrio de la raiz. Véase la función \hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio(\+Vertice$\ast$, Vertice$\ast$)} para entender el funcionamiento detallado 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raíz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor numérico referente al factor de equilibrio de la raiz 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio(\+Vertice$\ast$, Vertice$\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 600 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}\label{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!factor\+\_\+de\+\_\+equilibrio@{factor\+\_\+de\+\_\+equilibrio}}
+\index{factor\+\_\+de\+\_\+equilibrio@{factor\+\_\+de\+\_\+equilibrio}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{factor\+\_\+de\+\_\+equilibrio()}{factor\_de\_equilibrio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Arbol\+A\+V\+L\+::factor\+\_\+de\+\_\+equilibrio (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Izq,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Der }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obtiene el factor de equilibrio de la raíz en base a sus vértices hijo. 
+
+Calcula el factor de equilibrio de la raiz en base a lo siguiente. Dados los vértices $R$, $D$ e $I$ el vértice raíz, el hijo derecho de la raiz y el hijo izquierdo de la raiz respectivamente, tenemos que \[ F_e(R) = altura(D) - altura(I) \] Donde $F_e$ es el {\itshape factor de equilibrio} de la raiz 
+\begin{DoxyParams}{Parámetros}
+{\em hijo\+Izq} & puntero al hijo izquierdo de la raiz dada \\
+\hline
+{\em hijo\+Der} & puntero al hijo derecho de la raiz dada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor numérico referente al factor de equilibrio de la raiz 
+\end{DoxyReturn}
+
+
+Definición en la línea 608 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_ae6341a610967afe9a45c6fcddb68c4c9}\label{classArbolAVL_ae6341a610967afe9a45c6fcddb68c4c9}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!factores\+\_\+de\+\_\+equilibrio@{factores\+\_\+de\+\_\+equilibrio}}
+\index{factores\+\_\+de\+\_\+equilibrio@{factores\+\_\+de\+\_\+equilibrio}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{factores\+\_\+de\+\_\+equilibrio()}{factores\_de\_equilibrio()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::factores\+\_\+de\+\_\+equilibrio (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Mestra los factores de equilibrio de todos los vertices existentes actualmente en el subárbol dado. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & puntero al vertice raíz de dicho subárbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a8cf229fd1482232fbfe4803043eeec14}{factor\+\_\+de\+\_\+equilibrio(\+Vertice$\ast$, Vertice$\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 332 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a99512878bc14c77bf31ab7bf8dd6aa36}\label{classArbolAVL_a99512878bc14c77bf31ab7bf8dd6aa36}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!insertar@{insertar}}
+\index{insertar@{insertar}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::insertar (\begin{DoxyParamCaption}\item[{int}]{dato }\end{DoxyParamCaption})}
+
+
+
+Inserta un dato en el árbol. 
+
+Determina si el árbol cuenta con cero o más vertices. En caso de no tener vértices, simplemente inserta el vértice como si fuera la raiz, y termina su ejecución. En caso contrario, llama a la función recursiva \char`\"{}\+\_\+\+\_\+insertar\+\_\+\+\_\+(\+Vertice$\ast$, Vertice$\ast$)\char`\"{} para ser insertado entre los vértices preexistentes. 
+\begin{DoxyParams}{Parámetros}
+{\em dato} & valor numérico a insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\char`\"{}\+\_\+\+\_\+insertar\+\_\+\+\_\+(\+Vertice$\ast$, Vertice$\ast$)\char`\"{} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 548 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a498e8df16b6814ea1dad6bcdf274dc3f}\label{classArbolAVL_a498e8df16b6814ea1dad6bcdf274dc3f}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+derecha@{rotacion\+\_\+derecha}}
+\index{rotacion\+\_\+derecha@{rotacion\+\_\+derecha}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+derecha()}{rotacion\_derecha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+derecha (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})}
+
+
+
+Método preliminar para realizar la rotación derecha. Verifica que la raiz dada exista y que tenga un hijo derecho. 
+
+Dirigirse a \hyperlink{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}{rotacion\+\_\+derecha(\+Vertice $\ast$, Vertice $\ast$)} para ver el funcionamiento detallado 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}{rotacion\+\_\+derecha(\+Vertice $\ast$, Vertice $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 379 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}\label{classArbolAVL_a33dfba0b6e53caa0f2e4b71a8d2c6a7e}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+derecha@{rotacion\+\_\+derecha}}
+\index{rotacion\+\_\+derecha@{rotacion\+\_\+derecha}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+derecha()}{rotacion\_derecha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+derecha (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Der }\end{DoxyParamCaption})}
+
+
+
+Realiza la rotación derecha. 
+
+Para la rotación derecha, se tienen que tomar los siguientes datos. Dados un vertice $R$, raiz del subárbol en estudio y un vertice $X$, hijo derecho de la raiz, tenemos
+\begin{DoxyItemize}
+\item El hijo izquierdo de $X$ ahora será el hijo derecho de $R$
+\item El vertice $X$ ahora será padre del vértice $R$, y $R$ será su hijo izquierdo ~\newline
+  
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+{\em hijo\+Der} & puntero al vertice del hijo derecho de la raiz dada \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Definición en la línea 391 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_af75605601cca6de40f6e6f5b11bfce8e}\label{classArbolAVL_af75605601cca6de40f6e6f5b11bfce8e}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+doble\+\_\+derecha@{rotacion\+\_\+doble\+\_\+derecha}}
+\index{rotacion\+\_\+doble\+\_\+derecha@{rotacion\+\_\+doble\+\_\+derecha}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+doble\+\_\+derecha()}{rotacion\_doble\_derecha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+doble\+\_\+derecha (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})}
+
+
+
+Método preliminar para realizar la rotación doble derecha. 
+
+Dirigirse a \hyperlink{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}{rotacion\+\_\+doble\+\_\+derecha(\+Vertice $\ast$, Vertice $\ast$)} para ver el funcionamiento detallado 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}{rotacion\+\_\+doble\+\_\+derecha(\+Vertice $\ast$, Vertice $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 494 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}\label{classArbolAVL_aa481f6a1014b68159b1fe753b96bde62}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+doble\+\_\+derecha@{rotacion\+\_\+doble\+\_\+derecha}}
+\index{rotacion\+\_\+doble\+\_\+derecha@{rotacion\+\_\+doble\+\_\+derecha}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+doble\+\_\+derecha()}{rotacion\_doble\_derecha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+doble\+\_\+derecha (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Izq }\end{DoxyParamCaption})}
+
+
+
+Realiza la rotación doble derecha, que es una composición de dos rotaciones. 
+
+Este método realiza la rotación doble derecha la cual consiste en\+:
+\begin{DoxyItemize}
+\item realizar una rotación derecha en el hijo izquierdo de la raiz
+\item realizar una rotación izquierda en la raiz del subárbol
+\end{DoxyItemize}
+
+Dados un vértice R raíz de todo el subárbol y un vértice X hijo izquierdo de la raíz. Se tiene la siguiente ilustración ~\newline
+  
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+{\em hijo\+Izq} & puntero al vertice del hijo izquierdo de la raiz dada \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 508 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a0b4342509dd935785b6f54924e06afea}\label{classArbolAVL_a0b4342509dd935785b6f54924e06afea}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+doble\+\_\+izquierda@{rotacion\+\_\+doble\+\_\+izquierda}}
+\index{rotacion\+\_\+doble\+\_\+izquierda@{rotacion\+\_\+doble\+\_\+izquierda}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+doble\+\_\+izquierda()}{rotacion\_doble\_izquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+doble\+\_\+izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})}
+
+
+
+Método preliminar para realizar la rotación doble izquierda. 
+
+Dirigirse a \hyperlink{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}{rotacion\+\_\+doble\+\_\+izquierda(\+Vertice $\ast$, Vertice $\ast$)} para ver el funcionamiento detallado 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}{rotacion\+\_\+doble\+\_\+izquierda(\+Vertice $\ast$, Vertice $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 499 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}\label{classArbolAVL_a3115c59bd2be761c530eeeb11a169700}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+doble\+\_\+izquierda@{rotacion\+\_\+doble\+\_\+izquierda}}
+\index{rotacion\+\_\+doble\+\_\+izquierda@{rotacion\+\_\+doble\+\_\+izquierda}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+doble\+\_\+izquierda()}{rotacion\_doble\_izquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+doble\+\_\+izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Der }\end{DoxyParamCaption})}
+
+
+
+Realiza la rotación doble izquierda, que es una composición de dos rotaciones. 
+
+Este método realiza la rotación doble izquierda la cual consiste en\+:
+\begin{DoxyItemize}
+\item realizar una rotación izquierda en el hijo derecho de la raiz
+\item realizar una rotación derecha en la raiz del subárbol
+\end{DoxyItemize}
+
+Dados un vértice R raíz de todo el subárbol y un vértice X hijo derecho de la raíz. Se tiene la siguiente ilustración ~\newline
+  
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+{\em hijo\+Der} & puntero al vertice del hijo derecho de la raiz dada \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 530 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_aedfb7658eb4f826aeba3fb98f50483e6}\label{classArbolAVL_aedfb7658eb4f826aeba3fb98f50483e6}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+izquierda@{rotacion\+\_\+izquierda}}
+\index{rotacion\+\_\+izquierda@{rotacion\+\_\+izquierda}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+izquierda()}{rotacion\_izquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz }\end{DoxyParamCaption})}
+
+
+
+Método preliminar para realizar la rotación izquierda. Verifica que la raiz dada exista y que tenga un hijo izquierdo. 
+
+Dirigirse a \hyperlink{classArbolAVL_abfaf2247b607b040e328391ec8621546}{rotacion\+\_\+izquierda(\+Vertice $\ast$, Vertice $\ast$)} para ver el funcionamiento detallado 
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_abfaf2247b607b040e328391ec8621546}{rotacion\+\_\+izquierda(\+Vertice $\ast$, Vertice $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 437 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_abfaf2247b607b040e328391ec8621546}\label{classArbolAVL_abfaf2247b607b040e328391ec8621546}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!rotacion\+\_\+izquierda@{rotacion\+\_\+izquierda}}
+\index{rotacion\+\_\+izquierda@{rotacion\+\_\+izquierda}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{rotacion\+\_\+izquierda()}{rotacion\_izquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::rotacion\+\_\+izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{raiz,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{hijo\+Izq }\end{DoxyParamCaption})}
+
+
+
+Realiza la rotación izquierda. 
+
+Para la rotación izquierda, se tienen que tomar los siguientes datos. Dados un vertice $R$, raiz del subárbol en estudio y un vertice $X$, hijo izquierdo de la raiz, tenemos
+\begin{DoxyItemize}
+\item El hijo derecho de $X$ ahora será el hijo izquierdo de $R$
+\item El vertice $X$ ahora será padre del vértice $R$, y $R$ será su hijo derecho ~\newline
+  
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & puntero al vertice raiz del subárbol especificado \\
+\hline
+{\em hijo\+Izq} & puntero al vertice del hijo izquierdo de la raiz dada \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Definición en la línea 449 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}\label{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!test@{test}}
+\index{test@{test}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que contiene ciertos valores ya definidos para probar el funcionamiento. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} 
+
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_aeb90eb1614513b7438f98a43766d573d}{test\+\_\+hardcore(\+Arbol\+A\+V\+L$\ast$, int$\ast$, int, bool)} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 361 del archivo arbol\+A\+V\+L.\+hpp.
+
+\mbox{\Hypertarget{classArbolAVL_aeb90eb1614513b7438f98a43766d573d}\label{classArbolAVL_aeb90eb1614513b7438f98a43766d573d}} 
+\index{Arbol\+A\+VL@{Arbol\+A\+VL}!test\+\_\+hardcore@{test\+\_\+hardcore}}
+\index{test\+\_\+hardcore@{test\+\_\+hardcore}!Arbol\+A\+VL@{Arbol\+A\+VL}}
+\subsubsection{\texorpdfstring{test\+\_\+hardcore()}{test\_hardcore()}}
+{\footnotesize\ttfamily void Arbol\+A\+V\+L\+::test\+\_\+hardcore (\begin{DoxyParamCaption}\item[{\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$}]{a,  }\item[{int $\ast$}]{vector,  }\item[{int}]{n,  }\item[{bool}]{por\+Pasos }\end{DoxyParamCaption})}
+
+
+
+Método que permite realizar las debidas pruebas del funcionamiento segun los valores dados a través del método \hyperlink{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}{test()}. {\bfseries Se recomienda su uso S\+O\+LO en caso de necesitar probar el funcionamiento de la clase} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & puntero a un \hyperlink{classArbolAVL}{Arbol\+A\+VL} \\
+\hline
+{\em vector} & arreglo de valores numericos de cada vertice \\
+\hline
+{\em n} & cantidad de elementos en el arreglo \\
+\hline
+{\em por\+Pasos} & booleano que determina si mostrarán individualmente las inserciones o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classArbolAVL_a783a3ffe994d8c2b4069d2fd45afab7f}{test()} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 342 del archivo arbol\+A\+V\+L.\+hpp.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{arbolAVL_8hpp}{arbol\+A\+V\+L.\+hpp}\end{DoxyCompactItemize}

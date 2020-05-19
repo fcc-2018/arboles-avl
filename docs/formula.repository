@@ -1,0 +1,17 @@
+\form#0:$F_e = \{-1,0,1\}$
+\form#1:$F_e = \{ -2,2\}$
+\form#2:$R$
+\form#3:$I$
+\form#4:$D$
+\form#5:$F_e$
+\form#6:$F_e(R) = -2$
+\form#7:$F_e(I) = -1$
+\form#8:$F_e(R) = 2$
+\form#9:$F_e(D) = 1$
+\form#10:$F_e(D) = -1$
+\form#11:$F_e(I) = 1$
+\form#12:$d$
+\form#13:$b$
+\form#14:$a$
+\form#15:$X$
+\form#16:\[ F_e(R) = altura(D) - altura(I) \]

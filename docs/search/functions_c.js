@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['recorrer',['recorrer',['../classArbol.html#a5bd356760f63521e8578a83613aa4792',1,'Arbol::recorrer()'],['../classArbol.html#a0ae46c572d300cd4a5f27b7d00a1a14e',1,'Arbol::recorrer(Vertice *raiz, int cont)']]]
+  ['obtener_5fhijos',['obtener_hijos',['../classArbol.html#a18066699977ab8095398d026ef2a13ac',1,'Arbol']]],
+  ['ordenar_5flista_5fde_5fadyacentes',['ordenar_lista_de_adyacentes',['../classArbol.html#aeb7dff584795382d8e8a1a4694d0ac4e',1,'Arbol']]]
 ];

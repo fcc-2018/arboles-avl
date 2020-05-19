@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arboles AVL: Fichero Fuente testing.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arboles AVL
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Implementación de estructuras de datos básicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">testing.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="testing_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TEST_NULL &quot;TEST IS NULL&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// algunas funciones para evitar escribir mucho...</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// cout &lt;&lt; &quot;mensaje chido para saber que algo funciona bien&quot; &lt;&lt; variable &lt;&lt;  &quot; mas cosas etc etc&quot;;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// tambien sirve para ahorrar tiempo quitando mensajes de prueba</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// si se pone a false la variable debug_mode no mostrara ningun mensaje</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacecu.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecu.html">cu</a>{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacecu.html#a67ef22d5c0f232da615812d7c61846a2">   35</a></span>&#160;std::string <a class="code" href="namespacecu.html#a67ef22d5c0f232da615812d7c61846a2">promt</a> = <span class="stringliteral">&quot;[DEBUG]&quot;</span>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacecu.html#ae84c5e905dd7b8c2b1b1194553f9c9a9">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacecu.html#ae84c5e905dd7b8c2b1b1194553f9c9a9">debug_mode</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str){</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; std::endl;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacecu.html#a29c88a60e2e11b522402097bac91dd53">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str, std::string str2){</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; str2 &lt;&lt; std::endl;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacecu.html#a204c06884ca90cec812a74a79978ad1b">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str, <span class="keywordtype">int</span> dato){</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; dato &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacecu.html#ac74aabcdeff59ad38de0aa36237f8a9b">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str, <span class="keywordtype">int</span> dato, <span class="keywordtype">int</span> res){</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; [&quot;</span> &lt;&lt; dato &lt;&lt; <span class="stringliteral">&quot;] result [&quot;</span>&lt;&lt; res &lt;&lt;<span class="stringliteral">&quot;]\n&quot;</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespacecu.html#a4f3e4a3066ea798b15af01022a14ecf9">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str, <span class="keywordtype">bool</span> cond, std::string msg1, std::string msg2){</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; (cond? msg1: msg2) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="namespacecu.html#af2ea0a4da4f2192d226ca8c3bddbd821">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">test</a>(std::string str, <span class="keywordtype">bool</span> cond){</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(debug_mode)</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; promt &lt;&lt;<span class="stringliteral">&quot; &quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; (cond? <span class="stringliteral">&quot;YES&quot;</span>: <span class="stringliteral">&quot;NO&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">void test(int data, int expect){</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    if(data != expect)</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">        std::cout &lt;&lt; &quot;\n[ERROR] Test: &quot; &lt;&lt; expect &lt;&lt; &quot; expected, &quot; &lt;&lt; data &lt;&lt; &quot; result\n&quot;;</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    else </span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        std::cout &lt;&lt; &quot;\n[CHECK] Test: &quot; &lt;&lt; expect &lt;&lt; &quot; expected, &quot; &lt;&lt; data &lt;&lt; &quot; result\n&quot;;</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">}</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">void test(bool data, bool expect){</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">    if(data != expect)</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">        std::cout &lt;&lt; &quot;\n[ERROR] Test: &quot; &lt;&lt; (expect? &quot;true&quot; : &quot;false&quot;) &lt;&lt; &quot; expected, &quot; &lt;&lt; (data? &quot;true&quot; : &quot;false&quot;) &lt;&lt; &quot; result\n&quot;;</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">    else </span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">        std::cout &lt;&lt; &quot;\n[CHECK] Test: &quot; &lt;&lt; (expect? &quot;true&quot; : &quot;false&quot;) &lt;&lt; &quot; expected, &quot; &lt;&lt; (data? &quot;true&quot; : &quot;false&quot;) &lt;&lt; &quot; result\n&quot;;</span></div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">}</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="ttc" id="namespacecu_html_a67ef22d5c0f232da615812d7c61846a2"><div class="ttname"><a href="namespacecu.html#a67ef22d5c0f232da615812d7c61846a2">cu::promt</a></div><div class="ttdeci">std::string promt</div><div class="ttdoc">Texto que indica que se hace referencia a un texto del depurador. </div><div class="ttdef"><b>Definition:</b> <a href="testing_8h_source.html#l00035">testing.h:35</a></div></div>
+<div class="ttc" id="namespacecu_html"><div class="ttname"><a href="namespacecu.html">cu</a></div><div class="ttdoc">Espacio de nombres destinado a funciones utilizadas en la depuración de las funciones en estudio...</div><div class="ttdef"><b>Definition:</b> <a href="testing_8h_source.html#l00030">testing.h:30</a></div></div>
+<div class="ttc" id="namespacecu_html_a2032e7d323896144cae02cca83ea7776"><div class="ttname"><a href="namespacecu.html#a2032e7d323896144cae02cca83ea7776">cu::test</a></div><div class="ttdeci">void test(std::string str)</div><div class="ttdoc">Muestra en consola el texto pasado como parámetro. </div><div class="ttdef"><b>Definition:</b> <a href="testing_8h_source.html#l00045">testing.h:45</a></div></div>
+<div class="ttc" id="namespacecu_html_ae84c5e905dd7b8c2b1b1194553f9c9a9"><div class="ttname"><a href="namespacecu.html#ae84c5e905dd7b8c2b1b1194553f9c9a9">cu::debug_mode</a></div><div class="ttdeci">bool debug_mode</div><div class="ttdoc">Booleano que indica si el modo depurador está activado o no, es decir, si está en true o false respec...</div><div class="ttdef"><b>Definition:</b> <a href="testing_8h_source.html#l00040">testing.h:40</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
