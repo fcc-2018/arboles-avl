@@ -337,7 +337,7 @@ class Arbol: public Grafo{
         Vertice ** obtener_hijos(Vertice * padre);
 
         /*!
-         * @brief Verifica que todos los vértices en el árbol cumplen 
+         * @brief Verifica que todos los vértices en el árbol cumplen. 
          * una condición dada por una función de callback
          * @param funcion_callback función que verifica una condición en un solo vértice
          * @return true si todos los vértices pasan la prueba false si no.
@@ -355,8 +355,13 @@ class Arbol: public Grafo{
         bool __todos_cumplen_con__(bool (*funcion_callback)(Vertice*),Vertice* vert);
 };
 
-Vertice * Arbol::hermano(int buscar){
 
+Vertice * Arbol::hermano(int buscar){
+  /*! @var Vertice* $_padre 
+   * puntero al padre del nodo con el valor buscar
+   * */
+  /**! \brief Vertice* puntero al padre del nodo con el valor buscar */
+  //! @brief Vertice* puntero al padre del nodo con el valor buscar
 	Vertice * _padre = padre(buscar),
 			* vert = get_vertice(to_string(buscar));
 
@@ -364,7 +369,7 @@ Vertice * Arbol::hermano(int buscar){
 	if(_padre == NULL){
 		return NULL;
 	} else {
-		Vertice ** hijos = obtener_hijos(_padre);
+		Vertice ** hijos = obtener_hijos(_padre); /*!< Detailed description after the member */
 		Vertice * izq = hijos[0], * der = hijos[1];
 		if(izq == vert)
 			return der;

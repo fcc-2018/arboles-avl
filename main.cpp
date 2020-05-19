@@ -1,6 +1,6 @@
 #include <iostream>
 #include "arbolAVL.hpp"
-#include "menu.hpp"
+#include "menu.h"
 
 int main(){
     ArbolAVL * a1 = new ArbolAVL;
