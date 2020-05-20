@@ -1,45 +1,75 @@
-/*
-    * Integrantes del equipo 
-    * Batres Pedroza Alejandro          201836943
-    * Garcia Gonzalez Jorge             201847512
-    * Mendez Mendez Sebastian           201836190
-    * Segura Cuanalo Ricardo Alejandro  201848777
-*/
-/*Objetivo: Hacer la implementacion del tipo de dato abstracto cola de forma dinamica que se construye apartir de nodos
-HACIENDO USO DE TEMPLATES
-los metodos de esta practica son los unicos que se utlizan dentro de la clase grafo
-*/
 #include <iostream>
 
-template<class TIPO> class cola;
+/*!
+*\file cola.hpp
+*Definición de la clase nodo, cola, y la implementación de sus métodos, haciendo uso de templates
+*/
 
-template<class TIPO>//AL USAR NUESTRA CLASE COMO UNA PLATILLA NOS PERMITE ANTEPONERNOS A UN FORMATO ESPECIFICO DE DATO
-//SU UTLIDAD SE VE EN LA CLASE GRAFO
-class nodo {//definicion de la clase nodo
+template<class TIPO> class cola;
+//AL USAR NUESTRA CLASE COMO UNA PLATILLA NOS PERMITE ANTEPONERNOS A UN FORMATO ESPECIFICO DE DATO, SU UTLIDAD SE VE EN LA CLASE Grafo
+template<class TIPO>
+/*!
+*@class nodo
+*@brief Clase que maneja los atributos escenciales de un nodo, haciendo uso de templates
+*
+*
+*AL USAR NUESTRA CLASE COMO UNA PLATILLA NOS PERMITE ANTEPONERNOS A UN FORMATO ESPECIFICO DE DATO, SU UTLIDAD SE VE EN LA CLASE Grafo
+*/
+class nodo {
    public:
-      nodo(TIPO v, nodo<TIPO> *sig = NULL) {//constructor de la clase nodo
+      /*!
+      *@brief Constructor de nodo
+      *@param v Infomación que almacena el nodo
+      *@param sig Apuntador al nodo siguiente (NULL)
+      */
+      nodo(TIPO v, nodo<TIPO> *sig = NULL) {
          valor = v;
-         siguiente = sig;//atributos
+         siguiente = sig;
       }
 
    private:
+      //!&lt; Contiene la información que almacena el nodo
       TIPO valor;
-      nodo<TIPO> *siguiente;//apuntador
-      friend class cola<TIPO>;//el comando apuntador nos permite  acceder a los atributos y metodos desde la clase cola 
+      //!&lt; Apuntador al siguiente nodo
+      nodo<TIPO> *siguiente;
+      //!&lt; El comando apuntador nos permite  acceder a los atributos y metodos desde la clase cola 
+      friend class cola<TIPO>;
 };
 
 
 template<class TIPO>
-class cola {//definicion de la clase cola
+/*!
+*@class cola
+*@brief Clase que contiene las operaciones de una cola, haciendo uso de templates
+*
+*
+*AL USAR NUESTRA CLASE COMO UNA PLATILLA NOS PERMITE ANTEPONERNOS A UN FORMATO ESPECIFICO DE DATO, SU UTLIDAD SE VE EN LA CLASE Grafo
+*/
+class cola {
    public:
-      cola() : primero(NULL), ultimo(NULL) {}//constructor
-      //METODOS DE LA CLASE//
+      /*!
+      *@brief Constructor de cola
+      *@param primero Primer elemento en la cola (Por defecto: NULL)
+      *@param ultimo Último elemento en la cola (Por defecto: NULL)
+      */
+      cola() : primero(NULL), ultimo(NULL) {}
+      /*!
+      *@brief Nos indica si la cola está vacía
+      */
       bool vacio();
+      /*!
+      *@brief Realiza la operación PUSH, agregando un nuevo elemento a la cola
+      *@param v Elemento que se agregará a la cola
+      */
       void encolar(TIPO v);
+      /*!
+      *@brief Realiza la operación POP, eliminando un elemento a la cola
+      */
       TIPO desencolar();
 
    private:
-      nodo<TIPO> *primero, *ultimo;//PUNTEROS PRIMERO, ULTIMO O ATRAS, FRENTE... COMO LO VIMOS EN CLASE =)
+      //!&lt; PUNTEROS PRIMERO, ULTIMO O ATRAS, FRENTE.
+      nodo<TIPO> *primero, *ultimo;
 };
 
 
@@ -53,13 +83,13 @@ void cola<TIPO>::encolar(TIPO v) {
    nodo<TIPO> *nuevo;
 
    /* Crear un nodo nuevo */
-   /* Este ser� el �ltimo nodo, no debe tener siguiente */
+   /* Este sería el último nodo, no debe tener siguiente */
    nuevo = new nodo<TIPO>(v);
-   /* Si la cola no estaba vac�a, a�adimos el nuevo a continuaci�n de ultimo */
+   /* Si la cola no estaba vacía, añadimos el nuevo a continuación del último */
    if(ultimo) ultimo->siguiente = nuevo;
-   /* Ahora, el �ltimo elemento de la cola es el nuevo nodo */
+   /* Ahora, el último elemento de la cola es el nuevo nodo */
    ultimo = nuevo;
-   /* Si primero es NULL, la cola estaba vac�a, ahora primero apuntar� tambi�n al nuevo nodo */
+   /* Si primero es NULL, la cola estaba vacía, ahora primero apuntaría también al nuevo nodo */
    if(!primero) primero = nuevo;
 }
 

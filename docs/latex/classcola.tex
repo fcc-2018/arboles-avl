@@ -1,26 +1,86 @@
 \hypertarget{classcola}{}\section{Referencia de la plantilla de la Clase cola$<$ T\+I\+PO $>$}
 \label{classcola}\index{cola$<$ T\+I\+P\+O $>$@{cola$<$ T\+I\+P\+O $>$}}
+
+
+Clase que contiene las operaciones de una cola, haciendo uso de templates.  
+
+
+
+
+{\ttfamily \#include $<$cola.\+h$>$}
+
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classcola_acf21bbf0b0795607993d5ffe736398ae}{cola} ()
+\begin{DoxyCompactList}\small\item\em Constructor de cola. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classcola_a2af9a71dd856a907f446a1e396d83e5b}\label{classcola_a2af9a71dd856a907f446a1e396d83e5b}} 
-bool {\bfseries vacio} ()
-\item 
-\mbox{\Hypertarget{classcola_a4fe29cbff3478979d38a0f8a2d7a4b51}\label{classcola_a4fe29cbff3478979d38a0f8a2d7a4b51}} 
-void {\bfseries encolar} (T\+I\+PO v)
-\item 
+bool \hyperlink{classcola_a2af9a71dd856a907f446a1e396d83e5b}{vacio} ()
+\begin{DoxyCompactList}\small\item\em Nos indica si la cola está vacía. \end{DoxyCompactList}\item 
+void \hyperlink{classcola_a4fe29cbff3478979d38a0f8a2d7a4b51}{encolar} (T\+I\+PO v)
+\begin{DoxyCompactList}\small\item\em Realiza la operación P\+U\+SH, agregando un nuevo elemento a la cola. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classcola_afbe13fa4237aa2fde61067900ff8f884}\label{classcola_afbe13fa4237aa2fde61067900ff8f884}} 
-T\+I\+PO {\bfseries desencolar} ()
-\end{DoxyCompactItemize}
+T\+I\+PO \hyperlink{classcola_afbe13fa4237aa2fde61067900ff8f884}{desencolar} ()
+\begin{DoxyCompactList}\small\item\em Realiza la operación P\+OP, eliminando un elemento a la cola. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
 \subsubsection*{template$<$class T\+I\+PO$>$\newline
 class cola$<$ T\+I\+P\+O $>$}
 
+Clase que contiene las operaciones de una cola, haciendo uso de templates. 
+
+AL U\+S\+AR N\+U\+E\+S\+T\+RA C\+L\+A\+SE C\+O\+MO U\+NA P\+L\+A\+T\+I\+L\+LA N\+OS P\+E\+R\+M\+I\+TE A\+N\+T\+E\+P\+O\+N\+E\+R\+N\+OS A UN F\+O\+R\+M\+A\+TO E\+S\+P\+E\+C\+I\+F\+I\+CO DE D\+A\+TO, SU U\+T\+L\+I\+D\+AD SE VE EN LA C\+L\+A\+SE \hyperlink{classGrafo}{Grafo} 
+
+Definición en la línea 8 del archivo cola.\+h.
 
 
-Definición en la línea 14 del archivo cola.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classcola_acf21bbf0b0795607993d5ffe736398ae}\label{classcola_acf21bbf0b0795607993d5ffe736398ae}} 
+\index{cola@{cola}!cola@{cola}}
+\index{cola@{cola}!cola@{cola}}
+\subsubsection{\texorpdfstring{cola()}{cola()}}
+{\footnotesize\ttfamily template$<$class T\+I\+PO$>$ \\
+\hyperlink{classcola}{cola}$<$ T\+I\+PO $>$\+::\hyperlink{classcola}{cola} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em primero} & Primer elemento en la cola (Por defecto\+: N\+U\+LL) \\
+\hline
+{\em ultimo} & Último elemento en la cola (Por defecto\+: N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 55 del archivo cola.\+h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcola_a4fe29cbff3478979d38a0f8a2d7a4b51}\label{classcola_a4fe29cbff3478979d38a0f8a2d7a4b51}} 
+\index{cola@{cola}!encolar@{encolar}}
+\index{encolar@{encolar}!cola@{cola}}
+\subsubsection{\texorpdfstring{encolar()}{encolar()}}
+{\footnotesize\ttfamily template$<$class T\+I\+PO $>$ \\
+void \hyperlink{classcola}{cola}$<$ T\+I\+PO $>$\+::encolar (\begin{DoxyParamCaption}\item[{T\+I\+PO}]{v }\end{DoxyParamCaption})}
+
+
+
+Realiza la operación P\+U\+SH, agregando un nuevo elemento a la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em v} & Elemento que se agregará a la cola \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 82 del archivo cola.\+h.
 
 
 

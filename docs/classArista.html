@@ -68,35 +68,103 @@ $(function() {
 <div class="title">Referencia de la Clase Arista</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Clase que lleva el control del vertice de 'origen' y de 'destino' y el peso del camino entre estos.  
+ <a href="classArista.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="grafo_8h_source.html">grafo.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de colaboración para Arista:</div>
 <div class="dyncontent">
 <div class="center"><img src="classArista__coll__graph.png" border="0" usemap="#Arista_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 0 -->
+<map name="Arista_coll__map" id="Arista_coll__map">
+<area shape="rect" id="node2" href="classVertice.html" title="Clase encargada de llenar los datos en los Nodos insertados al Grafo. " alt="" coords="79,95,142,121"/>
+<area shape="rect" id="node4" href="classEtiqueta.html" title="Clase de apoyo para conservar el Vértice Origen y su Peso. " alt="" coords="137,199,207,225"/>
+<area shape="rect" id="node3" href="classLista.html" title="Lista\&lt; Vertice *\&gt;" alt="" coords="51,5,171,32"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:abfc5e334e70240f90b0f8d0cc094ad40"><td class="memItemLeft" align="right" valign="top"><a id="abfc5e334e70240f90b0f8d0cc094ad40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Arista</b> (<a class="el" href="classVertice.html">Vertice</a> *o, <a class="el" href="classVertice.html">Vertice</a> *d, float p)</td></tr>
+<tr class="memitem:abfc5e334e70240f90b0f8d0cc094ad40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArista.html#abfc5e334e70240f90b0f8d0cc094ad40">Arista</a> (<a class="el" href="classVertice.html">Vertice</a> *o, <a class="el" href="classVertice.html">Vertice</a> *d, float p)</td></tr>
+<tr class="memdesc:abfc5e334e70240f90b0f8d0cc094ad40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a>.  <a href="#abfc5e334e70240f90b0f8d0cc094ad40">Más...</a><br /></td></tr>
 <tr class="separator:abfc5e334e70240f90b0f8d0cc094ad40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atributos públicos</h2></td></tr>
 <tr class="memitem:a9eb724ff0d46897de85b760d36a2e6b4"><td class="memItemLeft" align="right" valign="top"><a id="a9eb724ff0d46897de85b760d36a2e6b4"></a>
-<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>origen</b></td></tr>
+<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArista.html#a9eb724ff0d46897de85b760d36a2e6b4">origen</a></td></tr>
+<tr class="memdesc:a9eb724ff0d46897de85b760d36a2e6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Apuntador del vértice de origen <br /></td></tr>
 <tr class="separator:a9eb724ff0d46897de85b760d36a2e6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41f8fed9f49c9216330c65caafc145d1"><td class="memItemLeft" align="right" valign="top"><a id="a41f8fed9f49c9216330c65caafc145d1"></a>
-<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>destino</b></td></tr>
-<tr class="separator:a41f8fed9f49c9216330c65caafc145d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc7d54b1945783a426f5251026af702"><td class="memItemLeft" align="right" valign="top"><a id="a7cc7d54b1945783a426f5251026af702"></a>
+<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArista.html#a7cc7d54b1945783a426f5251026af702">destino</a></td></tr>
+<tr class="memdesc:a7cc7d54b1945783a426f5251026af702"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Apuntador del vértice de destino <br /></td></tr>
+<tr class="separator:a7cc7d54b1945783a426f5251026af702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371fdf684b589d3b3d842ad5ae338342"><td class="memItemLeft" align="right" valign="top"><a id="a371fdf684b589d3b3d842ad5ae338342"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>peso</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArista.html#a371fdf684b589d3b3d842ad5ae338342">peso</a></td></tr>
+<tr class="memdesc:a371fdf684b589d3b3d842ad5ae338342"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Peso del camino entre los vértices <br /></td></tr>
 <tr class="separator:a371fdf684b589d3b3d842ad5ae338342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00056">56</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
-</div><hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<div class="textblock"><p>Clase que lleva el control del vertice de 'origen' y de 'destino' y el peso del camino entre estos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00106">106</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a id="abfc5e334e70240f90b0f8d0cc094ad40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc5e334e70240f90b0f8d0cc094ad40">&#9670;&nbsp;</a></span>Arista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arista::Arista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor de <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Apuntador al vértice de origen </td></tr>
+    <tr><td class="paramname">d</td><td>Apuntador al vértice de destino </td></tr>
+    <tr><td class="paramname">p</td><td>Peso del camino entre los vertices </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00121">121</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
 <li><a class="el" href="grafo_8h_source.html">grafo.h</a></li>
 </ul>
 </div><!-- contents -->

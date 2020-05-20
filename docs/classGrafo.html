@@ -68,89 +68,491 @@ $(function() {
 <div class="title">Referencia de la Clase Grafo</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Clase que contiene todos los procesos que se pueden realizar en el <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a>.  
+ <a href="classGrafo.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="grafo_8h_source.html">grafo.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de Grafo</div>
 <div class="dyncontent">
 <div class="center"><img src="classGrafo__inherit__graph.png" border="0" usemap="#Grafo_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<map name="Grafo_inherit__map" id="Grafo_inherit__map">
+<area shape="rect" id="node2" href="classArbol.html" title="Implementación de un árbol binario con listas de adyacencia. &#160;&#160;" alt="" coords="18,80,70,107"/>
+<area shape="rect" id="node3" href="classArbolAVL.html" title="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued..." alt="" coords="5,155,83,181"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <div class="dynheader">
 Diagrama de colaboración para Grafo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGrafo__coll__graph.png" border="0" usemap="#Grafo_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 1 -->
+<map name="Grafo_coll__map" id="Grafo_coll__map">
+<area shape="rect" id="node2" href="classLista.html" title="Lista\&lt; Vertice *\&gt;" alt="" coords="14,5,134,32"/>
+<area shape="rect" id="node4" href="classVertice.html" title="Clase encargada de llenar los datos en los Nodos insertados al Grafo. " alt="" coords="229,95,292,121"/>
+<area shape="rect" id="node3" href="classLista.html" title="Lista\&lt; Arista *\&gt;" alt="" coords="73,95,187,121"/>
+<area shape="rect" id="node5" href="classEtiqueta.html" title="Clase de apoyo para conservar el Vértice Origen y su Peso. " alt="" coords="319,184,389,211"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
+<tr class="memitem:ab810bbe26a98e9af6661ccddff66b03b"><td class="memItemLeft" align="right" valign="top"><a id="ab810bbe26a98e9af6661ccddff66b03b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#ab810bbe26a98e9af6661ccddff66b03b">Grafo</a> ()</td></tr>
+<tr class="memdesc:ab810bbe26a98e9af6661ccddff66b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a>. <br /></td></tr>
+<tr class="separator:ab810bbe26a98e9af6661ccddff66b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acffb2ecb4e945a429ee650ef86c50828"><td class="memItemLeft" align="right" valign="top"><a id="acffb2ecb4e945a429ee650ef86c50828"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>cardinalidad</b> ()</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#acffb2ecb4e945a429ee650ef86c50828">cardinalidad</a> ()</td></tr>
+<tr class="memdesc:acffb2ecb4e945a429ee650ef86c50828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra la cantidad de vértices en el <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a>. <br /></td></tr>
 <tr class="separator:acffb2ecb4e945a429ee650ef86c50828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0368926f9523063c42373e7b85f71f"><td class="memItemLeft" align="right" valign="top"><a id="a1b0368926f9523063c42373e7b85f71f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>vacio</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a1b0368926f9523063c42373e7b85f71f">vacio</a> ()</td></tr>
+<tr class="memdesc:a1b0368926f9523063c42373e7b85f71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verificación sobre el vértice inicial, por si es NULL. <br /></td></tr>
 <tr class="separator:a1b0368926f9523063c42373e7b85f71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bfb0f93720820e9d0cb8091f32d69a7"><td class="memItemLeft" align="right" valign="top"><a id="a7bfb0f93720820e9d0cb8091f32d69a7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>comprobar_adyacencia</b> (string origen, string destino)</td></tr>
+<tr class="memitem:a7bfb0f93720820e9d0cb8091f32d69a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a7bfb0f93720820e9d0cb8091f32d69a7">comprobar_adyacencia</a> (string origen, string destino)</td></tr>
+<tr class="memdesc:a7bfb0f93720820e9d0cb8091f32d69a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accede a la lista de adyacecia de 2 vértices, de 'origen' y 'destino'.  <a href="#a7bfb0f93720820e9d0cb8091f32d69a7">Más...</a><br /></td></tr>
 <tr class="separator:a7bfb0f93720820e9d0cb8091f32d69a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade13f10eecc05a5a08ef43c26b53e248"><td class="memItemLeft" align="right" valign="top"><a id="ade13f10eecc05a5a08ef43c26b53e248"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertar_vertice</b> (string nombre)</td></tr>
+<tr class="memitem:ade13f10eecc05a5a08ef43c26b53e248"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#ade13f10eecc05a5a08ef43c26b53e248">insertar_vertice</a> (string nombre)</td></tr>
+<tr class="memdesc:ade13f10eecc05a5a08ef43c26b53e248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creación de un nuevo vértice, sabiendo solo su nombre.  <a href="#ade13f10eecc05a5a08ef43c26b53e248">Más...</a><br /></td></tr>
 <tr class="separator:ade13f10eecc05a5a08ef43c26b53e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45450097c4398a0539689245784adf4a"><td class="memItemLeft" align="right" valign="top"><a id="a45450097c4398a0539689245784adf4a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertar_vertice</b> (string nombre, int dato)</td></tr>
+<tr class="memitem:a45450097c4398a0539689245784adf4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a45450097c4398a0539689245784adf4a">insertar_vertice</a> (string nombre, int dato)</td></tr>
+<tr class="memdesc:a45450097c4398a0539689245784adf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creación de un nuevo vértice, sabiendo su nombre y los datos que contiene.  <a href="#a45450097c4398a0539689245784adf4a">Más...</a><br /></td></tr>
 <tr class="separator:a45450097c4398a0539689245784adf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49d7c6c60a6b5bb1a7e66ef72144d36"><td class="memItemLeft" align="right" valign="top"><a id="ae49d7c6c60a6b5bb1a7e66ef72144d36"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insertar_arista</b> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino, float peso)</td></tr>
+<tr class="memitem:ae49d7c6c60a6b5bb1a7e66ef72144d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#ae49d7c6c60a6b5bb1a7e66ef72144d36">insertar_arista</a> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino, float peso)</td></tr>
+<tr class="memdesc:ae49d7c6c60a6b5bb1a7e66ef72144d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creación de una nueva <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a>.  <a href="#ae49d7c6c60a6b5bb1a7e66ef72144d36">Más...</a><br /></td></tr>
 <tr class="separator:ae49d7c6c60a6b5bb1a7e66ef72144d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d18ac8c9af95b06e7e17671b4d17b3c"><td class="memItemLeft" align="right" valign="top"><a id="a3d18ac8c9af95b06e7e17671b4d17b3c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>lista_adyacencia</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a3d18ac8c9af95b06e7e17671b4d17b3c">lista_adyacencia</a> ()</td></tr>
+<tr class="memdesc:a3d18ac8c9af95b06e7e17671b4d17b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la lista de adyacencia de cada vértice recorrido. <br /></td></tr>
 <tr class="separator:a3d18ac8c9af95b06e7e17671b4d17b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c65e0f7cbbf74cd690b5eddf220728d"><td class="memItemLeft" align="right" valign="top"><a id="a1c65e0f7cbbf74cd690b5eddf220728d"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>recorrido_en_anchura</b> (<a class="el" href="classVertice.html">Vertice</a> *origen)</td></tr>
+<tr class="memitem:a1c65e0f7cbbf74cd690b5eddf220728d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a1c65e0f7cbbf74cd690b5eddf220728d">recorrido_en_anchura</a> (<a class="el" href="classVertice.html">Vertice</a> *origen)</td></tr>
+<tr class="memdesc:a1c65e0f7cbbf74cd690b5eddf220728d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLista.html">Lista</a> de vértices visitados en el Recorrido en Anchura.  <a href="#a1c65e0f7cbbf74cd690b5eddf220728d">Más...</a><br /></td></tr>
 <tr class="separator:a1c65e0f7cbbf74cd690b5eddf220728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2773db77afaab3b02a8237b93091818"><td class="memItemLeft" align="right" valign="top"><a id="ae2773db77afaab3b02a8237b93091818"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>recorrido_en_profundidad</b> (<a class="el" href="classVertice.html">Vertice</a> *origen)</td></tr>
+<tr class="memitem:ae2773db77afaab3b02a8237b93091818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#ae2773db77afaab3b02a8237b93091818">recorrido_en_profundidad</a> (<a class="el" href="classVertice.html">Vertice</a> *origen)</td></tr>
+<tr class="memdesc:ae2773db77afaab3b02a8237b93091818"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLista.html">Lista</a> de vértices visitados en el Recorrido en Profundidad.  <a href="#ae2773db77afaab3b02a8237b93091818">Más...</a><br /></td></tr>
 <tr class="separator:ae2773db77afaab3b02a8237b93091818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac088cffbe30ed4c895ac831233251d99"><td class="memItemLeft" align="right" valign="top"><a id="ac088cffbe30ed4c895ac831233251d99"></a>
-<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_vertice</b> (string nombre)</td></tr>
+<tr class="memitem:ac088cffbe30ed4c895ac831233251d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#ac088cffbe30ed4c895ac831233251d99">get_vertice</a> (string nombre)</td></tr>
+<tr class="memdesc:ac088cffbe30ed4c895ac831233251d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene un vértice deseado, utilizando su nombre.  <a href="#ac088cffbe30ed4c895ac831233251d99">Más...</a><br /></td></tr>
 <tr class="separator:ac088cffbe30ed4c895ac831233251d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4baa752c1e6a7e6367672581525c3c19"><td class="memItemLeft" align="right" valign="top"><a id="a4baa752c1e6a7e6367672581525c3c19"></a>
-<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_vertice_inicial</b> ()</td></tr>
+<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a4baa752c1e6a7e6367672581525c3c19">get_vertice_inicial</a> ()</td></tr>
+<tr class="memdesc:a4baa752c1e6a7e6367672581525c3c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el Vértice Origen. <br /></td></tr>
 <tr class="separator:a4baa752c1e6a7e6367672581525c3c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed632e897451b00634e8f1d8088c12c8"><td class="memItemLeft" align="right" valign="top"><a id="aed632e897451b00634e8f1d8088c12c8"></a>
-<a class="el" href="classArista.html">Arista</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_arista</b> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memitem:aed632e897451b00634e8f1d8088c12c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArista.html">Arista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#aed632e897451b00634e8f1d8088c12c8">get_arista</a> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memdesc:aed632e897451b00634e8f1d8088c12c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a> entre 2 vertices.  <a href="#aed632e897451b00634e8f1d8088c12c8">Más...</a><br /></td></tr>
 <tr class="separator:aed632e897451b00634e8f1d8088c12c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bb5d2fe50503dd9f6c8042cee3e3631"><td class="memItemLeft" align="right" valign="top"><a id="a4bb5d2fe50503dd9f6c8042cee3e3631"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>dijkstra</b> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memitem:a4bb5d2fe50503dd9f6c8042cee3e3631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a4bb5d2fe50503dd9f6c8042cee3e3631">dijkstra</a> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memdesc:a4bb5d2fe50503dd9f6c8042cee3e3631"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLista.html">Lista</a> de vertices visitados en el 'Algoritmo de Dijkstra'.  <a href="#a4bb5d2fe50503dd9f6c8042cee3e3631">Más...</a><br /></td></tr>
 <tr class="separator:a4bb5d2fe50503dd9f6c8042cee3e3631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50fe04d01b2d34b777d8df0b827bedab"><td class="memItemLeft" align="right" valign="top"><a id="a50fe04d01b2d34b777d8df0b827bedab"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>conexo</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a50fe04d01b2d34b777d8df0b827bedab">conexo</a> ()</td></tr>
+<tr class="memdesc:a50fe04d01b2d34b777d8df0b827bedab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicador de si el <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a> es conexo. <br /></td></tr>
 <tr class="separator:a50fe04d01b2d34b777d8df0b827bedab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40fa3c86b1e2890d4dad315bbd59d2d0"><td class="memItemLeft" align="right" valign="top"><a id="a40fa3c86b1e2890d4dad315bbd59d2d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>dirigido</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a40fa3c86b1e2890d4dad315bbd59d2d0">dirigido</a> ()</td></tr>
+<tr class="memdesc:a40fa3c86b1e2890d4dad315bbd59d2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicador de si el <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a> es dirigido. <br /></td></tr>
 <tr class="separator:a40fa3c86b1e2890d4dad315bbd59d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ab9a12d473f6830af554efad5b438d"><td class="memItemLeft" align="right" valign="top"><a id="aa2ab9a12d473f6830af554efad5b438d"></a>
-<a class="el" href="classGrafo.html">Grafo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>kruskal</b> ()</td></tr>
+<tr class="memitem:aa2ab9a12d473f6830af554efad5b438d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGrafo.html">Grafo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#aa2ab9a12d473f6830af554efad5b438d">kruskal</a> ()</td></tr>
+<tr class="memdesc:aa2ab9a12d473f6830af554efad5b438d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica el algoritmo de kruskal al grafo. crea subarboles para encontrar el arbol de expansion minima.  <a href="#aa2ab9a12d473f6830af554efad5b438d">Más...</a><br /></td></tr>
 <tr class="separator:aa2ab9a12d473f6830af554efad5b438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24cc1dad8b719978e5fcba8b0950c3f5"><td class="memItemLeft" align="right" valign="top"><a id="a24cc1dad8b719978e5fcba8b0950c3f5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hay_camino</b> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memitem:a24cc1dad8b719978e5fcba8b0950c3f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a24cc1dad8b719978e5fcba8b0950c3f5">hay_camino</a> (<a class="el" href="classVertice.html">Vertice</a> *origen, <a class="el" href="classVertice.html">Vertice</a> *destino)</td></tr>
+<tr class="memdesc:a24cc1dad8b719978e5fcba8b0950c3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nos indica si existe un camino entre un vértice de origen y de destino.  <a href="#a24cc1dad8b719978e5fcba8b0950c3f5">Más...</a><br /></td></tr>
 <tr class="separator:a24cc1dad8b719978e5fcba8b0950c3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atributos protegidos</h2></td></tr>
 <tr class="memitem:af6719d649fae513eb84ef8bf502c1812"><td class="memItemLeft" align="right" valign="top"><a id="af6719d649fae513eb84ef8bf502c1812"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
+<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#af6719d649fae513eb84ef8bf502c1812">vertices</a></td></tr>
+<tr class="memdesc:af6719d649fae513eb84ef8bf502c1812"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; <a class="el" href="classLista.html">Lista</a> de Vertices <br /></td></tr>
 <tr class="separator:af6719d649fae513eb84ef8bf502c1812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69300beee0528e08e810d91b6f968d02"><td class="memItemLeft" align="right" valign="top"><a id="a69300beee0528e08e810d91b6f968d02"></a>
-<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classArista.html">Arista</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>aristas</b></td></tr>
+<a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classArista.html">Arista</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a69300beee0528e08e810d91b6f968d02">aristas</a></td></tr>
+<tr class="memdesc:a69300beee0528e08e810d91b6f968d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; <a class="el" href="classLista.html">Lista</a> de Aristas <br /></td></tr>
 <tr class="separator:a69300beee0528e08e810d91b6f968d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e71aebff46a360d82771b825f71263"><td class="memItemLeft" align="right" valign="top"><a id="a67e71aebff46a360d82771b825f71263"></a>
-<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>vertEtiquetas</b></td></tr>
+<a class="el" href="classVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrafo.html#a67e71aebff46a360d82771b825f71263">vertEtiquetas</a></td></tr>
+<tr class="memdesc:a67e71aebff46a360d82771b825f71263"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Si ya se ha ejecutado el algoritmo de dijkstra para el camino mas corto entre dos vértices, 'vertEtiquetas' guarda el vértice para el que se calcularon los caminos más cortos <br /></td></tr>
 <tr class="separator:a67e71aebff46a360d82771b825f71263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00065">65</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
-</div><hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<div class="textblock"><p>Clase que contiene todos los procesos que se pueden realizar en el <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00130">130</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a7bfb0f93720820e9d0cb8091f32d69a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfb0f93720820e9d0cb8091f32d69a7">&#9670;&nbsp;</a></span>comprobar_adyacencia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grafo::comprobar_adyacencia </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>destino</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accede a la lista de adyacecia de 2 vértices, de 'origen' y 'destino'. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Nombre del vértice de origen </td></tr>
+    <tr><td class="paramname">destino</td><td>Nombre del vértice de destino </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00272">272</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="a4bb5d2fe50503dd9f6c8042cee3e3631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb5d2fe50503dd9f6c8042cee3e3631">&#9670;&nbsp;</a></span>dijkstra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; * Grafo::dijkstra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>destino</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classLista.html">Lista</a> de vertices visitados en el 'Algoritmo de Dijkstra'. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Apuntador del vértice de origen </td></tr>
+    <tr><td class="paramname">destino</td><td>Apuntador del vértice de destino </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00388">388</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="aed632e897451b00634e8f1d8088c12c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed632e897451b00634e8f1d8088c12c8">&#9670;&nbsp;</a></span>get_arista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArista.html">Arista</a> * Grafo::get_arista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>destino</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene la <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a> entre 2 vertices. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Apuntador del vértice de origen </td></tr>
+    <tr><td class="paramname">destino</td><td>Apuntador del vértice de destino </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00379">379</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="ac088cffbe30ed4c895ac831233251d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac088cffbe30ed4c895ac831233251d99">&#9670;&nbsp;</a></span>get_vertice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVertice.html">Vertice</a> * Grafo::get_vertice </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nombre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene un vértice deseado, utilizando su nombre. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Nombre del vértice deseado </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00362">362</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="a24cc1dad8b719978e5fcba8b0950c3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cc1dad8b719978e5fcba8b0950c3f5">&#9670;&nbsp;</a></span>hay_camino()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grafo::hay_camino </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>destino</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nos indica si existe un camino entre un vértice de origen y de destino. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Apuntador del vértice de origen </td></tr>
+    <tr><td class="paramname">destino</td><td>Apuntador del vértice de destino </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00586">586</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="ae49d7c6c60a6b5bb1a7e66ef72144d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49d7c6c60a6b5bb1a7e66ef72144d36">&#9670;&nbsp;</a></span>insertar_arista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grafo::insertar_arista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>destino</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>peso</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creación de una nueva <a class="el" href="classArista.html" title="Clase que lleva el control del vertice de &#39;origen&#39; y de &#39;destino&#39; y el peso del camino entre estos...">Arista</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Forma en la que nos referiremos al vértice </td></tr>
+    <tr><td class="paramname">dato</td><td>Información que contendra el vértice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00304">304</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="ade13f10eecc05a5a08ef43c26b53e248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade13f10eecc05a5a08ef43c26b53e248">&#9670;&nbsp;</a></span>insertar_vertice() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grafo::insertar_vertice </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nombre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creación de un nuevo vértice, sabiendo solo su nombre. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Forma en la que nos referiremos al vértice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00282">282</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="a45450097c4398a0539689245784adf4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45450097c4398a0539689245784adf4a">&#9670;&nbsp;</a></span>insertar_vertice() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grafo::insertar_vertice </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nombre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dato</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creación de un nuevo vértice, sabiendo su nombre y los datos que contiene. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Forma en la que nos referiremos al vértice </td></tr>
+    <tr><td class="paramname">dato</td><td>Información que contendra el vértice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00291">291</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2ab9a12d473f6830af554efad5b438d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ab9a12d473f6830af554efad5b438d">&#9670;&nbsp;</a></span>kruskal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGrafo.html">Grafo</a> * Grafo::kruskal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica el algoritmo de kruskal al grafo. crea subarboles para encontrar el arbol de expansion minima. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>puntero a nuevo <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a> con estructura de un arbol de expansion minima </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00533">533</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c65e0f7cbbf74cd690b5eddf220728d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c65e0f7cbbf74cd690b5eddf220728d">&#9670;&nbsp;</a></span>recorrido_en_anchura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; * Grafo::recorrido_en_anchura </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classLista.html">Lista</a> de vértices visitados en el Recorrido en Anchura. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Vértice de partida para el recorrido </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00325">325</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<a id="ae2773db77afaab3b02a8237b93091818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2773db77afaab3b02a8237b93091818">&#9670;&nbsp;</a></span>recorrido_en_profundidad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="classVertice.html">Vertice</a> * &gt; * Grafo::recorrido_en_profundidad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>origen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classLista.html">Lista</a> de vértices visitados en el Recorrido en Profundidad. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>Vértice de partida para el recorrido </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="grafo_8h_source.html#l00350">350</a> del archivo <a class="el" href="grafo_8h_source.html">grafo.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
 <li><a class="el" href="grafo_8h_source.html">grafo.h</a></li>
 </ul>
 </div><!-- contents -->

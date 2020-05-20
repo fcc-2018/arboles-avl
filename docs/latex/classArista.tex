@@ -2,35 +2,74 @@
 \label{classArista}\index{Arista@{Arista}}
 
 
-Diagrama de colaboración para Arista\+:
-% FIG 0
+Clase que lleva el control del vertice de \textquotesingle{}origen\textquotesingle{} y de \textquotesingle{}destino\textquotesingle{} y el peso del camino entre estos.  
+
+
+
+
+{\ttfamily \#include $<$grafo.\+h$>$}
+
+
+
+Diagrama de colaboración para Arista\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classArista__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classArista_abfc5e334e70240f90b0f8d0cc094ad40}\label{classArista_abfc5e334e70240f90b0f8d0cc094ad40}} 
-{\bfseries Arista} (\hyperlink{classVertice}{Vertice} $\ast$o, \hyperlink{classVertice}{Vertice} $\ast$d, float p)
-\end{DoxyCompactItemize}
+\hyperlink{classArista_abfc5e334e70240f90b0f8d0cc094ad40}{Arista} (\hyperlink{classVertice}{Vertice} $\ast$o, \hyperlink{classVertice}{Vertice} $\ast$d, float p)
+\begin{DoxyCompactList}\small\item\em Constructor de \hyperlink{classArista}{Arista}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classArista_a9eb724ff0d46897de85b760d36a2e6b4}\label{classArista_a9eb724ff0d46897de85b760d36a2e6b4}} 
-\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries origen}
-\item 
-\mbox{\Hypertarget{classArista_a41f8fed9f49c9216330c65caafc145d1}\label{classArista_a41f8fed9f49c9216330c65caafc145d1}} 
-\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries destino}
-\item 
+\hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArista_a9eb724ff0d46897de85b760d36a2e6b4}{origen}
+\begin{DoxyCompactList}\small\item\em $<$ Apuntador del vértice de origen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArista_a7cc7d54b1945783a426f5251026af702}\label{classArista_a7cc7d54b1945783a426f5251026af702}} 
+\hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classArista_a7cc7d54b1945783a426f5251026af702}{destino}
+\begin{DoxyCompactList}\small\item\em $<$ Apuntador del vértice de destino \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classArista_a371fdf684b589d3b3d842ad5ae338342}\label{classArista_a371fdf684b589d3b3d842ad5ae338342}} 
-float {\bfseries peso}
-\end{DoxyCompactItemize}
+float \hyperlink{classArista_a371fdf684b589d3b3d842ad5ae338342}{peso}
+\begin{DoxyCompactList}\small\item\em $<$ Peso del camino entre los vértices \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
+Clase que lleva el control del vertice de \textquotesingle{}origen\textquotesingle{} y de \textquotesingle{}destino\textquotesingle{} y el peso del camino entre estos. 
+
+Definición en la línea 106 del archivo grafo.\+h.
 
 
-Definición en la línea 56 del archivo grafo.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classArista_abfc5e334e70240f90b0f8d0cc094ad40}\label{classArista_abfc5e334e70240f90b0f8d0cc094ad40}} 
+\index{Arista@{Arista}!Arista@{Arista}}
+\index{Arista@{Arista}!Arista@{Arista}}
+\subsubsection{\texorpdfstring{Arista()}{Arista()}}
+{\footnotesize\ttfamily Arista\+::\+Arista (\begin{DoxyParamCaption}\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{o,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{d,  }\item[{float}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de \hyperlink{classArista}{Arista}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em o} & Apuntador al vértice de origen \\
+\hline
+{\em d} & Apuntador al vértice de destino \\
+\hline
+{\em p} & Peso del camino entre los vertices \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 121 del archivo grafo.\+h.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-grafo.\+h\end{DoxyCompactItemize}
+\hyperlink{grafo_8h}{grafo.\+h}\end{DoxyCompactItemize}

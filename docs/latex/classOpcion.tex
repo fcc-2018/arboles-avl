@@ -1,26 +1,58 @@
 \hypertarget{classOpcion}{}\section{Referencia de la Clase Opcion}
 \label{classOpcion}\index{Opcion@{Opcion}}
+
+
+Representa a una opcion en el menu del programa.  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classOpcion_aca1ec1590d4a27e91615ec8af53d2824}\label{classOpcion_aca1ec1590d4a27e91615ec8af53d2824}} 
-{\bfseries Opcion} (std\+::string titulo, std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$funcion)
-\end{DoxyCompactItemize}
+\hyperlink{classOpcion_aca1ec1590d4a27e91615ec8af53d2824}{Opcion} (std\+::string \hyperlink{classOpcion_a1d02b7f92549a27f96d434111ede0056}{titulo}, std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$\hyperlink{classOpcion_a11149c2d9df3732dfb83727f9df76f05}{funcion})
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classOpcion_a1d02b7f92549a27f96d434111ede0056}\label{classOpcion_a1d02b7f92549a27f96d434111ede0056}} 
-std\+::string {\bfseries titulo}
-\item 
+std\+::string \hyperlink{classOpcion_a1d02b7f92549a27f96d434111ede0056}{titulo}
+\begin{DoxyCompactList}\small\item\em titulo que se muestra en el menu \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classOpcion_a11149c2d9df3732dfb83727f9df76f05}\label{classOpcion_a11149c2d9df3732dfb83727f9df76f05}} 
-std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$ {\bfseries funcion}
-\end{DoxyCompactItemize}
+std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$ \hyperlink{classOpcion_a11149c2d9df3732dfb83727f9df76f05}{funcion}
+\begin{DoxyCompactList}\small\item\em funcion que ejecuta el codigo de la opcion del menu, cuando se selecciona \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
+Representa a una opcion en el menu del programa. 
+
+Definición en la línea 17 del archivo menu.\+h.
 
 
-Definición en la línea 10 del archivo menu.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classOpcion_aca1ec1590d4a27e91615ec8af53d2824}\label{classOpcion_aca1ec1590d4a27e91615ec8af53d2824}} 
+\index{Opcion@{Opcion}!Opcion@{Opcion}}
+\index{Opcion@{Opcion}!Opcion@{Opcion}}
+\subsubsection{\texorpdfstring{Opcion()}{Opcion()}}
+{\footnotesize\ttfamily Opcion\+::\+Opcion (\begin{DoxyParamCaption}\item[{std\+::string}]{titulo,  }\item[{std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$}]{funcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em titulo} & titulo de la opcion, sin numero ni saltos de linea \\
+\hline
+{\em funcion} & funcion que se ejecuta al elegir esta opcion en el menu \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 34 del archivo menu.\+h.
 
 
 

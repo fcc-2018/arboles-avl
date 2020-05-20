@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['test',['test',['../classArbolAVL.html#a783a3ffe994d8c2b4069d2fd45afab7f',1,'ArbolAVL::test()'],['../namespacecu.html#a2032e7d323896144cae02cca83ea7776',1,'cu::test(std::string str)'],['../namespacecu.html#a29c88a60e2e11b522402097bac91dd53',1,'cu::test(std::string str, std::string str2)'],['../namespacecu.html#a204c06884ca90cec812a74a79978ad1b',1,'cu::test(std::string str, int dato)'],['../namespacecu.html#ac74aabcdeff59ad38de0aa36237f8a9b',1,'cu::test(std::string str, int dato, int res)'],['../namespacecu.html#a4f3e4a3066ea798b15af01022a14ecf9',1,'cu::test(std::string str, bool cond, std::string msg1, std::string msg2)'],['../namespacecu.html#af2ea0a4da4f2192d226ca8c3bddbd821',1,'cu::test(std::string str, bool cond)']]],
-  ['test_5fhardcore',['test_hardcore',['../classArbolAVL.html#aeb90eb1614513b7438f98a43766d573d',1,'ArbolAVL']]],
-  ['todos_5fcumplen_5fcon',['todos_cumplen_con',['../classArbol.html#aba4b09fef18152beb43e04fee7394f34',1,'Arbol']]]
+  ['padre',['padre',['../classArbol.html#abcb8c26e9021a1418de71ad6014351cf',1,'Arbol::padre(int hijo)'],['../classArbol.html#a53527e7a8999ceda0b8a0fa25a3f357c',1,'Arbol::padre(string hijo)'],['../classArbol.html#a3395234bc7b7a91d2880e10367039284',1,'Arbol::padre(Vertice *hijo)']]],
+  ['peso',['peso',['../classArbol.html#a9051a6b4120b42ff8d046f41ab73dbaa',1,'Arbol']]],
+  ['postorden',['postorden',['../classArbol.html#a126e7d801dbe214ac39f183c26e9135d',1,'Arbol']]],
+  ['preorden',['preorden',['../classArbol.html#a0ffdc60ce8f2267366681cc94cf6beea',1,'Arbol']]]
 ];

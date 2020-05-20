@@ -2,35 +2,77 @@
 \label{classEtiqueta}\index{Etiqueta@{Etiqueta}}
 
 
-Diagrama de colaboración para Etiqueta\+:
-% FIG 0
+Clase de apoyo para conservar el Vértice Origen y su Peso.  
+
+
+
+
+{\ttfamily \#include $<$grafo.\+h$>$}
+
+
+
+Diagrama de colaboración para Etiqueta\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classEtiqueta__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEtiqueta_aa7f1cc55f5fed8f31cc176d375544349}\label{classEtiqueta_aa7f1cc55f5fed8f31cc176d375544349}} 
-{\bfseries Etiqueta} (float p, \hyperlink{classVertice}{Vertice} $\ast$origen, bool permanente)
-\end{DoxyCompactItemize}
+\hyperlink{classEtiqueta_aa7f1cc55f5fed8f31cc176d375544349}{Etiqueta} (float p, \hyperlink{classVertice}{Vertice} $\ast$origen, bool \hyperlink{classEtiqueta_aa69958b23c24051acace2d464be55de4}{permanente})
+\begin{DoxyCompactList}\small\item\em Constructor de \hyperlink{classEtiqueta}{Etiqueta}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEtiqueta_aaf0b9fe57ea31a58b0dc4012cf8198a2}\label{classEtiqueta_aaf0b9fe57ea31a58b0dc4012cf8198a2}} 
+\hyperlink{classEtiqueta_aaf0b9fe57ea31a58b0dc4012cf8198a2}{Etiqueta} ()
+\begin{DoxyCompactList}\small\item\em Atributos de un Vértice Origen creado por defecto. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEtiqueta_a6cb53a3db11a5f79617642d5a3b1a2fa}\label{classEtiqueta_a6cb53a3db11a5f79617642d5a3b1a2fa}} 
-float {\bfseries peso}
-\item 
+float \hyperlink{classEtiqueta_a6cb53a3db11a5f79617642d5a3b1a2fa}{peso}
+\begin{DoxyCompactList}\small\item\em $<$ Varible contenedora del Peso del Vértice Origen \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEtiqueta_abbc7c11fe50bd7ae2a34949e10e66fff}\label{classEtiqueta_abbc7c11fe50bd7ae2a34949e10e66fff}} 
-\hyperlink{classVertice}{Vertice} $\ast$ {\bfseries vertice\+Origen}
-\item 
+\hyperlink{classVertice}{Vertice} $\ast$ \hyperlink{classEtiqueta_abbc7c11fe50bd7ae2a34949e10e66fff}{vertice\+Origen}
+\begin{DoxyCompactList}\small\item\em $<$ Apuntador al Vértice Origen \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEtiqueta_aa69958b23c24051acace2d464be55de4}\label{classEtiqueta_aa69958b23c24051acace2d464be55de4}} 
-bool {\bfseries permanente}
-\end{DoxyCompactItemize}
+bool \hyperlink{classEtiqueta_aa69958b23c24051acace2d464be55de4}{permanente}
+\begin{DoxyCompactList}\small\item\em $<$ Marca para evitar que el Origen cambie \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
+Clase de apoyo para conservar el Vértice Origen y su Peso. 
+
+Definición en la línea 23 del archivo grafo.\+h.
 
 
-Definición en la línea 14 del archivo grafo.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classEtiqueta_aa7f1cc55f5fed8f31cc176d375544349}\label{classEtiqueta_aa7f1cc55f5fed8f31cc176d375544349}} 
+\index{Etiqueta@{Etiqueta}!Etiqueta@{Etiqueta}}
+\index{Etiqueta@{Etiqueta}!Etiqueta@{Etiqueta}}
+\subsubsection{\texorpdfstring{Etiqueta()}{Etiqueta()}}
+{\footnotesize\ttfamily Etiqueta\+::\+Etiqueta (\begin{DoxyParamCaption}\item[{float}]{p,  }\item[{\hyperlink{classVertice}{Vertice} $\ast$}]{origen,  }\item[{bool}]{permanente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de \hyperlink{classEtiqueta}{Etiqueta}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Peso del Vértice Origen \\
+\hline
+{\em origen} & Apuntador al Vértice que se tomará como Origen \\
+\hline
+{\em permanente} & Marca utilizada para evitar el cambio de Origen \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 38 del archivo grafo.\+h.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-grafo.\+h\end{DoxyCompactItemize}
+\hyperlink{grafo_8h}{grafo.\+h}\end{DoxyCompactItemize}

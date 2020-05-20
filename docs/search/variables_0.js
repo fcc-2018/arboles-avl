@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['debug_5fmode',['debug_mode',['../namespacecu.html#ae84c5e905dd7b8c2b1b1194553f9c9a9',1,'cu']]]
+  ['adyacente',['adyacente',['../classVertice.html#a740d1d3cf0a6fad9b0d49832e8c2cd55',1,'Vertice']]],
+  ['arbol',['arbol',['../classMenu.html#a0b2445d309a32befdc877e64f555a024',1,'Menu']]],
+  ['aristas',['aristas',['../classGrafo.html#a69300beee0528e08e810d91b6f968d02',1,'Grafo']]]
 ];

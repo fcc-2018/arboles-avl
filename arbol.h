@@ -240,21 +240,21 @@ class Arbol: public Grafo{
         int nivel(string nombre);
 
         /*!
-         * @brief Obtiene los antecesores de un nodo
+         * @brief Obtiene los antecesores de un nodo a partir de su valor
          * @param dato valor numérico del nodo
          * @return lista de punteros a vértices previos al nodo
          * */
         Lista<Vertice*> * antecesores(int dato);
 
         /*!
-         * @brief Obtiene los antecesores de un nodo
+         * @brief Obtiene los antecesores de un nodo a partir de su nombre
          * @param nombre nombre del nodo raíz
          * @return lista de punteros a vértices antecesores al nodo
          * */
         Lista<Vertice*> * antecesores(string nombre);
 
         /*!
-         * @brief Obtiene los descendientes de un nodo
+         * @brief Obtiene los descendientes de un nodo a partir de su valor
          * @param dato valor numérico del nodo raíz
          * @return lista de punteros a vértices descendientes al nodo
          * */

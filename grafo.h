@@ -9,15 +9,38 @@
 
 using namespace std;
 
+/*!
+*\file grafo.h
+*@brief Definición de la clase Grafo, Vertice, Arista, Etiqueta, y la implementación de sus métodos.
+*/
+
 class Vertice;
 
+/*!
+*@class Etiqueta
+*@brief Clase de apoyo para conservar el Vértice Origen y su Peso
+*/
 class Etiqueta{
 	public:
+	//!&lt; Varible contenedora del Peso del Vértice Origen
 	float peso;
+	//!&lt; Apuntador al Vértice Origen
 	Vertice * verticeOrigen;
+	//!&lt; Marca para evitar que el Origen cambie
 	bool permanente;
+
+	/*!
+	*@brief Constructor de Etiqueta
+	*@param p Peso del Vértice Origen
+	*@param origen Apuntador al Vértice que se tomará como Origen
+	*@param permanente Marca utilizada para evitar el cambio de Origen
+	*/
 	Etiqueta(float p, Vertice * origen, bool permanente): 
 		peso(p), verticeOrigen(origen), permanente(permanente){}
+
+	/*!
+	*@brief Atributos de un Vértice Origen creado por defecto
+	*/
 	Etiqueta(){
 		peso = 0;
 		verticeOrigen = NULL;
@@ -25,93 +48,227 @@ class Etiqueta{
 	}
 };
 
+/*!
+*@class Vertice
+*@brief Clase encargada de llenar los datos en los Nodos insertados al Grafo
+*/
 class Vertice{
 	public:
-	Vertice *sig; // se usa para recorrer la lista de vertices
-	Lista<Vertice*> *adyacente; // Lista de vertices adyacentes (Vertice *)
+	//!&lt; Se usa para recorrer la lista de vertices
+	Vertice *sig;
+	//!&lt; Lista de vértices adyacentes (Vertice *)
+	Lista<Vertice*> *adyacente;
+	//!&lt; Nombre que llevará el vértice
 	string nombre;
+	//!&lt; Información que almacena el vértice
 	int dato;
+	//!&lt; Creación de un Vértice Origen por defecto
 	Etiqueta etiqueta;
+	//!&lt; Marca para saber por cuáles vértices ya se ha pasado en los recorridos
 	bool visitado;
-	Vertice(): sig(NULL), nombre(""), dato(0){}
+
+	/*!
+	*@brief Constructor de Vertice
+	*@param nombre Forma en la que nos referiremos al vértice
+	*@param dato Información que contendra el vértice
+	*/
 	Vertice(string nombre, int dato): sig(NULL), 
 		nombre(nombre), dato(dato), adyacente(new Lista<Vertice*>){}
 	friend class Grafo;
 
-	// Al momento de llamar a " out << V " donde V es una variable de tipo Vertice,
-	// se mostrara en la salida "out" el campo "nombre" de V
+	/*!
+	*@brief Atributos de un vértice creado por defecto
+	*/
+	Vertice(): sig(NULL), nombre(""), dato(0){}
+
+	/*!
+	*@brief Al momento de llamar a " out << V " donde V es una variable de tipo Vertice,
+	*@return Se mostrará en la salida "out" el campo "nombre" de V
+	*/
 	friend ostream& operator<<(ostream& os, const Vertice& v) {
 		return os << v.nombre;
 	}
 
-	// Al momento de llamar a " out << V " donde V es una variable de tipo Vertice*,
-	// (apuntador a Vertice) se mostrara en la salida "out" el campo "nombre" de *V
-	// (Este es un caso especial para que el grafo muestre los vertices correctamente)
-	// (SE RECOMIENDA DISCRECION)
+	/*!
+	*@brief Al momento de llamar a " out << V " donde V es una variable de tipo Vertice* (apuntador a Vertice)
+	* (Este es un caso especial para que el grafo muestre los vértices correctamente)
+	*@return Se mostrará en la salida "out" el campo "nombre" de *V
+	*/
 	friend ostream& operator<<(ostream& os, const Vertice* v) {
 		return os << v->nombre;
 	}
 };
 
+/*!
+*@class Arista
+*@brief Clase que lleva el control del vertice de 'origen' y de 'destino' y el peso del camino entre estos
+*/
 class Arista{
 	public:
-	Vertice *origen, *destino;
+	//!&lt; Apuntador del vértice de origen 
+	Vertice *origen;
+	//!&lt; Apuntador del vértice de destino
+	Vertice *destino;
+	//!&lt; Peso del camino entre los vértices
 	float peso;
+
+	/*!
+	*@brief Constructor de Arista
+	*@param o Apuntador al vértice de origen
+	*@param d Apuntador al vértice de destino
+	*@param p Peso del camino entre los vertices
+	*/
 	Arista(Vertice *o, Vertice *d, float p){
 		origen = o; destino = d; peso = p;
 	}
 };
 
+/*!
+*@class Grafo
+*@brief Clase que contiene todos los procesos que se pueden realizar en el Grafo
+*/
 class Grafo{
 	protected:
+	//!&lt; Lista de Vertices
 	Lista<Vertice*> vertices;
+	//!&lt; Lista de Aristas
 	Lista<Arista*> aristas;
-	// si ya se ha ejecutado el algoritmo de dijkstra para el 
-	// camino mas corto entre dos vertices vertEtiquetas guarda
-	// el vertice para el que se calcularon los caminos mas cortos
+	//!&lt; Si ya se ha ejecutado el algoritmo de dijkstra para el camino mas corto entre dos vértices, 'vertEtiquetas' guarda el vértice para el que se calcularon los caminos más cortos
 	Vertice * vertEtiquetas;
-    public:    
+    public:
+		 /*!
+		 *@brief Constructor de Grafo
+		 */
 		Grafo(){
 			vertEtiquetas = NULL;
 		}
+		/*!
+		*@brief Muestra la cantidad de vértices en el Grafo
+		*/
      	int cardinalidad();
+		/*!
+		*@brief Verificación sobre el vértice inicial, por si es NULL
+		*/
      	bool vacio();
-
+		/*!
+		*@brief Accede a la lista de adyacecia de 2 vértices, de 'origen' y 'destino'
+		*@param origen Nombre del vértice de origen
+		*@param destino Nombre del vértice de destino
+		*/
 	    bool comprobar_adyacencia(string origen,string destino);
+		/*!
+		*@brief Creación de un nuevo vértice, sabiendo solo su nombre
+		*@param nombre Forma en la que nos referiremos al vértice
+		*/
      	bool insertar_vertice(string nombre);
+		/*!
+		*@brief Creación de un nuevo vértice, sabiendo su nombre y los datos que contiene
+		*@param nombre Forma en la que nos referiremos al vértice
+		*@param dato Información que contendra el vértice
+		*/
 		bool insertar_vertice(string nombre, int dato);
+		/*!
+		*@brief Creación de una nueva Arista
+		*@param nombre Forma en la que nos referiremos al vértice
+		*@param dato Información que contendra el vértice
+		*/
      	void insertar_arista(Vertice *origen, Vertice *destino, float peso);
+		/*!
+		*@brief Mostra la lista de adyacencia de cada vértice recorrido
+		*/
      	void lista_adyacencia();
+		/*!
+		*@brief Lista de vértices visitados en el Recorrido en Anchura
+		*@param origen Vértice de partida para el recorrido
+		*/
      	Lista<Vertice*>* recorrido_en_anchura(Vertice *origen);
+		/*!
+		*@brief Lista de vértices visitados en el Recorrido en Profundidad
+		*@param origen Vértice de partida para el recorrido
+		*/
      	Lista<Vertice*>* recorrido_en_profundidad(Vertice *origen);
+		/*!
+		*@brief Obtiene un vértice deseado, utilizando su nombre
+		*@param nombre Nombre del vértice deseado
+		*/
 		Vertice * get_vertice(string nombre);
+		/*!
+		*@brief Obtiene el Vértice Origen
+		*/
 		Vertice * get_vertice_inicial();
+		/*!
+		*@brief Obtiene la Arista entre 2 vertices
+		*@param origen Apuntador del vértice de origen
+		*@param destino Apuntador del vértice de destino
+		*/
 		Arista * get_arista(Vertice * origen, Vertice * destino);
+		/*!
+		*@brief Lista de vertices visitados en el 'Algoritmo de Dijkstra'
+		*@param origen Apuntador del vértice de origen
+		*@param destino Apuntador del vértice de destino
+		*/
 		Lista<Vertice*> * dijkstra(Vertice * origen, Vertice * destino);
+		/*!
+		*@brief Indicador de si el Grafo es conexo
+		*/
 		bool conexo();
+		/*!
+		*@brief Indicador de si el Grafo es dirigido
+		*/
 		bool dirigido();
+
+		/*!
+		* @brief Aplica el algoritmo de kruskal al grafo.
+		* crea subarboles para encontrar el arbol de expansion minima.
+		* @return puntero a nuevo Grafo con estructura de un arbol de expansion minima
+		*/
 		Grafo *kruskal();
+		/*!
+		*@brief Nos indica si existe un camino entre un vértice de origen y de destino
+		*@param origen Apuntador del vértice de origen
+		*@param destino Apuntador del vértice de destino
+		*/
 		bool hay_camino(Vertice * origen, Vertice * destino);
 	private:
+		/*!
+		*@brief Determina si existe un camino de un vertice dado, a un vertice cualquiera
+		*@param Lista Lista de todos los vértices en el Grafo
+		*@param Vertice Apuntador al vértice de partida
+		*/
 		void dfs(Lista<Vertice*>*,Vertice*);
+		/*!
+		*@brief Determina si existe un vertice en un amino dado a través de una lista hecha después de un recorrido
+		*@param Lista Lista de todos los vértices en el Grafo
+		*@param Vertice Apuntador al vértice de partida
+		*/
 		bool contiene_vertice(Lista<Vertice*>*, Vertice*);
+		/*!
+		*@brief Genera una matríz de adyacencia con todos los vértices del Grafo
+		*/
 		int **generarMatrizAdyacencia();
+		/*!
+		*@brief Nos indica si hubo Vértices Origen solo utilizados para un proceso específico
+		*/
 		bool hayEtiquetasTemporales();
+		/*!
+		*@brief Establece un nuevo Vértice Origen, ya sea permanente o temporal
+		*/
 		void setEtiquetas(float peso, Vertice * verticeOrigen, bool permantente);
 };
 
+//fn Utilizado para saber cuántos vértices tienen el Grafo
+//return Número de vértices en el Grafo
 int Grafo::cardinalidad(){
 	return vertices.tamanio();
 }
 
+//8fn Si el vertice inicial es igual a NULL, la lista esta vacía, de lo contrario tiene elementos
 bool Grafo::vacio(){
-	//si el vertice inicial es igual a null la lista esta vacia de lo contrario tiene elementos
 	return vertices.vacia();
 }
 
-//dados los nombres de los vertices destino y origen se accede a la lista
-//de adyacencia del vertice de origen si es que existe y se corrobora que
-//el vertice destino este en su lista con su nombre
+//fn Dados los nombres de los vertices destino y origen, se accede a la lista de adyacencia del vértice
+//de origen si es que existe y se corrobora que el vertice destino este en su lista con su nombre
 bool Grafo::comprobar_adyacencia(string origen, string destino){
 	Vertice *o = get_vertice(origen), *d = get_vertice(destino);
 	if(o != NULL && d != NULL)
@@ -120,14 +277,18 @@ bool Grafo::comprobar_adyacencia(string origen, string destino){
 	return false;
 }
 
+//fn Crea un nuevo vértice, sabiendo solo su nombre
+//param nombre Forma en la que nos referiremos al vértice
 bool Grafo::insertar_vertice(string nombre){
 	return insertar_vertice(nombre,-1337);
 }
 
+//fn Crea un nuevo vértice, sabiendo su nombre y la información que almacena
+//Se agrega el un nuevo objeto de la clase Vertice a lista de vertices
+//Cada vertice va etiquetado con el nombre que le asigna el usuario y en su campo adyacente apunta a un lista de adyacencia
+//param nombre Forma en la que nos referiremos al vértice
+//param dato Infomación que almacenará el vértice
 bool Grafo::insertar_vertice(string nombre, int dato){
-//se agrega el un nuevo objeto de la clase Vertice a lista de vertices
-//cada vertice va etiquetado con el nombre que le asigna el usuario y en su campo adyacente apunta a un lista de adyacencia
-	
 	Vertice * nuevo = new Vertice;
 	Lista<Vertice*> * lista = new Lista<Vertice*>;
 	nuevo->nombre=nombre;
@@ -138,17 +299,17 @@ bool Grafo::insertar_vertice(string nombre, int dato){
 	return true;
 }
 
+//fn Se inserta una nuevo nodo en la lista de adyacencia del vertice origen
+//Al insertarlo ese nodo va ir etiquetado por el nombre del vertice destino
 void Grafo::insertar_arista(Vertice *origen, Vertice *destino, float peso){
-	//se inserta una nuevo nodo en la lista de adyacencia del vertice origen
-	//al insertarlo ese nodo va ir etiquetado por el nombre del vertice destino
 	origen->adyacente->insertar_final(destino);
 	origen->adyacente->ordenar_lista();
 	aristas.insertar_final(new Arista(origen, destino, peso));
 }
 
+//fn En ella imprimimos la lista de adyacencia de cada vertice se recorre la lista de vertices
+//Y se accede a cada vertice en su campo adyacente osea la lista.
 void Grafo::lista_adyacencia(){
-//en ella imprimimos la lista de adyacencia de cada vertice se recorre la lista de vertices
-//y se accede a cada vertice en su campo adyacente osea la lista.
 	if(!vacio()){
 		for(Lista<Vertice*>::iterator i = vertices.begin(); i != vertices.end();i++){
 			cout << " [ " << (*i)->nombre << " ]: ";
@@ -160,10 +321,11 @@ void Grafo::lista_adyacencia(){
 	}
 }
 
+//fn Proceso del Recorrido en Anchura (explicado con notas dentro del método)
 Lista<Vertice*> * Grafo::recorrido_en_anchura(Vertice * origen){
-	Lista<Vertice*> *visitados = new Lista<Vertice*>;	// Lista de vertices visitados (recorrido a lo ancho)
-	cola<Vertice*> proximos;	// Cola de vertices a comparar
-	Vertice *actual;	// Vertice utilizado para la comparacion de los proximos vertices
+	Lista<Vertice*> *visitados = new Lista<Vertice*>;//Lista de vertices visitados (recorrido a lo ancho)
+	cola<Vertice*> proximos;//Cola de vertices a comparar
+	Vertice *actual;//Vertice utilizado para la comparacion de los proximos vertices
 	
 	// Se comprueba que el vertice exista
 	if(origen != NULL && get_vertice(origen->nombre) != NULL){

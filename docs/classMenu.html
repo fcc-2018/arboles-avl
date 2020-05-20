@@ -68,56 +68,339 @@ $(function() {
 <div class="title">Referencia de la Clase Menu</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Muestra un menu de opciones automaticamente y ejecuta el codigo que se le indica mediante funciones lambda en cada opcion.  
+ <a href="classMenu.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="menu_8h_source.html">menu.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de colaboración para Menu:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu__coll__graph.png" border="0" usemap="#Menu_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 0 -->
+<map name="Menu_coll__map" id="Menu_coll__map">
+<area shape="rect" id="node2" href="classArbolAVL.html" title="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued..." alt="" coords="73,336,150,363"/>
+<area shape="rect" id="node3" href="classArbol.html" title="Implementación de un árbol binario con listas de adyacencia. &#160;&#160;" alt="" coords="85,260,137,287"/>
+<area shape="rect" id="node4" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. " alt="" coords="84,184,139,211"/>
+<area shape="rect" id="node5" href="classLista.html" title="Lista\&lt; Vertice *\&gt;" alt="" coords="14,5,134,32"/>
+<area shape="rect" id="node7" href="classVertice.html" title="Clase encargada de llenar los datos en los Nodos insertados al Grafo. " alt="" coords="229,95,292,121"/>
+<area shape="rect" id="node6" href="classLista.html" title="Lista\&lt; Arista *\&gt;" alt="" coords="73,95,187,121"/>
+<area shape="rect" id="node8" href="classEtiqueta.html" title="Clase de apoyo para conservar el Vértice Origen y su Peso. " alt="" coords="319,184,389,211"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:a6d615b4b49c03a0cbfc2a01cfae8a64f"><td class="memItemLeft" align="right" valign="top"><a id="a6d615b4b49c03a0cbfc2a01cfae8a64f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Menu</b> (<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a)</td></tr>
+<tr class="memitem:a6d615b4b49c03a0cbfc2a01cfae8a64f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a6d615b4b49c03a0cbfc2a01cfae8a64f">Menu</a> (<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a)</td></tr>
+<tr class="memdesc:a6d615b4b49c03a0cbfc2a01cfae8a64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6d615b4b49c03a0cbfc2a01cfae8a64f">Más...</a><br /></td></tr>
 <tr class="separator:a6d615b4b49c03a0cbfc2a01cfae8a64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad673482d111ee4a4d918653df02369e3"><td class="memItemLeft" align="right" valign="top"><a id="ad673482d111ee4a4d918653df02369e3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Menu</b> (<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a, std::string titulo)</td></tr>
+<tr class="memitem:ad673482d111ee4a4d918653df02369e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#ad673482d111ee4a4d918653df02369e3">Menu</a> (<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a, std::string <a class="el" href="classMenu.html#a16f1a749e7d6f35d9c1b4b7ae93b204f">titulo</a>)</td></tr>
+<tr class="memdesc:ad673482d111ee4a4d918653df02369e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad673482d111ee4a4d918653df02369e3">Más...</a><br /></td></tr>
 <tr class="separator:ad673482d111ee4a4d918653df02369e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1f674058f3fd03a500859abda7dded"><td class="memItemLeft" align="right" valign="top"><a id="a1e1f674058f3fd03a500859abda7dded"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>agregar_opcion</b> (std::string titulo, std::function&lt; bool(<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a)&gt; *funcion)</td></tr>
+<tr class="memitem:a1e1f674058f3fd03a500859abda7dded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a1e1f674058f3fd03a500859abda7dded">agregar_opcion</a> (std::string <a class="el" href="classMenu.html#a16f1a749e7d6f35d9c1b4b7ae93b204f">titulo</a>, std::function&lt; bool(<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a)&gt; *funcion)</td></tr>
+<tr class="memdesc:a1e1f674058f3fd03a500859abda7dded"><td class="mdescLeft">&#160;</td><td class="mdescRight">agrega una opcion al menu  <a href="#a1e1f674058f3fd03a500859abda7dded">Más...</a><br /></td></tr>
 <tr class="separator:a1e1f674058f3fd03a500859abda7dded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa964e3e58eb5c6b63ebadd7f2ec6751a"><td class="memItemLeft" align="right" valign="top"><a id="aa964e3e58eb5c6b63ebadd7f2ec6751a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>imprimir_opcion</b> (string texto)</td></tr>
+<tr class="memitem:aa964e3e58eb5c6b63ebadd7f2ec6751a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#aa964e3e58eb5c6b63ebadd7f2ec6751a">imprimir_opcion</a> (string texto)</td></tr>
+<tr class="memdesc:aa964e3e58eb5c6b63ebadd7f2ec6751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime una opcion/texto en el menu con formato.  <a href="#aa964e3e58eb5c6b63ebadd7f2ec6751a">Más...</a><br /></td></tr>
 <tr class="separator:aa964e3e58eb5c6b63ebadd7f2ec6751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"><td class="memItemLeft" align="right" valign="top"><a id="a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>generar_n_espacios</b> (int n)</td></tr>
+<tr class="memitem:a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a67ebd3e3bcfe45c99a7c0ff13a5c3ebb">generar_n_espacios</a> (int n)</td></tr>
+<tr class="memdesc:a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">genera n espacios en blanco  <a href="#a67ebd3e3bcfe45c99a7c0ff13a5c3ebb">Más...</a><br /></td></tr>
 <tr class="separator:a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d231cb7a3783451bd690612ff0f77a"><td class="memItemLeft" align="right" valign="top"><a id="ab0d231cb7a3783451bd690612ff0f77a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>imprimir_opcion</b> (<a class="el" href="classOpcion.html">Opcion</a> *op, int ind)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#ab0d231cb7a3783451bd690612ff0f77a">imprimir_opcion</a> (<a class="el" href="classOpcion.html">Opcion</a> *op, int ind)</td></tr>
+<tr class="memdesc:ab0d231cb7a3783451bd690612ff0f77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">imprime una opcion con indice <br /></td></tr>
 <tr class="separator:ab0d231cb7a3783451bd690612ff0f77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909877f977f662803994c67e862b4b87"><td class="memItemLeft" align="right" valign="top"><a id="a909877f977f662803994c67e862b4b87"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>mostrar</b> ()</td></tr>
+<tr class="memitem:a909877f977f662803994c67e862b4b87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a909877f977f662803994c67e862b4b87">mostrar</a> ()</td></tr>
+<tr class="memdesc:a909877f977f662803994c67e862b4b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu de manera elegante.  <a href="#a909877f977f662803994c67e862b4b87">Más...</a><br /></td></tr>
 <tr class="separator:a909877f977f662803994c67e862b4b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5609ebe5415d2e5f06143819b832981"><td class="memItemLeft" align="right" valign="top"><a id="ab5609ebe5415d2e5f06143819b832981"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>accion</b> ()</td></tr>
+<tr class="memitem:ab5609ebe5415d2e5f06143819b832981"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#ab5609ebe5415d2e5f06143819b832981">accion</a> ()</td></tr>
+<tr class="memdesc:ab5609ebe5415d2e5f06143819b832981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta la accion actual ingresada por el usuario.  <a href="#ab5609ebe5415d2e5f06143819b832981">Más...</a><br /></td></tr>
 <tr class="separator:ab5609ebe5415d2e5f06143819b832981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6be64bbaaaa59e535507d868cc9740f"><td class="memItemLeft" align="right" valign="top"><a id="aa6be64bbaaaa59e535507d868cc9740f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ejecutar</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#aa6be64bbaaaa59e535507d868cc9740f">ejecutar</a> ()</td></tr>
+<tr class="memdesc:aa6be64bbaaaa59e535507d868cc9740f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta el menu mientras el usuario siga realizando operaciones. <br /></td></tr>
 <tr class="separator:aa6be64bbaaaa59e535507d868cc9740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atributos públicos</h2></td></tr>
 <tr class="memitem:a0b2445d309a32befdc877e64f555a024"><td class="memItemLeft" align="right" valign="top"><a id="a0b2445d309a32befdc877e64f555a024"></a>
-<a class="el" href="classArbolAVL.html">ArbolAVL</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>arbol</b></td></tr>
+<a class="el" href="classArbolAVL.html">ArbolAVL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a0b2445d309a32befdc877e64f555a024">arbol</a></td></tr>
+<tr class="memdesc:a0b2445d309a32befdc877e64f555a024"><td class="mdescLeft">&#160;</td><td class="mdescRight">puntero a arbol sobre el que se va a operar <br /></td></tr>
 <tr class="separator:a0b2445d309a32befdc877e64f555a024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16f1a749e7d6f35d9c1b4b7ae93b204f"><td class="memItemLeft" align="right" valign="top"><a id="a16f1a749e7d6f35d9c1b4b7ae93b204f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>titulo</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenu.html#a16f1a749e7d6f35d9c1b4b7ae93b204f">titulo</a></td></tr>
+<tr class="memdesc:a16f1a749e7d6f35d9c1b4b7ae93b204f"><td class="mdescLeft">&#160;</td><td class="mdescRight">titulo del menu en el programa <br /></td></tr>
 <tr class="separator:a16f1a749e7d6f35d9c1b4b7ae93b204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00025">25</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
-</div><hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<div class="textblock"><p>Muestra un menu de opciones automaticamente y ejecuta el codigo que se le indica mediante funciones lambda en cada opcion. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00044">44</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a id="a6d615b4b49c03a0cbfc2a01cfae8a64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d615b4b49c03a0cbfc2a01cfae8a64f">&#9670;&nbsp;</a></span>Menu() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Menu::Menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArbolAVL.html">ArbolAVL</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>puntero a <a class="el" href="classArbolAVL.html" title="Implementación de un arbol binario que por cada inserción se corrobore el balance del mismo y se pued...">ArbolAVL</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00058">58</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<a id="ad673482d111ee4a4d918653df02369e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad673482d111ee4a4d918653df02369e3">&#9670;&nbsp;</a></span>Menu() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Menu::Menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArbolAVL.html">ArbolAVL</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>titulo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>puntero a arbolAVL </td></tr>
+    <tr><td class="paramname">titulo</td><td>titulo del menu en el programa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00065">65</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="ab5609ebe5415d2e5f06143819b832981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5609ebe5415d2e5f06143819b832981">&#9670;&nbsp;</a></span>accion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Menu::accion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ejecuta la accion actual ingresada por el usuario. </p>
+<dl class="section return"><dt>Devuelve</dt><dd><em>true</em> si la opcion fue ejecutada <em>false</em> si no se encontro la opcion </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00151">151</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e1f674058f3fd03a500859abda7dded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1f674058f3fd03a500859abda7dded">&#9670;&nbsp;</a></span>agregar_opcion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::agregar_opcion </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>titulo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; bool(<a class="el" href="classArbolAVL.html">ArbolAVL</a> *a)&gt; *&#160;</td>
+          <td class="paramname"><em>funcion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>agrega una opcion al menu </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">titulo</td><td>titulo de la opcion en el menu </td></tr>
+    <tr><td class="paramname">funcion</td><td>funcion que se ejecuta al seleccionar esta opcion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00073">73</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<a id="a67ebd3e3bcfe45c99a7c0ff13a5c3ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ebd3e3bcfe45c99a7c0ff13a5c3ebb">&#9670;&nbsp;</a></span>generar_n_espacios()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Menu::generar_n_espacios </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>genera n espacios en blanco </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>numero de espacios </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>string con n espacios en blanco </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00097">97</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<a id="aa964e3e58eb5c6b63ebadd7f2ec6751a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa964e3e58eb5c6b63ebadd7f2ec6751a">&#9670;&nbsp;</a></span>imprimir_opcion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::imprimir_opcion </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>texto</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Imprime una opcion/texto en el menu con formato. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texto</td><td>texto a imprimir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00085">85</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<a id="a909877f977f662803994c67e862b4b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909877f977f662803994c67e862b4b87">&#9670;&nbsp;</a></span>mostrar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Menu::mostrar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Muestra el menu de manera elegante. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>opcion elegida por el usuario </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="menu_8h_source.html#l00123">123</a> del archivo <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
 <li><a class="el" href="menu_8h_source.html">menu.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['obtener_5fhijos',['obtener_hijos',['../classArbol.html#a18066699977ab8095398d026ef2a13ac',1,'Arbol']]],
-  ['ordenar_5flista_5fde_5fadyacentes',['ordenar_lista_de_adyacentes',['../classArbol.html#aeb7dff584795382d8e8a1a4694d0ac4e',1,'Arbol']]]
+  ['menu',['Menu',['../classMenu.html#a6d615b4b49c03a0cbfc2a01cfae8a64f',1,'Menu::Menu(ArbolAVL *a)'],['../classMenu.html#ad673482d111ee4a4d918653df02369e3',1,'Menu::Menu(ArbolAVL *a, std::string titulo)']]],
+  ['mostrar',['mostrar',['../classArbol.html#a61749974f55056420f4e5a76eb664809',1,'Arbol::mostrar()'],['../classMenu.html#a909877f977f662803994c67e862b4b87',1,'Menu::mostrar()']]]
 ];

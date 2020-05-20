@@ -1,40 +1,75 @@
 #include <iostream>
 #include <functional>
 
+
+
 // utilizamos std::function para almacenar en variables
 // funciones normales, y funciones lambda
 // para hacer mas faciles las cosas usamos typedef
 typedef std::function<bool(ArbolAVL*a)> funcion_menu;
 
-// Opcion del menu
+
+
+/*!
+ * @class Opcion 
+ * @brief Representa a una opcion en el menu del programa
+ * */
 class Opcion{
 	public:
-	// titulo que se muestra en el menu
+	/*!
+	 *  @brief titulo que se muestra en el menu
+	 */
 	std::string titulo;
-	// funcion que ejecuta el codigo de la opcion
-	// del menu, cuando se selecciona
+
+	/*!
+	 *  @brief funcion que ejecuta el codigo de la opcion
+	 *  del menu, cuando se selecciona
+	 */
 	std::function<bool (ArbolAVL * a)> * funcion;
-	// constructor
+	/*!
+	 * @brief Constructor de la clase
+	 * @param titulo titulo de la opcion, sin numero ni saltos de linea
+	 * @param funcion funcion que se ejecuta al elegir esta opcion en el menu
+	*/
 	Opcion(std::string titulo, std::function<bool (ArbolAVL* a)> * funcion): 
 		titulo(titulo), funcion(funcion){}
 };
 
-// Muestra un menu de opciones automaticamente
-// y ejecuta el codigo que se le indica mediante
-// funciones lambda en cada opcion
+/*!
+ * @class Menu
+ * @brief Muestra un menu de opciones automaticamente
+ * y ejecuta el codigo que se le indica mediante
+ * funciones lambda en cada opcion.
+ */
 class Menu{
 	public:
-	// arbol sobre el que se va a operar
+	/*!
+	 *  @brief puntero a arbol sobre el que se va a operar
+	 */
 	ArbolAVL * arbol;
+	/*!
+	 * @brief titulo del menu en el programa
+	 */
 	std::string titulo;
-
+	/*!
+	 * @brief Constructor
+	 * @param a puntero a ArbolAVL 
+	 * */
 	Menu(ArbolAVL* a) :arbol(a), titulo("Sin titulo"), 
 				indice(1), ancho_menu(50) {}
+	/*!
+	 * @brief Constructor
+	 * @param a puntero a arbolAVL
+	 * @param titulo titulo del menu en el programa
+	*/
 	Menu(ArbolAVL* a, std::string titulo) :arbol(a), titulo(titulo), 
 				indice(1), ancho_menu(50) {}
-	// agrega una opcion al menu 
-	// recibe un titulo y una funcion a ejecutar cuando se
-	// selecciona dicha opcion
+
+	/*!
+	 * @brief agrega una opcion al menu 
+	 * @param titulo titulo de la opcion en el menu
+	 * @param funcion funcion que se ejecuta al seleccionar esta opcion
+	*/
 	void agregar_opcion(std::string titulo, std::function<bool(ArbolAVL*a)>* funcion)
 	{ 
 		// insertar en la lista de opciones
@@ -43,7 +78,10 @@ class Menu{
 		indice ++; 
 	}
 
-	// imprime un titulo o un mensaje de adios
+	/*!
+	 *  @brief Imprime una opcion/texto en el menu con formato
+	 *  @param texto texto a imprimir
+	 */
 	void imprimir_opcion(string texto){
 		texto = "| " + texto;
 		int longitud = texto.length();
@@ -51,13 +89,20 @@ class Menu{
 		std::cout << texto << esp << "|" <<endl;
 	}
 
+	/*!
+	 * @brief genera n espacios en blanco
+	 * @param n numero de espacios
+	 * @return string con n espacios en blanco
+	*/
 	std::string generar_n_espacios(int n){
 		string esp = "";
 		for(int i = 0; i < n; i++) esp += " ";
 		return esp;
 	}
 
-	// imprime una opcion con estilo
+	/*!
+	 * @brief imprime una opcion con indice
+	*/
 	void imprimir_opcion(Opcion* op, int ind){
 		int longitud;
 		std::string item, espacios;
@@ -71,7 +116,10 @@ class Menu{
 		std::cout << item << espacios << "|" << endl;
 	}
 
-	// muestra el menu de manera elegante 
+	/*!
+	 *  @brief Muestra el menu de manera elegante 
+	 *  @return opcion elegida por el usuario
+	 * */
 	int mostrar(){
 		// jaja para no reescribir cout xD
 		ostream & out = std::cout;
@@ -96,7 +144,10 @@ class Menu{
 		return eleccion;
 	}
 	
-	// ejecuta la accion actual ingresada por el usuario
+	/*! 
+	 * @brief Ejecuta la accion actual ingresada por el usuario
+	 * @return *true* si la opcion fue ejecutada *false* si no se encontro la opcion
+	 */
 	bool accion(){
 		// obtener la accion
 		Opcion * act = opciones.obtener(eleccion -1);
@@ -111,6 +162,9 @@ class Menu{
 		return false;
 	}
 
+	/*!
+	 * @brief Ejecuta el menu mientras el usuario siga realizando operaciones
+	 * */
 	void ejecutar(){
 		// coronavirus ? no_salir : salir;
 		bool salir = false;
@@ -127,8 +181,15 @@ class Menu{
 		imprimir_opcion("Vuelve pronto prro jsjsjs xD");
 	}
 
-	private: 
+	private:
+		/*!
+		 * @brief indice numero de acciones en el menu
+		 * @brief eleccion numero de accion seleccionada por el usuario
+		 * @brief ancho_menu numero de caracteres por linea en el menu
+		*/
 		int indice, eleccion, ancho_menu;
-		Lista<struct Opcion *> opciones;
-		
+		/*!
+		 * @brief opciones lista de opciones en el menu
+		*/
+		Lista<struct Opcion *> opciones;		
 };

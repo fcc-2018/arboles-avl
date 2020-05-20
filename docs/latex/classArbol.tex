@@ -12,12 +12,22 @@ Implementación de un árbol binario con listas de adyacencia. ~\newline
 
 
 
-Diagrama de herencias de Arbol
-% FIG 0
+Diagrama de herencias de Arbol\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classArbol__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Diagrama de colaboración para Arbol\+:
-% FIG 1
+Diagrama de colaboración para Arbol\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classArbol__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -74,11 +84,11 @@ int \hyperlink{classArbol_accd2dd2f8012067c1a2d77fd14c64546}{nivel} (int dato)
 int \hyperlink{classArbol_a3a8a414e8e3f45bf90c481649928a86d}{nivel} (string nombre)
 \begin{DoxyCompactList}\small\item\em Calcula el nivel donde se encuentra un nodo (la raíz tiene un nivel 0 y sus hijos tienen un nivel 1) \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_ac7ff5e2f436a1e83e24cbdd0b2cc827b}{antecesores} (int dato)
-\begin{DoxyCompactList}\small\item\em Obtiene los antecesores de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los antecesores de un nodo a partir de su valor. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_aa975d5d9cf5fcfc392a8200bd0078d1c}{antecesores} (string nombre)
-\begin{DoxyCompactList}\small\item\em Obtiene los antecesores de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los antecesores de un nodo a partir de su nombre. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_acae8e9dfd17ae18e250d9029172e1c9e}{descendientes} (int dato)
-\begin{DoxyCompactList}\small\item\em Obtiene los descendientes de un nodo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene los descendientes de un nodo a partir de su valor. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_a790b07f284b14bd179499eb4a991ad86}{descendientes} (string nombre)
 \begin{DoxyCompactList}\small\item\em Obtiene los descendientes de un nodo. \end{DoxyCompactList}\item 
 \hyperlink{classLista}{Lista}$<$ \hyperlink{classVertice}{Vertice} $\ast$ $>$ $\ast$ \hyperlink{classArbol_accfa606c5f5e67b6ab18c4490075cf39}{camino\+\_\+entre} (int o, int d)
@@ -504,7 +514,7 @@ Definición en la línea 982 del archivo arbol.\+h.
 
 
 
-Obtiene los antecesores de un nodo. 
+Obtiene los antecesores de un nodo a partir de su valor. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -526,7 +536,7 @@ Definición en la línea 1033 del archivo arbol.\+h.
 
 
 
-Obtiene los antecesores de un nodo. 
+Obtiene los antecesores de un nodo a partir de su nombre. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -618,7 +628,7 @@ Definición en la línea 495 del archivo arbol.\+h.
 
 
 
-Obtiene los descendientes de un nodo. 
+Obtiene los descendientes de un nodo a partir de su valor. 
 
 
 \begin{DoxyParams}{Parámetros}

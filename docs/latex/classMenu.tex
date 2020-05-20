@@ -2,53 +2,202 @@
 \label{classMenu}\index{Menu@{Menu}}
 
 
-Diagrama de colaboración para Menu\+:
-% FIG 0
+Muestra un menu de opciones automaticamente y ejecuta el codigo que se le indica mediante funciones lambda en cada opcion.  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+
+
+Diagrama de colaboración para Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMenu_a6d615b4b49c03a0cbfc2a01cfae8a64f}\label{classMenu_a6d615b4b49c03a0cbfc2a01cfae8a64f}} 
-{\bfseries Menu} (\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)
-\item 
-\mbox{\Hypertarget{classMenu_ad673482d111ee4a4d918653df02369e3}\label{classMenu_ad673482d111ee4a4d918653df02369e3}} 
-{\bfseries Menu} (\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a, std\+::string titulo)
-\item 
-\mbox{\Hypertarget{classMenu_a1e1f674058f3fd03a500859abda7dded}\label{classMenu_a1e1f674058f3fd03a500859abda7dded}} 
-void {\bfseries agregar\+\_\+opcion} (std\+::string titulo, std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$funcion)
-\item 
-\mbox{\Hypertarget{classMenu_aa964e3e58eb5c6b63ebadd7f2ec6751a}\label{classMenu_aa964e3e58eb5c6b63ebadd7f2ec6751a}} 
-void {\bfseries imprimir\+\_\+opcion} (string texto)
-\item 
-\mbox{\Hypertarget{classMenu_a67ebd3e3bcfe45c99a7c0ff13a5c3ebb}\label{classMenu_a67ebd3e3bcfe45c99a7c0ff13a5c3ebb}} 
-std\+::string {\bfseries generar\+\_\+n\+\_\+espacios} (int n)
-\item 
+\hyperlink{classMenu_a6d615b4b49c03a0cbfc2a01cfae8a64f}{Menu} (\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classMenu_ad673482d111ee4a4d918653df02369e3}{Menu} (\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a, std\+::string \hyperlink{classMenu_a16f1a749e7d6f35d9c1b4b7ae93b204f}{titulo})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_a1e1f674058f3fd03a500859abda7dded}{agregar\+\_\+opcion} (std\+::string \hyperlink{classMenu_a16f1a749e7d6f35d9c1b4b7ae93b204f}{titulo}, std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$funcion)
+\begin{DoxyCompactList}\small\item\em agrega una opcion al menu \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_aa964e3e58eb5c6b63ebadd7f2ec6751a}{imprimir\+\_\+opcion} (string texto)
+\begin{DoxyCompactList}\small\item\em Imprime una opcion/texto en el menu con formato. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMenu_a67ebd3e3bcfe45c99a7c0ff13a5c3ebb}{generar\+\_\+n\+\_\+espacios} (int n)
+\begin{DoxyCompactList}\small\item\em genera n espacios en blanco \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classMenu_ab0d231cb7a3783451bd690612ff0f77a}\label{classMenu_ab0d231cb7a3783451bd690612ff0f77a}} 
-void {\bfseries imprimir\+\_\+opcion} (\hyperlink{classOpcion}{Opcion} $\ast$op, int ind)
-\item 
-\mbox{\Hypertarget{classMenu_a909877f977f662803994c67e862b4b87}\label{classMenu_a909877f977f662803994c67e862b4b87}} 
-int {\bfseries mostrar} ()
-\item 
-\mbox{\Hypertarget{classMenu_ab5609ebe5415d2e5f06143819b832981}\label{classMenu_ab5609ebe5415d2e5f06143819b832981}} 
-bool {\bfseries accion} ()
-\item 
+void \hyperlink{classMenu_ab0d231cb7a3783451bd690612ff0f77a}{imprimir\+\_\+opcion} (\hyperlink{classOpcion}{Opcion} $\ast$op, int ind)
+\begin{DoxyCompactList}\small\item\em imprime una opcion con indice \end{DoxyCompactList}\item 
+int \hyperlink{classMenu_a909877f977f662803994c67e862b4b87}{mostrar} ()
+\begin{DoxyCompactList}\small\item\em Muestra el menu de manera elegante. \end{DoxyCompactList}\item 
+bool \hyperlink{classMenu_ab5609ebe5415d2e5f06143819b832981}{accion} ()
+\begin{DoxyCompactList}\small\item\em Ejecuta la accion actual ingresada por el usuario. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classMenu_aa6be64bbaaaa59e535507d868cc9740f}\label{classMenu_aa6be64bbaaaa59e535507d868cc9740f}} 
-void {\bfseries ejecutar} ()
-\end{DoxyCompactItemize}
+void \hyperlink{classMenu_aa6be64bbaaaa59e535507d868cc9740f}{ejecutar} ()
+\begin{DoxyCompactList}\small\item\em Ejecuta el menu mientras el usuario siga realizando operaciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classMenu_a0b2445d309a32befdc877e64f555a024}\label{classMenu_a0b2445d309a32befdc877e64f555a024}} 
-\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$ {\bfseries arbol}
-\item 
+\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$ \hyperlink{classMenu_a0b2445d309a32befdc877e64f555a024}{arbol}
+\begin{DoxyCompactList}\small\item\em puntero a arbol sobre el que se va a operar \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classMenu_a16f1a749e7d6f35d9c1b4b7ae93b204f}\label{classMenu_a16f1a749e7d6f35d9c1b4b7ae93b204f}} 
-std\+::string {\bfseries titulo}
-\end{DoxyCompactItemize}
+std\+::string \hyperlink{classMenu_a16f1a749e7d6f35d9c1b4b7ae93b204f}{titulo}
+\begin{DoxyCompactList}\small\item\em titulo del menu en el programa \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
+Muestra un menu de opciones automaticamente y ejecuta el codigo que se le indica mediante funciones lambda en cada opcion. 
+
+Definición en la línea 44 del archivo menu.\+h.
 
 
-Definición en la línea 25 del archivo menu.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classMenu_a6d615b4b49c03a0cbfc2a01cfae8a64f}\label{classMenu_a6d615b4b49c03a0cbfc2a01cfae8a64f}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & puntero a \hyperlink{classArbolAVL}{Arbol\+A\+VL} \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 58 del archivo menu.\+h.
+
+\mbox{\Hypertarget{classMenu_ad673482d111ee4a4d918653df02369e3}\label{classMenu_ad673482d111ee4a4d918653df02369e3}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$}]{a,  }\item[{std\+::string}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & puntero a arbol\+A\+VL \\
+\hline
+{\em titulo} & titulo del menu en el programa \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 65 del archivo menu.\+h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classMenu_ab5609ebe5415d2e5f06143819b832981}\label{classMenu_ab5609ebe5415d2e5f06143819b832981}} 
+\index{Menu@{Menu}!accion@{accion}}
+\index{accion@{accion}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{accion()}{accion()}}
+{\footnotesize\ttfamily bool Menu\+::accion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ejecuta la accion actual ingresada por el usuario. 
+
+\begin{DoxyReturn}{Devuelve}
+{\itshape true} si la opcion fue ejecutada {\itshape false} si no se encontro la opcion 
+\end{DoxyReturn}
+
+
+Definición en la línea 151 del archivo menu.\+h.
+
+\mbox{\Hypertarget{classMenu_a1e1f674058f3fd03a500859abda7dded}\label{classMenu_a1e1f674058f3fd03a500859abda7dded}} 
+\index{Menu@{Menu}!agregar\+\_\+opcion@{agregar\+\_\+opcion}}
+\index{agregar\+\_\+opcion@{agregar\+\_\+opcion}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{agregar\+\_\+opcion()}{agregar\_opcion()}}
+{\footnotesize\ttfamily void Menu\+::agregar\+\_\+opcion (\begin{DoxyParamCaption}\item[{std\+::string}]{titulo,  }\item[{std\+::function$<$ bool(\hyperlink{classArbolAVL}{Arbol\+A\+VL} $\ast$a)$>$ $\ast$}]{funcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+agrega una opcion al menu 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em titulo} & titulo de la opcion en el menu \\
+\hline
+{\em funcion} & funcion que se ejecuta al seleccionar esta opcion \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 73 del archivo menu.\+h.
+
+\mbox{\Hypertarget{classMenu_a67ebd3e3bcfe45c99a7c0ff13a5c3ebb}\label{classMenu_a67ebd3e3bcfe45c99a7c0ff13a5c3ebb}} 
+\index{Menu@{Menu}!generar\+\_\+n\+\_\+espacios@{generar\+\_\+n\+\_\+espacios}}
+\index{generar\+\_\+n\+\_\+espacios@{generar\+\_\+n\+\_\+espacios}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{generar\+\_\+n\+\_\+espacios()}{generar\_n\_espacios()}}
+{\footnotesize\ttfamily std\+::string Menu\+::generar\+\_\+n\+\_\+espacios (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+genera n espacios en blanco 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & numero de espacios \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+string con n espacios en blanco 
+\end{DoxyReturn}
+
+
+Definición en la línea 97 del archivo menu.\+h.
+
+\mbox{\Hypertarget{classMenu_aa964e3e58eb5c6b63ebadd7f2ec6751a}\label{classMenu_aa964e3e58eb5c6b63ebadd7f2ec6751a}} 
+\index{Menu@{Menu}!imprimir\+\_\+opcion@{imprimir\+\_\+opcion}}
+\index{imprimir\+\_\+opcion@{imprimir\+\_\+opcion}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{imprimir\+\_\+opcion()}{imprimir\_opcion()}}
+{\footnotesize\ttfamily void Menu\+::imprimir\+\_\+opcion (\begin{DoxyParamCaption}\item[{string}]{texto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime una opcion/texto en el menu con formato. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em texto} & texto a imprimir \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 85 del archivo menu.\+h.
+
+\mbox{\Hypertarget{classMenu_a909877f977f662803994c67e862b4b87}\label{classMenu_a909877f977f662803994c67e862b4b87}} 
+\index{Menu@{Menu}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{mostrar()}{mostrar()}}
+{\footnotesize\ttfamily int Menu\+::mostrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Muestra el menu de manera elegante. 
+
+\begin{DoxyReturn}{Devuelve}
+opcion elegida por el usuario 
+\end{DoxyReturn}
+
+
+Definición en la línea 123 del archivo menu.\+h.
 
 
 
