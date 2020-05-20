@@ -8,8 +8,8 @@
 
 
 /**
-  * @file cola.hpp
-  * @brief Definicion de la clase cola 
+  * \file cola.hpp
+  * @brief Definicion de la clase cola y la implementación de sus métodos, haciendo uso de templates
   * @version 1.0
   * @date 22/05/2020
   * @title Clase Cola 
@@ -21,7 +21,8 @@
 
 /**
   * @class cola
-  * @brief Clase para formar el TDA cola
+  * @brief Clase para formar el TDA cola, haciendo uso de templates
+  * para evitar limitaciones con los tipos de datos.
   */
 template<class TIPO>
 class cola: public Lista<TIPO>{//definicion de la clase cola
@@ -33,7 +34,7 @@ class cola: public Lista<TIPO>{//definicion de la clase cola
       //METODOS DE LA CLASE//
 /**
   * @brief Funcion para determinar si la cola esta vacia
-  * @return Valor boleano que nos indica si esta vacia la cola
+  * @return Valor booleano que nos indica si esta vacia la cola
   */
       bool vacio();
 /**

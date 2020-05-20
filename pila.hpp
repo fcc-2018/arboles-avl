@@ -3,7 +3,7 @@
 
 /*!
 *\file pila.hpp
-*\brief Definición de la clase nodo, pila, y la implementación de sus métodos, haciendo uso de templates
+*\brief Definición de la clase pila y la implementación de sus métodos, haciendo uso de templates
 */
 
 template<class TIPO> class pila;
@@ -22,6 +22,7 @@ class pila : public Lista<TIPO>{
       pila() : Lista<TIPO>(){}
       /*!
       *@brief Nos indica si la pila está vacía
+      *@return Valor booleano que nos indica si esta vacia la pila
       */
 	   bool vacio();
       /*!

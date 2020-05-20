@@ -2,6 +2,11 @@
 #include "arbolAVL.hpp"
 #include "menu.hpp"
 
+/*!
+ * \file main.cpp
+ * \brief Aplicación de los métodos de las clases Menu y ArbolAVL para la
+ * demostración de su funcionamiento
+ * */
 
 int main(){
     ArbolAVL * a1 = new ArbolAVL;
