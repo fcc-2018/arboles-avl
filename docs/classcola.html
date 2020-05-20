@@ -68,76 +68,155 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Clase que contiene las operaciones de una cola, haciendo uso de templates.  
+<p>Clase para formar el TDA cola.  
  <a href="classcola.html#details">Más...</a></p>
 
-<p><code>#include &lt;<a class="el" href="cola_8h_source.html">cola.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cola_8hpp_source.html">cola.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de herencias de cola&lt; TIPO &gt;</div>
+<div class="dyncontent">
+<div class="center"><img src="classcola__inherit__graph.png" border="0" usemap="#cola_3_01TIPO_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="cola_3_01TIPO_01_4_inherit__map" id="cola_3_01TIPO_01_4_inherit__map">
+<area shape="rect" id="node2" href="classLista.html" title="Lista\&lt; TIPO \&gt;" alt="" coords="5,5,111,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
+<div class="dynheader">
+Diagrama de colaboración para cola&lt; TIPO &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcola__coll__graph.png" border="0" usemap="#cola_3_01TIPO_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="cola_3_01TIPO_01_4_coll__map" id="cola_3_01TIPO_01_4_coll__map">
+<area shape="rect" id="node2" href="classLista.html" title="Lista\&lt; TIPO \&gt;" alt="" coords="5,5,111,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:acf21bbf0b0795607993d5ffe736398ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#acf21bbf0b0795607993d5ffe736398ae">cola</a> ()</td></tr>
-<tr class="memdesc:acf21bbf0b0795607993d5ffe736398ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de cola.  <a href="#acf21bbf0b0795607993d5ffe736398ae">Más...</a><br /></td></tr>
+<tr class="memitem:acf21bbf0b0795607993d5ffe736398ae"><td class="memItemLeft" align="right" valign="top"><a id="acf21bbf0b0795607993d5ffe736398ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#acf21bbf0b0795607993d5ffe736398ae">cola</a> ()</td></tr>
+<tr class="memdesc:acf21bbf0b0795607993d5ffe736398ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase cola por defecto. <br /></td></tr>
 <tr class="separator:acf21bbf0b0795607993d5ffe736398ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af9a71dd856a907f446a1e396d83e5b"><td class="memItemLeft" align="right" valign="top"><a id="a2af9a71dd856a907f446a1e396d83e5b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">vacio</a> ()</td></tr>
-<tr class="memdesc:a2af9a71dd856a907f446a1e396d83e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nos indica si la cola está vacía. <br /></td></tr>
+<tr class="memitem:a2af9a71dd856a907f446a1e396d83e5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">vacio</a> ()</td></tr>
+<tr class="memdesc:a2af9a71dd856a907f446a1e396d83e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para determinar si la cola esta vacia.  <a href="#a2af9a71dd856a907f446a1e396d83e5b">Más...</a><br /></td></tr>
 <tr class="separator:a2af9a71dd856a907f446a1e396d83e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fe29cbff3478979d38a0f8a2d7a4b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#a4fe29cbff3478979d38a0f8a2d7a4b51">encolar</a> (TIPO v)</td></tr>
-<tr class="memdesc:a4fe29cbff3478979d38a0f8a2d7a4b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza la operación PUSH, agregando un nuevo elemento a la cola.  <a href="#a4fe29cbff3478979d38a0f8a2d7a4b51">Más...</a><br /></td></tr>
+<tr class="memdesc:a4fe29cbff3478979d38a0f8a2d7a4b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para encolar un elemento.  <a href="#a4fe29cbff3478979d38a0f8a2d7a4b51">Más...</a><br /></td></tr>
 <tr class="separator:a4fe29cbff3478979d38a0f8a2d7a4b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe13fa4237aa2fde61067900ff8f884"><td class="memItemLeft" align="right" valign="top"><a id="afbe13fa4237aa2fde61067900ff8f884"></a>
-TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">desencolar</a> ()</td></tr>
-<tr class="memdesc:afbe13fa4237aa2fde61067900ff8f884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza la operación POP, eliminando un elemento a la cola. <br /></td></tr>
+<tr class="memitem:afbe13fa4237aa2fde61067900ff8f884"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">desencolar</a> ()</td></tr>
+<tr class="memdesc:afbe13fa4237aa2fde61067900ff8f884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para desencolar un elemento.  <a href="#afbe13fa4237aa2fde61067900ff8f884">Más...</a><br /></td></tr>
 <tr class="separator:afbe13fa4237aa2fde61067900ff8f884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classLista"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLista')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="classLista.html">Lista&lt; TIPO &gt;</a></td></tr>
+<tr class="memitem:ada89d0bebdb2db83b7c19c940ab70e62 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#ada89d0bebdb2db83b7c19c940ab70e62">get</a> (int pos)</td></tr>
+<tr class="memdesc:ada89d0bebdb2db83b7c19c940ab70e62 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para retornar el dato de un nodo dado su posicion.  <a href="classLista.html#ada89d0bebdb2db83b7c19c940ab70e62">Más...</a><br /></td></tr>
+<tr class="separator:ada89d0bebdb2db83b7c19c940ab70e62 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6c7156fcd7ca69d5b12bcbb3312590 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a4b6c7156fcd7ca69d5b12bcbb3312590">insertar_inicio</a> (TIPO el)</td></tr>
+<tr class="memdesc:a4b6c7156fcd7ca69d5b12bcbb3312590 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para insertar al inicio de la lista.  <a href="classLista.html#a4b6c7156fcd7ca69d5b12bcbb3312590">Más...</a><br /></td></tr>
+<tr class="separator:a4b6c7156fcd7ca69d5b12bcbb3312590 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff75a84824729ce5af9d9f5d184020a inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">insertar_final</a> (TIPO destino)</td></tr>
+<tr class="memdesc:a4ff75a84824729ce5af9d9f5d184020a inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para insertar al final de la lista.  <a href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">Más...</a><br /></td></tr>
+<tr class="separator:a4ff75a84824729ce5af9d9f5d184020a inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa945bc96acdaeaefb3b9180f05539142 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aa945bc96acdaeaefb3b9180f05539142">suprimir_inicio</a> ()</td></tr>
+<tr class="memdesc:aa945bc96acdaeaefb3b9180f05539142 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para suprimir al inicio de la lista.  <a href="classLista.html#aa945bc96acdaeaefb3b9180f05539142">Más...</a><br /></td></tr>
+<tr class="separator:aa945bc96acdaeaefb3b9180f05539142 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23f3bd8ec8de6a913cc9cd876ef82b6 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aa23f3bd8ec8de6a913cc9cd876ef82b6">suprimir_final</a> ()</td></tr>
+<tr class="memdesc:aa23f3bd8ec8de6a913cc9cd876ef82b6 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para suprimir al final de la lista.  <a href="classLista.html#aa23f3bd8ec8de6a913cc9cd876ef82b6">Más...</a><br /></td></tr>
+<tr class="separator:aa23f3bd8ec8de6a913cc9cd876ef82b6 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846073e6ce175fa96c6322a4870ddc6d inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a846073e6ce175fa96c6322a4870ddc6d">suprimir</a> (TIPO)</td></tr>
+<tr class="memdesc:a846073e6ce175fa96c6322a4870ddc6d inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para suprimir un elemento en cualquier posicion de la lista.  <a href="classLista.html#a846073e6ce175fa96c6322a4870ddc6d">Más...</a><br /></td></tr>
+<tr class="separator:a846073e6ce175fa96c6322a4870ddc6d inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92650be08dd29c9800da07c65ad6ff3a inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">vacia</a> ()</td></tr>
+<tr class="memdesc:a92650be08dd29c9800da07c65ad6ff3a inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para saber si esta vacia la lista.  <a href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">Más...</a><br /></td></tr>
+<tr class="separator:a92650be08dd29c9800da07c65ad6ff3a inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfb23a36d8476b8731d955bd52b81d5 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a7bfb23a36d8476b8731d955bd52b81d5">primero</a> ()</td></tr>
+<tr class="memdesc:a7bfb23a36d8476b8731d955bd52b81d5 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para obtener el primer elemento de la lista.  <a href="classLista.html#a7bfb23a36d8476b8731d955bd52b81d5">Más...</a><br /></td></tr>
+<tr class="separator:a7bfb23a36d8476b8731d955bd52b81d5 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab425ba6e39a83df96a56ef6d58bce951 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#ab425ba6e39a83df96a56ef6d58bce951">ultimo</a> ()</td></tr>
+<tr class="memdesc:ab425ba6e39a83df96a56ef6d58bce951 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para obtener el ultimo elemento de la lista.  <a href="classLista.html#ab425ba6e39a83df96a56ef6d58bce951">Más...</a><br /></td></tr>
+<tr class="separator:ab425ba6e39a83df96a56ef6d58bce951 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984961f2492bbd50fc373c2726a26e82 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a984961f2492bbd50fc373c2726a26e82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a984961f2492bbd50fc373c2726a26e82">eliminar_duplicados</a> ()</td></tr>
+<tr class="memdesc:a984961f2492bbd50fc373c2726a26e82 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para eliminar los elementos duplicados en la lista. <br /></td></tr>
+<tr class="separator:a984961f2492bbd50fc373c2726a26e82 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cad7f9b4ae2e76a3083e8e25246588 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a18cad7f9b4ae2e76a3083e8e25246588">buscar_elemento</a> (std::string nombre)</td></tr>
+<tr class="memdesc:a18cad7f9b4ae2e76a3083e8e25246588 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para buscar un elemento de la lista.  <a href="classLista.html#a18cad7f9b4ae2e76a3083e8e25246588">Más...</a><br /></td></tr>
+<tr class="separator:a18cad7f9b4ae2e76a3083e8e25246588 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b4a38c8aee5835dcbb3185972c1b11 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#ac1b4a38c8aee5835dcbb3185972c1b11">obtener_nombre</a> (int indice)</td></tr>
+<tr class="memdesc:ac1b4a38c8aee5835dcbb3185972c1b11 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para obtener el nombre de un elemento de la lista.  <a href="classLista.html#ac1b4a38c8aee5835dcbb3185972c1b11">Más...</a><br /></td></tr>
+<tr class="separator:ac1b4a38c8aee5835dcbb3185972c1b11 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae71c3b813589c892ab1f4ff8edd753 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">TIPO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a8ae71c3b813589c892ab1f4ff8edd753">obtener</a> (int indice)</td></tr>
+<tr class="memdesc:a8ae71c3b813589c892ab1f4ff8edd753 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para obtener el elemento de una lista.  <a href="classLista.html#a8ae71c3b813589c892ab1f4ff8edd753">Más...</a><br /></td></tr>
+<tr class="separator:a8ae71c3b813589c892ab1f4ff8edd753 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f1a416d1bc0eb65b708f99cff25677 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a63f1a416d1bc0eb65b708f99cff25677">existe</a> (TIPO dato)</td></tr>
+<tr class="memdesc:a63f1a416d1bc0eb65b708f99cff25677 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para saber si existe un elemento en la lista.  <a href="classLista.html#a63f1a416d1bc0eb65b708f99cff25677">Más...</a><br /></td></tr>
+<tr class="separator:a63f1a416d1bc0eb65b708f99cff25677 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbee380012da3c38609361439625d96 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="aafbee380012da3c38609361439625d96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aafbee380012da3c38609361439625d96">mostrar_lista</a> ()</td></tr>
+<tr class="memdesc:aafbee380012da3c38609361439625d96 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para mostrar la lista. <br /></td></tr>
+<tr class="separator:aafbee380012da3c38609361439625d96 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd45f814bcad14746f775ba49a18dbe inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="aadd45f814bcad14746f775ba49a18dbe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aadd45f814bcad14746f775ba49a18dbe">ordenar_lista</a> ()</td></tr>
+<tr class="memdesc:aadd45f814bcad14746f775ba49a18dbe inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion para ordenar la lista. <br /></td></tr>
+<tr class="separator:aadd45f814bcad14746f775ba49a18dbe inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cb279c5cce74427e91af418772a7fb inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a44cb279c5cce74427e91af418772a7fb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a44cb279c5cce74427e91af418772a7fb">Lista</a> ()</td></tr>
+<tr class="memdesc:a44cb279c5cce74427e91af418772a7fb inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase <a class="el" href="classLista.html" title="Clase TDA Lista con diversas operaciones. ">Lista</a>. <br /></td></tr>
+<tr class="separator:a44cb279c5cce74427e91af418772a7fb inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd56566af6d1c85b7c9fa01f64e82e5 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="aecd56566af6d1c85b7c9fa01f64e82e5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aecd56566af6d1c85b7c9fa01f64e82e5">tamanio</a> ()</td></tr>
+<tr class="memdesc:aecd56566af6d1c85b7c9fa01f64e82e5 inherit pub_methods_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Tama�o de la lista <br /></td></tr>
+<tr class="separator:aecd56566af6d1c85b7c9fa01f64e82e5 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12152cfb5d404d55ccc4d1a57194cf30 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a12152cfb5d404d55ccc4d1a57194cf30"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a12152cfb5d404d55ccc4d1a57194cf30 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1097e030d597d00a5c68768df7d09d inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a0f1097e030d597d00a5c68768df7d09d"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a0f1097e030d597d00a5c68768df7d09d inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93e2645445485ec58e7d08197fbd695 inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="ac93e2645445485ec58e7d08197fbd695"></a>
+<a class="el" href="classLista.html">Lista</a>&lt; TIPO &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classLista.html">Lista</a>&lt; TIPO &gt; &amp;aa)</td></tr>
+<tr class="separator:ac93e2645445485ec58e7d08197fbd695 inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c88e2b3109fa5c001237f1ff52bafb inherit pub_methods_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a24c88e2b3109fa5c001237f1ff52bafb"></a>
+TIPO *&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i)</td></tr>
+<tr class="separator:a24c88e2b3109fa5c001237f1ff52bafb inherit pub_methods_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pub_types_classLista"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classLista')"><img src="closed.png" alt="-"/>&#160;Tipos públicos heredados desde <a class="el" href="classLista.html">Lista&lt; TIPO &gt;</a></td></tr>
+<tr class="memitem:a0059fae2a7636eef85cdced28ab42386 inherit pub_types_classLista"><td class="memItemLeft" align="right" valign="top"><a id="a0059fae2a7636eef85cdced28ab42386"></a>
+typedef Nodo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a0059fae2a7636eef85cdced28ab42386">pNodo</a></td></tr>
+<tr class="memdesc:a0059fae2a7636eef85cdced28ab42386 inherit pub_types_classLista"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Puntero a nodo <br /></td></tr>
+<tr class="separator:a0059fae2a7636eef85cdced28ab42386 inherit pub_types_classLista"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><h3>template&lt;class TIPO&gt;<br />
 class cola&lt; TIPO &gt;</h3>
 
-<p>Clase que contiene las operaciones de una cola, haciendo uso de templates. </p>
-<p>AL USAR NUESTRA CLASE COMO UNA PLATILLA NOS PERMITE ANTEPONERNOS A UN FORMATO ESPECIFICO DE DATO, SU UTLIDAD SE VE EN LA CLASE <a class="el" href="classGrafo.html" title="Clase que contiene todos los procesos que se pueden realizar en el Grafo. ">Grafo</a> </p>
+<p>Clase para formar el TDA cola. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="cola_8h_source.html#l00008">8</a> del archivo <a class="el" href="cola_8h_source.html">cola.h</a>.</p>
-</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
-<a id="acf21bbf0b0795607993d5ffe736398ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf21bbf0b0795607993d5ffe736398ae">&#9670;&nbsp;</a></span>cola()</h2>
+<p class="definition">Definición en la línea <a class="el" href="cola_8hpp_source.html#l00027">27</a> del archivo <a class="el" href="cola_8hpp_source.html">cola.hpp</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="afbe13fa4237aa2fde61067900ff8f884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe13fa4237aa2fde61067900ff8f884">&#9670;&nbsp;</a></span>desencolar()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TIPO&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class TIPO &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcola.html">cola</a>&lt; TIPO &gt;::<a class="el" href="classcola.html">cola</a> </td>
+          <td class="memname">TIPO <a class="el" href="classcola.html">cola</a>&lt; TIPO &gt;::desencolar </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Constructor de cola. </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">primero</td><td>Primer elemento en la cola (Por defecto: NULL) </td></tr>
-    <tr><td class="paramname">ultimo</td><td>Último elemento en la cola (Por defecto: NULL) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Funcion para desencolar un elemento. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Elemento desencolado </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="cola_8h_source.html#l00055">55</a> del archivo <a class="el" href="cola_8h_source.html">cola.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="cola_8hpp_source.html#l00064">64</a> del archivo <a class="el" href="cola_8hpp_source.html">cola.hpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a id="a4fe29cbff3478979d38a0f8a2d7a4b51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fe29cbff3478979d38a0f8a2d7a4b51">&#9670;&nbsp;</a></span>encolar()</h2>
 
@@ -156,20 +235,44 @@ template&lt;class TIPO &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Realiza la operación PUSH, agregando un nuevo elemento a la cola. </p>
+<p>Funcion para encolar un elemento. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>Elemento que se agregará a la cola </td></tr>
+    <tr><td class="paramname">Elemento</td><td>a encolar </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="cola_8h_source.html#l00082">82</a> del archivo <a class="el" href="cola_8h_source.html">cola.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="cola_8hpp_source.html#l00059">59</a> del archivo <a class="el" href="cola_8hpp_source.html">cola.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2af9a71dd856a907f446a1e396d83e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af9a71dd856a907f446a1e396d83e5b">&#9670;&nbsp;</a></span>vacio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TIPO &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcola.html">cola</a>&lt; TIPO &gt;::vacio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion para determinar si la cola esta vacia. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor boleano que nos indica si esta vacia la cola </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="cola_8hpp_source.html#l00054">54</a> del archivo <a class="el" href="cola_8hpp_source.html">cola.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
-<li><a class="el" href="cola_8h_source.html">cola.h</a></li>
+<li><a class="el" href="cola_8hpp_source.html">cola.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

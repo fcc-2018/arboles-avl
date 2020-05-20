@@ -1,8 +1,8 @@
 <map id="arbolAVL.hpp" name="arbolAVL.hpp">
-<area shape="rect" id="node2" href="$arbol_8h.html" title="Definción de clase Arbol e implementación de sus métodos. " alt="" coords="361,80,422,107"/>
-<area shape="rect" id="node14" href="$testing_8h.html" title="Cabecera destinada a pruebas de funcionamiento. " alt="" coords="551,80,623,107"/>
-<area shape="rect" id="node6" href="$grafo_8h.html" title="Definición de la clase Grafo, Vertice, Arista, Etiqueta, y la implementación de sus métodos..." alt="" coords="308,155,371,181"/>
-<area shape="rect" id="node13" href="$pila_8h_source.html" title="pila.h" alt="" coords="447,155,501,181"/>
-<area shape="rect" id="node7" href="$lista_8h_source.html" title="lista.h" alt="" coords="311,229,368,256"/>
-<area shape="rect" id="node9" href="$cola_8h_source.html" title="cola.h" alt="" coords="444,229,501,256"/>
+<area shape="rect" id="node2" href="$arbol_8hpp.html" title="Definción de clase Arbol e implementación de sus métodos. " alt="" coords="448,80,523,107"/>
+<area shape="rect" id="node14" href="$testing_8hpp.html" title="Cabecera destinada a pruebas de funcionamiento. " alt="" coords="650,304,737,331"/>
+<area shape="rect" id="node6" href="$grafo_8hpp.html" title="Definición de la clase Grafo, Vertice, Arista, Etiqueta, y la implementación de sus métodos..." alt="" coords="386,155,462,181"/>
+<area shape="rect" id="node13" href="$pila_8hpp.html" title="Definición de la clase nodo, pila, y la implementación de sus métodos, haciendo uso de templates..." alt="" coords="5,229,72,256"/>
+<area shape="rect" id="node7" href="$lista_8hpp.html" title="Definicion de la clase Lista. " alt="" coords="197,304,267,331"/>
+<area shape="rect" id="node9" href="$cola_8hpp.html" title="Definicion de la clase cola. " alt="" coords="238,229,309,256"/>
 </map>

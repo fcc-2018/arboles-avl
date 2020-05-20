@@ -1,6 +1,6 @@
 #include <iostream>
 #include "arbolAVL.hpp"
-#include "menu.h"
+#include "menu.hpp"
 
 
 int main(){

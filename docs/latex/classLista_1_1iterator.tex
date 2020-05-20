@@ -1,56 +1,305 @@
 \hypertarget{classLista_1_1iterator}{}\section{Referencia de la Clase Lista$<$ tipo $>$\+:\+:iterator}
 \label{classLista_1_1iterator}\index{Lista$<$ tipo $>$\+::iterator@{Lista$<$ tipo $>$\+::iterator}}
+
+
+Clase que ayuda a acceder a los elementos del T\+DA \hyperlink{classLista}{Lista}.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+hpp$>$}
+
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLista_1_1iterator_a1535d6055cf70a60518be63c0f62cc1d}\label{classLista_1_1iterator_a1535d6055cf70a60518be63c0f62cc1d}} 
-{\bfseries iterator} (\hyperlink{classLista}{Lista}$<$ tipo $>$ \&il)
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_ad96ff61e26fb131406d0b320b36e9516}\label{classLista_1_1iterator_ad96ff61e26fb131406d0b320b36e9516}} 
-{\bfseries iterator} (\hyperlink{classLista}{Lista}$<$ tipo $>$ \&il, bool)
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_af8c7d385ce8bc7c62b8bc806db714ae9}\label{classLista_1_1iterator_af8c7d385ce8bc7c62b8bc806db714ae9}} 
-tipo {\bfseries operator++} ()
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_ac9059ed8e1f396ec967ae97b571d11fe}\label{classLista_1_1iterator_ac9059ed8e1f396ec967ae97b571d11fe}} 
-tipo {\bfseries operator++} (int)
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_a99315852e99d13cfac11f570917ac092}\label{classLista_1_1iterator_a99315852e99d13cfac11f570917ac092}} 
-\hyperlink{classLista_1_1iterator}{iterator} \& {\bfseries operator+=} (int amount)
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_a602f51e54500d6027158a48a8495826a}\label{classLista_1_1iterator_a602f51e54500d6027158a48a8495826a}} 
-\hyperlink{classLista_1_1iterator}{iterator} \& {\bfseries operator=} (const \hyperlink{classLista_1_1iterator}{iterator} \&aa)
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_a2a48c3991820aef39d777df2c8e19664}\label{classLista_1_1iterator_a2a48c3991820aef39d777df2c8e19664}} 
-tipo \& {\bfseries operator$\ast$} ()
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_abb50011145596234ea6ac6d1bd5fe920}\label{classLista_1_1iterator_abb50011145596234ea6ac6d1bd5fe920}} 
-bool {\bfseries operator==} (const \hyperlink{classLista_1_1iterator}{iterator} \&rv) const
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_a25cd74ab23dd46dd3e9f0769c0264eb9}\label{classLista_1_1iterator_a25cd74ab23dd46dd3e9f0769c0264eb9}} 
-bool {\bfseries operator!=} (const \hyperlink{classLista_1_1iterator}{iterator} \&rv) const
-\item 
-\mbox{\Hypertarget{classLista_1_1iterator_a6e73de7c83716c9bd99bd68b89214d81}\label{classLista_1_1iterator_a6e73de7c83716c9bd99bd68b89214d81}} 
-tipo {\bfseries current} () const
-\end{DoxyCompactItemize}
+\hyperlink{classLista_1_1iterator_a1535d6055cf70a60518be63c0f62cc1d}{iterator} (\hyperlink{classLista}{Lista}$<$ tipo $>$ \&il)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase iterator para definir el inicio. \end{DoxyCompactList}\item 
+\hyperlink{classLista_1_1iterator_ad96ff61e26fb131406d0b320b36e9516}{iterator} (\hyperlink{classLista}{Lista}$<$ tipo $>$ \&il, bool)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase iterator para definir el final. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_1_1iterator_af8c7d385ce8bc7c62b8bc806db714ae9}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Funcion para aumentar el indice iterador. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_1_1iterator_ac9059ed8e1f396ec967ae97b571d11fe}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em Funcion para aumentar el indice iterador. \end{DoxyCompactList}\item 
+\hyperlink{classLista_1_1iterator}{iterator} \& \hyperlink{classLista_1_1iterator_a99315852e99d13cfac11f570917ac092}{operator+=} (int amount)
+\begin{DoxyCompactList}\small\item\em Funcion para aumentar la cantidad predeterminada de elementos. \end{DoxyCompactList}\item 
+\hyperlink{classLista_1_1iterator}{iterator} \& \hyperlink{classLista_1_1iterator_a602f51e54500d6027158a48a8495826a}{operator=} (const \hyperlink{classLista_1_1iterator}{iterator} \&aa)
+\begin{DoxyCompactList}\small\item\em Funcion para ver si estas en el final de la lista / o comparar iteradores. \end{DoxyCompactList}\item 
+tipo \& \hyperlink{classLista_1_1iterator_a2a48c3991820aef39d777df2c8e19664}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el valor del actual. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_1_1iterator_abb50011145596234ea6ac6d1bd5fe920}{operator==} (const \hyperlink{classLista_1_1iterator}{iterator} \&rv) const
+\begin{DoxyCompactList}\small\item\em Funcion para ver si estas en el final de la lista / o comparar iteradores. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_1_1iterator_a25cd74ab23dd46dd3e9f0769c0264eb9}{operator!=} (const \hyperlink{classLista_1_1iterator}{iterator} \&rv) const
+\begin{DoxyCompactList}\small\item\em Funcion para saber si el iterador es distinto de otro iterador ? \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_1_1iterator_a6e73de7c83716c9bd99bd68b89214d81}{current} () const
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el elemento actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Amigas}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLista_1_1iterator_ab86d5cacfaca06c9075ddb7427cf7ddb}\label{classLista_1_1iterator_ab86d5cacfaca06c9075ddb7427cf7ddb}} 
-std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classLista_1_1iterator}{iterator} \&it)
-\end{DoxyCompactItemize}
+std\+::ostream \& \hyperlink{classLista_1_1iterator_ab86d5cacfaca06c9075ddb7427cf7ddb}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classLista_1_1iterator}{iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Funcion para imprimir en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones relacionadas}
+(Observar que estas no son funciones miembro.) \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLista_1_1iterator_a67171474c4da6cc8efe0c7fafefd2b2d}\label{classLista_1_1iterator_a67171474c4da6cc8efe0c7fafefd2b2d}} 
+class \hyperlink{classLista_1_1iterator_a67171474c4da6cc8efe0c7fafefd2b2d}{iterator}
+\begin{DoxyCompactList}\small\item\em iterador adicional. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
 \subsubsection*{template$<$typename tipo$>$\newline
 class Lista$<$ tipo $>$\+::iterator}
 
+Clase que ayuda a acceder a los elementos del T\+DA \hyperlink{classLista}{Lista}. 
+
+Definición en la línea 189 del archivo lista.\+hpp.
 
 
-Definición en la línea 60 del archivo lista.\+h.
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classLista_1_1iterator_a1535d6055cf70a60518be63c0f62cc1d}\label{classLista_1_1iterator_a1535d6055cf70a60518be63c0f62cc1d}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+\hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{\hyperlink{classLista}{Lista}$<$ tipo $>$ \&}]{il }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase iterator para definir el inicio. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Referencia} & a lista \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 201 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_ad96ff61e26fb131406d0b320b36e9516}\label{classLista_1_1iterator_ad96ff61e26fb131406d0b320b36e9516}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+\hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{\hyperlink{classLista}{Lista}$<$ tipo $>$ \&}]{il,  }\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase iterator para definir el final. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Referencia} & a lista \\
+\hline
+{\em Valor} & boleano \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 207 del archivo lista.\+hpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classLista_1_1iterator_a6e73de7c83716c9bd99bd68b89214d81}\label{classLista_1_1iterator_a6e73de7c83716c9bd99bd68b89214d81}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!current@{current}}
+\index{current@{current}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para obtener el elemento actual. 
+
+\begin{DoxyReturn}{Devuelve}
+valor del nodo actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 292 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_a25cd74ab23dd46dd3e9f0769c0264eb9}\label{classLista_1_1iterator_a25cd74ab23dd46dd3e9f0769c0264eb9}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classLista_1_1iterator}{iterator} \&}]{rv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para saber si el iterador es distinto de otro iterador ? 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Referencia} & a iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos indica si el iterador es distinto de otro iterador 
+\end{DoxyReturn}
+
+
+Definición en la línea 285 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_a2a48c3991820aef39d777df2c8e19664}\label{classLista_1_1iterator_a2a48c3991820aef39d777df2c8e19664}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+tipo\& \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para obtener el valor del actual. 
+
+\begin{DoxyReturn}{Devuelve}
+Valor del nodo actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 267 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_af8c7d385ce8bc7c62b8bc806db714ae9}\label{classLista_1_1iterator_af8c7d385ce8bc7c62b8bc806db714ae9}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para aumentar el indice iterador. 
+
+\begin{DoxyReturn}{Devuelve}
+Dato del nodo actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 213 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_ac9059ed8e1f396ec967ae97b571d11fe}\label{classLista_1_1iterator_ac9059ed8e1f396ec967ae97b571d11fe}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para aumentar el indice iterador. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Dato del nodo actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 226 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_a99315852e99d13cfac11f570917ac092}\label{classLista_1_1iterator_a99315852e99d13cfac11f570917ac092}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+\hyperlink{classLista_1_1iterator}{iterator}\& \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator+= (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para aumentar la cantidad predeterminada de elementos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Cantidad} & de elementos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia de iterator 
+\end{DoxyReturn}
+
+
+Definición en la línea 240 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_a602f51e54500d6027158a48a8495826a}\label{classLista_1_1iterator_a602f51e54500d6027158a48a8495826a}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+\hyperlink{classLista_1_1iterator}{iterator}\& \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classLista_1_1iterator}{iterator} \&}]{aa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para ver si estas en el final de la lista / o comparar iteradores. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Referenca} & de iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia de iterator 
+\end{DoxyReturn}
+
+
+Definición en la línea 255 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_1_1iterator_abb50011145596234ea6ac6d1bd5fe920}\label{classLista_1_1iterator_abb50011145596234ea6ac6d1bd5fe920}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classLista_1_1iterator}{iterator} \&}]{rv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funcion para ver si estas en el final de la lista / o comparar iteradores. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Referencia} & a iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos indica si estamos al final de la lista o son iguales los iteradores 
+\end{DoxyReturn}
+
+
+Definición en la línea 277 del archivo lista.\+hpp.
+
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classLista_1_1iterator_ab86d5cacfaca06c9075ddb7427cf7ddb}\label{classLista_1_1iterator_ab86d5cacfaca06c9075ddb7427cf7ddb}} 
+\index{Lista\+::iterator@{Lista\+::iterator}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Lista\+::iterator@{Lista\+::iterator}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classLista_1_1iterator}{iterator} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Funcion para imprimir en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & ostream\& \\
+\hline
+{\em Referencia} & constante de un iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Operator ostream\& 
+\end{DoxyReturn}
+
+
+Definición en la línea 300 del archivo lista.\+hpp.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-lista.\+h\end{DoxyCompactItemize}
+\hyperlink{lista_8hpp}{lista.\+hpp}\end{DoxyCompactItemize}

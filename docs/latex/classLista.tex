@@ -1,72 +1,71 @@
 \hypertarget{classLista}{}\section{Referencia de la plantilla de la Clase Lista$<$ tipo $>$}
 \label{classLista}\index{Lista$<$ tipo $>$@{Lista$<$ tipo $>$}}
+
+
+Clase T\+DA \hyperlink{classLista}{Lista} con diversas operaciones.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+hpp$>$}
+
 \subsection*{Clases}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classLista_1_1iterator}{iterator}
-\item 
+\begin{DoxyCompactList}\small\item\em Clase que ayuda a acceder a los elementos del T\+DA \hyperlink{classLista}{Lista}. \end{DoxyCompactList}\item 
 class \hyperlink{classLista_1_1Nodo}{Nodo}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Clase que funciona como unidad basica en el T\+DA \hyperlink{classLista}{Lista}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Tipos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classLista_a0059fae2a7636eef85cdced28ab42386}\label{classLista_a0059fae2a7636eef85cdced28ab42386}} 
-typedef \hyperlink{classLista_1_1Nodo}{Nodo} $\ast$ {\bfseries p\+Nodo}
-\end{DoxyCompactItemize}
+typedef \hyperlink{classLista_1_1Nodo}{Nodo} $\ast$ \hyperlink{classLista_a0059fae2a7636eef85cdced28ab42386}{p\+Nodo}
+\begin{DoxyCompactList}\small\item\em $<$ Puntero a nodo \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLista_ada89d0bebdb2db83b7c19c940ab70e62}\label{classLista_ada89d0bebdb2db83b7c19c940ab70e62}} 
-tipo $\ast$ {\bfseries get} (int pos)
-\item 
-\mbox{\Hypertarget{classLista_a4b6c7156fcd7ca69d5b12bcbb3312590}\label{classLista_a4b6c7156fcd7ca69d5b12bcbb3312590}} 
-bool {\bfseries insertar\+\_\+inicio} (tipo el)
-\item 
-\mbox{\Hypertarget{classLista_a4ff75a84824729ce5af9d9f5d184020a}\label{classLista_a4ff75a84824729ce5af9d9f5d184020a}} 
-bool {\bfseries insertar\+\_\+final} (tipo destino)
-\item 
-\mbox{\Hypertarget{classLista_aa945bc96acdaeaefb3b9180f05539142}\label{classLista_aa945bc96acdaeaefb3b9180f05539142}} 
-tipo {\bfseries suprimir\+\_\+inicio} ()
-\item 
-\mbox{\Hypertarget{classLista_aa23f3bd8ec8de6a913cc9cd876ef82b6}\label{classLista_aa23f3bd8ec8de6a913cc9cd876ef82b6}} 
-tipo {\bfseries suprimir\+\_\+final} ()
-\item 
-\mbox{\Hypertarget{classLista_a846073e6ce175fa96c6322a4870ddc6d}\label{classLista_a846073e6ce175fa96c6322a4870ddc6d}} 
-bool {\bfseries suprimir} (tipo)
-\item 
-\mbox{\Hypertarget{classLista_a92650be08dd29c9800da07c65ad6ff3a}\label{classLista_a92650be08dd29c9800da07c65ad6ff3a}} 
-bool {\bfseries vacia} ()
-\item 
-\mbox{\Hypertarget{classLista_a7bfb23a36d8476b8731d955bd52b81d5}\label{classLista_a7bfb23a36d8476b8731d955bd52b81d5}} 
-tipo {\bfseries primero} ()
-\item 
-\mbox{\Hypertarget{classLista_ab425ba6e39a83df96a56ef6d58bce951}\label{classLista_ab425ba6e39a83df96a56ef6d58bce951}} 
-tipo {\bfseries ultimo} ()
-\item 
+tipo $\ast$ \hyperlink{classLista_ada89d0bebdb2db83b7c19c940ab70e62}{get} (int pos)
+\begin{DoxyCompactList}\small\item\em Funcion para retornar el dato de un nodo dado su posicion. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_a4b6c7156fcd7ca69d5b12bcbb3312590}{insertar\+\_\+inicio} (tipo el)
+\begin{DoxyCompactList}\small\item\em Funcion para insertar al inicio de la lista. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_a4ff75a84824729ce5af9d9f5d184020a}{insertar\+\_\+final} (tipo destino)
+\begin{DoxyCompactList}\small\item\em Funcion para insertar al final de la lista. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_aa945bc96acdaeaefb3b9180f05539142}{suprimir\+\_\+inicio} ()
+\begin{DoxyCompactList}\small\item\em Funcion para suprimir al inicio de la lista. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_aa23f3bd8ec8de6a913cc9cd876ef82b6}{suprimir\+\_\+final} ()
+\begin{DoxyCompactList}\small\item\em Funcion para suprimir al final de la lista. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_a846073e6ce175fa96c6322a4870ddc6d}{suprimir} (tipo)
+\begin{DoxyCompactList}\small\item\em Funcion para suprimir un elemento en cualquier posicion de la lista. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_a92650be08dd29c9800da07c65ad6ff3a}{vacia} ()
+\begin{DoxyCompactList}\small\item\em Funcion para saber si esta vacia la lista. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_a7bfb23a36d8476b8731d955bd52b81d5}{primero} ()
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el primer elemento de la lista. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_ab425ba6e39a83df96a56ef6d58bce951}{ultimo} ()
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el ultimo elemento de la lista. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLista_a984961f2492bbd50fc373c2726a26e82}\label{classLista_a984961f2492bbd50fc373c2726a26e82}} 
-void {\bfseries eliminar\+\_\+duplicados} ()
-\item 
-\mbox{\Hypertarget{classLista_a18cad7f9b4ae2e76a3083e8e25246588}\label{classLista_a18cad7f9b4ae2e76a3083e8e25246588}} 
-int {\bfseries buscar\+\_\+elemento} (std\+::string nombre)
-\item 
-\mbox{\Hypertarget{classLista_ac1b4a38c8aee5835dcbb3185972c1b11}\label{classLista_ac1b4a38c8aee5835dcbb3185972c1b11}} 
-std\+::string {\bfseries obtener\+\_\+nombre} (int indice)
-\item 
-\mbox{\Hypertarget{classLista_a8ae71c3b813589c892ab1f4ff8edd753}\label{classLista_a8ae71c3b813589c892ab1f4ff8edd753}} 
-tipo {\bfseries obtener} (int indice)
-\item 
-\mbox{\Hypertarget{classLista_a63f1a416d1bc0eb65b708f99cff25677}\label{classLista_a63f1a416d1bc0eb65b708f99cff25677}} 
-bool {\bfseries existe} (tipo dato)
-\item 
+void \hyperlink{classLista_a984961f2492bbd50fc373c2726a26e82}{eliminar\+\_\+duplicados} ()
+\begin{DoxyCompactList}\small\item\em Funcion para eliminar los elementos duplicados en la lista. \end{DoxyCompactList}\item 
+int \hyperlink{classLista_a18cad7f9b4ae2e76a3083e8e25246588}{buscar\+\_\+elemento} (std\+::string nombre)
+\begin{DoxyCompactList}\small\item\em Funcion para buscar un elemento de la lista. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classLista_ac1b4a38c8aee5835dcbb3185972c1b11}{obtener\+\_\+nombre} (int indice)
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el nombre de un elemento de la lista. \end{DoxyCompactList}\item 
+tipo \hyperlink{classLista_a8ae71c3b813589c892ab1f4ff8edd753}{obtener} (int indice)
+\begin{DoxyCompactList}\small\item\em Funcion para obtener el elemento de una lista. \end{DoxyCompactList}\item 
+bool \hyperlink{classLista_a63f1a416d1bc0eb65b708f99cff25677}{existe} (tipo dato)
+\begin{DoxyCompactList}\small\item\em Funcion para saber si existe un elemento en la lista. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLista_aafbee380012da3c38609361439625d96}\label{classLista_aafbee380012da3c38609361439625d96}} 
-void {\bfseries mostrar\+\_\+lista} ()
-\item 
+void \hyperlink{classLista_aafbee380012da3c38609361439625d96}{mostrar\+\_\+lista} ()
+\begin{DoxyCompactList}\small\item\em Funcion para mostrar la lista. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLista_aadd45f814bcad14746f775ba49a18dbe}\label{classLista_aadd45f814bcad14746f775ba49a18dbe}} 
-void {\bfseries ordenar\+\_\+lista} ()
-\item 
+void \hyperlink{classLista_aadd45f814bcad14746f775ba49a18dbe}{ordenar\+\_\+lista} ()
+\begin{DoxyCompactList}\small\item\em Funcion para ordenar la lista. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLista_a44cb279c5cce74427e91af418772a7fb}\label{classLista_a44cb279c5cce74427e91af418772a7fb}} 
+\hyperlink{classLista_a44cb279c5cce74427e91af418772a7fb}{Lista} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \hyperlink{classLista}{Lista}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLista_aecd56566af6d1c85b7c9fa01f64e82e5}\label{classLista_aecd56566af6d1c85b7c9fa01f64e82e5}} 
-int {\bfseries tamanio} ()
-\item 
+int \hyperlink{classLista_aecd56566af6d1c85b7c9fa01f64e82e5}{tamanio} ()
+\begin{DoxyCompactList}\small\item\em $<$ Tama�o de la lista \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLista_a12152cfb5d404d55ccc4d1a57194cf30}\label{classLista_a12152cfb5d404d55ccc4d1a57194cf30}} 
 \hyperlink{classLista_1_1iterator}{iterator} {\bfseries begin} ()
 \item 
@@ -79,24 +78,295 @@ int {\bfseries tamanio} ()
 \mbox{\Hypertarget{classLista_a24c88e2b3109fa5c001237f1ff52bafb}\label{classLista_a24c88e2b3109fa5c001237f1ff52bafb}} 
 tipo $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i)
 \end{DoxyCompactItemize}
-\subsection*{Amigas}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classLista_a67171474c4da6cc8efe0c7fafefd2b2d}\label{classLista_a67171474c4da6cc8efe0c7fafefd2b2d}} 
-class {\bfseries iterator}
-\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
 \subsubsection*{template$<$typename tipo$>$\newline
 class Lista$<$ tipo $>$}
 
+Clase T\+DA \hyperlink{classLista}{Lista} con diversas operaciones. 
+
+Definición en la línea 50 del archivo lista.\+hpp.
 
 
-Definición en la línea 25 del archivo lista.\+h.
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classLista_a18cad7f9b4ae2e76a3083e8e25246588}\label{classLista_a18cad7f9b4ae2e76a3083e8e25246588}} 
+\index{Lista@{Lista}!buscar\+\_\+elemento@{buscar\+\_\+elemento}}
+\index{buscar\+\_\+elemento@{buscar\+\_\+elemento}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{buscar\+\_\+elemento()}{buscar\_elemento()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+int \hyperlink{classLista}{Lista}$<$ tipo $>$\+::buscar\+\_\+elemento (\begin{DoxyParamCaption}\item[{std\+::string}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Funcion para buscar un elemento de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Dato} & del elemento a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Posicion que ocupa dentro la lista 
+\end{DoxyReturn}
+
+
+Definición en la línea 495 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a63f1a416d1bc0eb65b708f99cff25677}\label{classLista_a63f1a416d1bc0eb65b708f99cff25677}} 
+\index{Lista@{Lista}!existe@{existe}}
+\index{existe@{existe}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{existe()}{existe()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::existe (\begin{DoxyParamCaption}\item[{tipo}]{dato }\end{DoxyParamCaption})}
+
+
+
+Funcion para saber si existe un elemento en la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Dato} & de elemento a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos dice si existe o no ese elemento 
+\end{DoxyReturn}
+
+
+Definición en la línea 541 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_ada89d0bebdb2db83b7c19c940ab70e62}\label{classLista_ada89d0bebdb2db83b7c19c940ab70e62}} 
+\index{Lista@{Lista}!get@{get}}
+\index{get@{get}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo $\ast$ \hyperlink{classLista}{Lista}$<$ tipo $>$\+::get (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Funcion para retornar el dato de un nodo dado su posicion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em La} & posicion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El dato de ese nodo 
+\end{DoxyReturn}
+
+
+Definición en la línea 341 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a4ff75a84824729ce5af9d9f5d184020a}\label{classLista_a4ff75a84824729ce5af9d9f5d184020a}} 
+\index{Lista@{Lista}!insertar\+\_\+final@{insertar\+\_\+final}}
+\index{insertar\+\_\+final@{insertar\+\_\+final}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{insertar\+\_\+final()}{insertar\_final()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::insertar\+\_\+final (\begin{DoxyParamCaption}\item[{tipo}]{destino }\end{DoxyParamCaption})}
+
+
+
+Funcion para insertar al final de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em T\+DA} & o elemento a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos dice si fue exitoso o no el procedimiento 
+\end{DoxyReturn}
+
+
+Definición en la línea 375 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a4b6c7156fcd7ca69d5b12bcbb3312590}\label{classLista_a4b6c7156fcd7ca69d5b12bcbb3312590}} 
+\index{Lista@{Lista}!insertar\+\_\+inicio@{insertar\+\_\+inicio}}
+\index{insertar\+\_\+inicio@{insertar\+\_\+inicio}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{insertar\+\_\+inicio()}{insertar\_inicio()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::insertar\+\_\+inicio (\begin{DoxyParamCaption}\item[{tipo}]{el }\end{DoxyParamCaption})}
+
+
+
+Funcion para insertar al inicio de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em T\+DA} & o elemento a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos dice si fue exitoso o no el procedimiento 
+\end{DoxyReturn}
+
+
+Definición en la línea 358 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a8ae71c3b813589c892ab1f4ff8edd753}\label{classLista_a8ae71c3b813589c892ab1f4ff8edd753}} 
+\index{Lista@{Lista}!obtener@{obtener}}
+\index{obtener@{obtener}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{obtener()}{obtener()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::obtener (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})}
+
+
+
+Funcion para obtener el elemento de una lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Indice} & del elemento en la lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Elemento buscado en la lista 
+\end{DoxyReturn}
+
+
+Definición en la línea 529 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_ac1b4a38c8aee5835dcbb3185972c1b11}\label{classLista_ac1b4a38c8aee5835dcbb3185972c1b11}} 
+\index{Lista@{Lista}!obtener\+\_\+nombre@{obtener\+\_\+nombre}}
+\index{obtener\+\_\+nombre@{obtener\+\_\+nombre}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{obtener\+\_\+nombre()}{obtener\_nombre()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+std\+::string \hyperlink{classLista}{Lista}$<$ tipo $>$\+::obtener\+\_\+nombre (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})}
+
+
+
+Funcion para obtener el nombre de un elemento de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Indice} & del elemento en la lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Dato del elemento buscado en la lista 
+\end{DoxyReturn}
+
+
+Definición en la línea 515 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a7bfb23a36d8476b8731d955bd52b81d5}\label{classLista_a7bfb23a36d8476b8731d955bd52b81d5}} 
+\index{Lista@{Lista}!primero@{primero}}
+\index{primero@{primero}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{primero()}{primero()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::primero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion para obtener el primer elemento de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Elemento al inicio de la lista 
+\end{DoxyReturn}
+
+
+Definición en la línea 576 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a846073e6ce175fa96c6322a4870ddc6d}\label{classLista_a846073e6ce175fa96c6322a4870ddc6d}} 
+\index{Lista@{Lista}!suprimir@{suprimir}}
+\index{suprimir@{suprimir}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{suprimir()}{suprimir()}}
+{\footnotesize\ttfamily template$<$typename tipo$>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::suprimir (\begin{DoxyParamCaption}\item[{tipo}]{dato }\end{DoxyParamCaption})}
+
+
+
+Funcion para suprimir un elemento en cualquier posicion de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em El} & dato del elemento a suprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos dice si fue exitoso o no el procedimiento 
+\end{DoxyReturn}
+
+
+Definición en la línea 451 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_aa23f3bd8ec8de6a913cc9cd876ef82b6}\label{classLista_aa23f3bd8ec8de6a913cc9cd876ef82b6}} 
+\index{Lista@{Lista}!suprimir\+\_\+final@{suprimir\+\_\+final}}
+\index{suprimir\+\_\+final@{suprimir\+\_\+final}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{suprimir\+\_\+final()}{suprimir\_final()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::suprimir\+\_\+final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion para suprimir al final de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Dato del elemento suprimido 
+\end{DoxyReturn}
+
+
+Definición en la línea 424 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_aa945bc96acdaeaefb3b9180f05539142}\label{classLista_aa945bc96acdaeaefb3b9180f05539142}} 
+\index{Lista@{Lista}!suprimir\+\_\+inicio@{suprimir\+\_\+inicio}}
+\index{suprimir\+\_\+inicio@{suprimir\+\_\+inicio}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{suprimir\+\_\+inicio()}{suprimir\_inicio()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::suprimir\+\_\+inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion para suprimir al inicio de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Dato del elemento suprimido 
+\end{DoxyReturn}
+
+
+Definición en la línea 405 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_ab425ba6e39a83df96a56ef6d58bce951}\label{classLista_ab425ba6e39a83df96a56ef6d58bce951}} 
+\index{Lista@{Lista}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{ultimo()}{ultimo()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+tipo \hyperlink{classLista}{Lista}$<$ tipo $>$\+::ultimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion para obtener el ultimo elemento de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Elemento al final de la lista 
+\end{DoxyReturn}
+
+
+Definición en la línea 585 del archivo lista.\+hpp.
+
+\mbox{\Hypertarget{classLista_a92650be08dd29c9800da07c65ad6ff3a}\label{classLista_a92650be08dd29c9800da07c65ad6ff3a}} 
+\index{Lista@{Lista}!vacia@{vacia}}
+\index{vacia@{vacia}!Lista@{Lista}}
+\subsubsection{\texorpdfstring{vacia()}{vacia()}}
+{\footnotesize\ttfamily template$<$typename tipo $>$ \\
+bool \hyperlink{classLista}{Lista}$<$ tipo $>$\+::vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion para saber si esta vacia la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Valor boleano que nos dice si esta vacia o tiene elementos 
+\end{DoxyReturn}
+
+
+Definición en la línea 480 del archivo lista.\+hpp.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-lista.\+h\end{DoxyCompactItemize}
+\hyperlink{lista_8hpp}{lista.\+hpp}\end{DoxyCompactItemize}

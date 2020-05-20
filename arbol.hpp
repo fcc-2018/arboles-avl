@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cmath>
 #include <string>
-#include "grafo.h"
-#include "pila.h"
+#include "grafo.hpp"
+#include "pila.hpp"
 
 
 
 /*!
- * \file arbol.h
+ * \file arbol.hpp
  * \brief Definción de clase Arbol e implementación de sus métodos
  * */
 

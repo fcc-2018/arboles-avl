@@ -1,5 +1,5 @@
-#include "arbol.h"
-#include "testing.h"
+#include "arbol.hpp"
+#include "testing.hpp"
 
 /*!
  * \file arbolAVL.hpp

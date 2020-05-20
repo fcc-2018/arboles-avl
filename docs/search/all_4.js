@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['dato',['dato',['../classVertice.html#accb96991da9db4ee82280acf2019d1dc',1,'Vertice']]],
+  ['dato',['dato',['../classVertice.html#accb96991da9db4ee82280acf2019d1dc',1,'Vertice::dato()'],['../classLista_1_1Nodo.html#ae3e8f0073984b0791ba94590ea9e2c9f',1,'Lista::Nodo::dato()']]],
   ['debug_5fmode',['debug_mode',['../namespacecu.html#ae84c5e905dd7b8c2b1b1194553f9c9a9',1,'cu']]],
+  ['desapilar',['desapilar',['../classpila.html#a6024dd235a660c7806e47a36194b97cc',1,'pila']]],
   ['descendientes',['descendientes',['../classArbol.html#acae8e9dfd17ae18e250d9029172e1c9e',1,'Arbol::descendientes(int dato)'],['../classArbol.html#a790b07f284b14bd179499eb4a991ad86',1,'Arbol::descendientes(string nombre)']]],
   ['desencolar',['desencolar',['../classcola.html#afbe13fa4237aa2fde61067900ff8f884',1,'cola']]],
   ['destino',['destino',['../classArista.html#a7cc7d54b1945783a426f5251026af702',1,'Arista']]],

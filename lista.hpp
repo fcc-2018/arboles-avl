@@ -12,8 +12,9 @@ los metodos de esta practica
 #ifndef LISTA_HPP
 #define LISTA_HPP
 
-/**
-  * @file lista.hpp
+/**!
+  * \file lista.hpp
+  * @brief Definicion de la clase Lista 
   * @version 1.0
   * @date 22/05/2020
   * @title Clase Lista 

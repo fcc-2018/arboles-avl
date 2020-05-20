@@ -1,29 +1,82 @@
 \hypertarget{classpila}{}\section{Referencia de la plantilla de la Clase pila$<$ T\+I\+PO $>$}
 \label{classpila}\index{pila$<$ T\+I\+P\+O $>$@{pila$<$ T\+I\+P\+O $>$}}
+
+
+Clase que contiene las operaciones de una pila, haciendo uso de templates para evitar limitaciones con los tipos de datos.  
+
+
+
+
+{\ttfamily \#include $<$pila.\+hpp$>$}
+
+
+
+Diagrama de herencias de pila$<$ T\+I\+PO $>$\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classpila__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para pila$<$ T\+I\+PO $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classpila__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classpila_a18755d1505a3d0946c1978c571cd456c}\label{classpila_a18755d1505a3d0946c1978c571cd456c}} 
-bool {\bfseries vacia} ()
-\item 
-\mbox{\Hypertarget{classpila_aadc65c1c0f7d355204aa80d0ca10b688}\label{classpila_aadc65c1c0f7d355204aa80d0ca10b688}} 
-void {\bfseries apilar} (T\+I\+PO v)
-\item 
+\mbox{\Hypertarget{classpila_ade9134db35fdc8ab820f087b7bf9a4c8}\label{classpila_ade9134db35fdc8ab820f087b7bf9a4c8}} 
+\hyperlink{classpila_ade9134db35fdc8ab820f087b7bf9a4c8}{pila} ()
+\begin{DoxyCompactList}\small\item\em Constructor de pila. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpila_a1c4a98c4932e4b2f7c174921c2443e8a}\label{classpila_a1c4a98c4932e4b2f7c174921c2443e8a}} 
+bool \hyperlink{classpila_a1c4a98c4932e4b2f7c174921c2443e8a}{vacio} ()
+\begin{DoxyCompactList}\small\item\em Nos indica si la pila está vacía. \end{DoxyCompactList}\item 
+void \hyperlink{classpila_aadc65c1c0f7d355204aa80d0ca10b688}{apilar} (T\+I\+PO v)
+\begin{DoxyCompactList}\small\item\em Realiza la operación P\+U\+SH, agregando un elemento al final de la pila. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classpila_a6024dd235a660c7806e47a36194b97cc}\label{classpila_a6024dd235a660c7806e47a36194b97cc}} 
-T\+I\+PO {\bfseries desapilar} ()
-\end{DoxyCompactItemize}
+T\+I\+PO \hyperlink{classpila_a6024dd235a660c7806e47a36194b97cc}{desapilar} ()
+\begin{DoxyCompactList}\small\item\em Realiza la operación P\+OP, eliminando el último elemento de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
 
 
 \subsection{Descripción detallada}
 \subsubsection*{template$<$class T\+I\+PO$>$\newline
 class pila$<$ T\+I\+P\+O $>$}
 
+Clase que contiene las operaciones de una pila, haciendo uso de templates para evitar limitaciones con los tipos de datos. 
+
+Definición en la línea 9 del archivo pila.\+hpp.
 
 
-Definición en la línea 16 del archivo pila.\+h.
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classpila_aadc65c1c0f7d355204aa80d0ca10b688}\label{classpila_aadc65c1c0f7d355204aa80d0ca10b688}} 
+\index{pila@{pila}!apilar@{apilar}}
+\index{apilar@{apilar}!pila@{pila}}
+\subsubsection{\texorpdfstring{apilar()}{apilar()}}
+{\footnotesize\ttfamily template$<$class T\+I\+PO $>$ \\
+void \hyperlink{classpila}{pila}$<$ T\+I\+PO $>$\+::apilar (\begin{DoxyParamCaption}\item[{T\+I\+PO}]{v }\end{DoxyParamCaption})}
+
+
+
+Realiza la operación P\+U\+SH, agregando un elemento al final de la pila. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em v} & Elemento que se agregará a la pila \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 44 del archivo pila.\+hpp.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-pila.\+h\end{DoxyCompactItemize}
+\hyperlink{pila_8hpp}{pila.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arboles AVL: Fichero Fuente cola.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arboles AVL
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Implementación de estructuras de datos básicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cola.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cola_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    * Integrantes del equipo </span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    * Batres Pedroza Alejandro          201836943</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    * Garcia Gonzalez Jorge             201847512</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    * Mendez Mendez Sebastian           201836190</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    * Segura Cuanalo Ricardo Alejandro  201848777</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8hpp.html">lista.hpp</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classcola.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcola.html">cola</a>: <span class="keyword">public</span> <a class="code" href="classLista.html">Lista</a>&lt;TIPO&gt;{<span class="comment">//definicion de la clase cola</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keyword">public</span>:</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classcola.html#acf21bbf0b0795607993d5ffe736398ae">   32</a></span>&#160;      <a class="code" href="classcola.html#acf21bbf0b0795607993d5ffe736398ae">cola</a>() : <a class="code" href="classLista.html">Lista</a>&lt;TIPO&gt;() {}<span class="comment">//constructor</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="comment">//METODOS DE LA CLASE//</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>      <span class="keywordtype">bool</span> <a class="code" href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">vacio</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classcola.html#a4fe29cbff3478979d38a0f8a2d7a4b51">encolar</a>(TIPO v);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      TIPO <a class="code" href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">desencolar</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">cola&lt;TIPO&gt;::vacio</a>(){ </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">Lista&lt;TIPO&gt;::vacia</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classcola.html#a4fe29cbff3478979d38a0f8a2d7a4b51">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classcola.html#a4fe29cbff3478979d38a0f8a2d7a4b51">cola&lt;TIPO&gt;::encolar</a>(TIPO v) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   <a class="code" href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">Lista&lt;TIPO&gt;::insertar_final</a>(v);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">   64</a></span>&#160;TIPO <a class="code" href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">cola&lt;TIPO&gt;::desencolar</a>() {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="classLista.html#aa945bc96acdaeaefb3b9180f05539142">Lista&lt;TIPO&gt;::suprimir_inicio</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div><div class="ttc" id="classLista_html_aa945bc96acdaeaefb3b9180f05539142"><div class="ttname"><a href="classLista.html#aa945bc96acdaeaefb3b9180f05539142">Lista::suprimir_inicio</a></div><div class="ttdeci">tipo suprimir_inicio()</div><div class="ttdoc">Funcion para suprimir al inicio de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00405">lista.hpp:405</a></div></div>
+<div class="ttc" id="classcola_html_acf21bbf0b0795607993d5ffe736398ae"><div class="ttname"><a href="classcola.html#acf21bbf0b0795607993d5ffe736398ae">cola::cola</a></div><div class="ttdeci">cola()</div><div class="ttdoc">Constructor de la clase cola por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="cola_8hpp_source.html#l00032">cola.hpp:32</a></div></div>
+<div class="ttc" id="classcola_html_afbe13fa4237aa2fde61067900ff8f884"><div class="ttname"><a href="classcola.html#afbe13fa4237aa2fde61067900ff8f884">cola::desencolar</a></div><div class="ttdeci">TIPO desencolar()</div><div class="ttdoc">Funcion para desencolar un elemento. </div><div class="ttdef"><b>Definition:</b> <a href="cola_8hpp_source.html#l00064">cola.hpp:64</a></div></div>
+<div class="ttc" id="lista_8hpp_html"><div class="ttname"><a href="lista_8hpp.html">lista.hpp</a></div><div class="ttdoc">Definicion de la clase Lista. </div></div>
+<div class="ttc" id="classLista_html_a92650be08dd29c9800da07c65ad6ff3a"><div class="ttname"><a href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">Lista::vacia</a></div><div class="ttdeci">bool vacia()</div><div class="ttdoc">Funcion para saber si esta vacia la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00480">lista.hpp:480</a></div></div>
+<div class="ttc" id="classcola_html_a4fe29cbff3478979d38a0f8a2d7a4b51"><div class="ttname"><a href="classcola.html#a4fe29cbff3478979d38a0f8a2d7a4b51">cola::encolar</a></div><div class="ttdeci">void encolar(TIPO v)</div><div class="ttdoc">Funcion para encolar un elemento. </div><div class="ttdef"><b>Definition:</b> <a href="cola_8hpp_source.html#l00059">cola.hpp:59</a></div></div>
+<div class="ttc" id="classcola_html"><div class="ttname"><a href="classcola.html">cola</a></div><div class="ttdoc">Clase para formar el TDA cola. </div><div class="ttdef"><b>Definition:</b> <a href="cola_8hpp_source.html#l00027">cola.hpp:27</a></div></div>
+<div class="ttc" id="classLista_html"><div class="ttname"><a href="classLista.html">Lista</a></div><div class="ttdoc">Clase TDA Lista con diversas operaciones. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00050">lista.hpp:50</a></div></div>
+<div class="ttc" id="classcola_html_a2af9a71dd856a907f446a1e396d83e5b"><div class="ttname"><a href="classcola.html#a2af9a71dd856a907f446a1e396d83e5b">cola::vacio</a></div><div class="ttdeci">bool vacio()</div><div class="ttdoc">Funcion para determinar si la cola esta vacia. </div><div class="ttdef"><b>Definition:</b> <a href="cola_8hpp_source.html#l00054">cola.hpp:54</a></div></div>
+<div class="ttc" id="classLista_html_a4ff75a84824729ce5af9d9f5d184020a"><div class="ttname"><a href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">Lista::insertar_final</a></div><div class="ttdeci">bool insertar_final(tipo destino)</div><div class="ttdoc">Funcion para insertar al final de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00375">lista.hpp:375</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

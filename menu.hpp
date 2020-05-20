@@ -2,6 +2,10 @@
 #include <functional>
 
 
+/*!
+ * @file menu.hpp
+ * @brief Implementacion de la clase Menu y Opcion
+*/
 
 // utilizamos std::function para almacenar en variables
 // funciones normales, y funciones lambda

@@ -1,0 +1,64 @@
+\hypertarget{testing_8hpp}{}\section{Referencia del Archivo testing.\+hpp}
+\label{testing_8hpp}\index{testing.\+hpp@{testing.\+hpp}}
+
+
+Cabecera destinada a pruebas de funcionamiento.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Dependencia gráfica adjunta para testing.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{testing_8hpp__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{testing_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecu}{cu}
+\begin{DoxyCompactList}\small\item\em Espacio de nombres destinado a funciones utilizadas en la depuración de las funciones en estudio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{testing_8hpp_a269aa50758a398403bcc8000fea66075}\label{testing_8hpp_a269aa50758a398403bcc8000fea66075}} 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+N\+U\+LL}~\char`\"{}T\+E\+ST IS N\+U\+LL\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacecu_a2032e7d323896144cae02cca83ea7776}{cu\+::test} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Muestra en consola el texto pasado como parámetro. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecu_a29c88a60e2e11b522402097bac91dd53}{cu\+::test} (std\+::string str, std\+::string str2)
+\begin{DoxyCompactList}\small\item\em Muestra en consola los textos pasados como parámetro. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecu_a204c06884ca90cec812a74a79978ad1b}{cu\+::test} (std\+::string str, int dato)
+\begin{DoxyCompactList}\small\item\em Muestra en consola una descripción y un valor dados. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecu_ac74aabcdeff59ad38de0aa36237f8a9b}{cu\+::test} (std\+::string str, int dato, int res)
+\begin{DoxyCompactList}\small\item\em Muestra en consola una descripción junto con un valor inicial y un valor como resultado. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecu_a4f3e4a3066ea798b15af01022a14ecf9}{cu\+::test} (std\+::string str, bool cond, std\+::string msg1, std\+::string msg2)
+\begin{DoxyCompactList}\small\item\em Muestra en consola una descripción y, según un valor booleano, decide qué texto mostrar después. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecu_af2ea0a4da4f2192d226ca8c3bddbd821}{cu\+::test} (std\+::string str, bool cond)
+\begin{DoxyCompactList}\small\item\em Muestra en consola una descripción y, dependiendo del valor booleano dado, mostrará un mensaje \char`\"{}\+Y\+E\+S\char`\"{} o un mensaje \char`\"{}\+N\+O\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecu_a67ef22d5c0f232da615812d7c61846a2}\label{namespacecu_a67ef22d5c0f232da615812d7c61846a2}} 
+std\+::string \hyperlink{namespacecu_a67ef22d5c0f232da615812d7c61846a2}{cu\+::promt} = \char`\"{}\mbox{[}D\+E\+B\+UG\mbox{]}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Texto que indica que se hace referencia a un texto del depurador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacecu_ae84c5e905dd7b8c2b1b1194553f9c9a9}\label{namespacecu_ae84c5e905dd7b8c2b1b1194553f9c9a9}} 
+bool \hyperlink{namespacecu_ae84c5e905dd7b8c2b1b1194553f9c9a9}{cu\+::debug\+\_\+mode} = true
+\begin{DoxyCompactList}\small\item\em Booleano que indica si el modo depurador está activado o no, es decir, si está en {\itshape true} o {\itshape false} respectivamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Cabecera destinada a pruebas de funcionamiento. 
+
+Archivo de cabecera que contiene un {\itshape namespace} con métodos utilizados para probar y monitorear el funcionamiento de las funciones en estudio. ~\newline
+ Todos los métodos contenidos en él archivo tienen la función de imprimir de manera más práctica en consola mensajes \mbox{[}D\+E\+B\+UG\mbox{]} personalizados por el desarrollador 

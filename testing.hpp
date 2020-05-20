@@ -3,7 +3,7 @@
 #define TEST_NULL "TEST IS NULL"
 
 /*!
- * \file testing.h
+ * \file testing.hpp
  * @brief Cabecera destinada a pruebas de funcionamiento
  * 
  * Archivo de cabecera que contiene un *namespace* con métodos utilizados para probar

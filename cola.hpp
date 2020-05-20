@@ -5,14 +5,11 @@
     * Mendez Mendez Sebastian           201836190
     * Segura Cuanalo Ricardo Alejandro  201848777
 */
-/*Objetivo: Hacer la implementacion del tipo de dato abstracto cola de forma dinamica que se construye apartir de nodos
-HACIENDO USO DE TEMPLATES
-los metodos de esta practica son los unicos que se utlizan dentro de la clase grafo
-*/
 
 
 /**
   * @file cola.hpp
+  * @brief Definicion de la clase cola 
   * @version 1.0
   * @date 22/05/2020
   * @title Clase Cola 

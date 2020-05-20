@@ -5,5 +5,6 @@ var searchData=
   ['cola',['cola',['../classcola.html#acf21bbf0b0795607993d5ffe736398ae',1,'cola']]],
   ['comprobar_5fadyacencia',['comprobar_adyacencia',['../classGrafo.html#a7bfb0f93720820e9d0cb8091f32d69a7',1,'Grafo']]],
   ['conexo',['conexo',['../classGrafo.html#a50fe04d01b2d34b777d8df0b827bedab',1,'Grafo']]],
-  ['cont_5fhojas',['cont_hojas',['../classArbol.html#aba59969b2a10294fb79e583a8e9471c5',1,'Arbol']]]
+  ['cont_5fhojas',['cont_hojas',['../classArbol.html#aba59969b2a10294fb79e583a8e9471c5',1,'Arbol']]],
+  ['current',['current',['../classLista_1_1iterator.html#a6e73de7c83716c9bd99bd68b89214d81',1,'Lista::iterator']]]
 ];

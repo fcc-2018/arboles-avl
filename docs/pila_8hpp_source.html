@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arboles AVL: Fichero Fuente pila.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arboles AVL
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Implementación de estructuras de datos básicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pila.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pila_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8hpp.html">lista.hpp</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classpila.html">    9</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt; <span class="keyword">class </span><a class="code" href="classpila.html">pila</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classpila.html">pila</a> : <span class="keyword">public</span> <a class="code" href="classLista.html">Lista</a>&lt;TIPO&gt;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classpila.html#ade9134db35fdc8ab820f087b7bf9a4c8">   22</a></span>&#160;      <a class="code" href="classpila.html#ade9134db35fdc8ab820f087b7bf9a4c8">pila</a>() : <a class="code" href="classLista.html">Lista</a>&lt;TIPO&gt;(){}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;       <span class="keywordtype">bool</span> <a class="code" href="classpila.html#a1c4a98c4932e4b2f7c174921c2443e8a">vacio</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classpila.html#aadc65c1c0f7d355204aa80d0ca10b688">apilar</a>(TIPO v);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      TIPO <a class="code" href="classpila.html#a6024dd235a660c7806e47a36194b97cc">desapilar</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classpila.html#a1c4a98c4932e4b2f7c174921c2443e8a">   39</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classpila.html#a1c4a98c4932e4b2f7c174921c2443e8a">pila&lt;TIPO&gt;::vacio</a>(){<span class="comment">//Comprobar si la pila esta vacia</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">Lista&lt;TIPO&gt;::vacia</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classpila.html#aadc65c1c0f7d355204aa80d0ca10b688">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classpila.html#aadc65c1c0f7d355204aa80d0ca10b688">pila&lt;TIPO&gt;::apilar</a>(TIPO v) {<span class="comment">//Insertamos un elemento al final de la pila</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   <a class="code" href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">Lista&lt;TIPO&gt;::insertar_final</a>(v);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIPO&gt;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classpila.html#a6024dd235a660c7806e47a36194b97cc">   49</a></span>&#160;TIPO <a class="code" href="classpila.html#a6024dd235a660c7806e47a36194b97cc">pila&lt;TIPO&gt;::desapilar</a>(){<span class="comment">//Eliminamos un elemento al final de la pila</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="classLista.html#aa23f3bd8ec8de6a913cc9cd876ef82b6">Lista&lt;TIPO&gt;::suprimir_final</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="lista_8hpp_html"><div class="ttname"><a href="lista_8hpp.html">lista.hpp</a></div><div class="ttdoc">Definicion de la clase Lista. </div></div>
+<div class="ttc" id="classLista_html_a92650be08dd29c9800da07c65ad6ff3a"><div class="ttname"><a href="classLista.html#a92650be08dd29c9800da07c65ad6ff3a">Lista::vacia</a></div><div class="ttdeci">bool vacia()</div><div class="ttdoc">Funcion para saber si esta vacia la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00480">lista.hpp:480</a></div></div>
+<div class="ttc" id="classpila_html_ade9134db35fdc8ab820f087b7bf9a4c8"><div class="ttname"><a href="classpila.html#ade9134db35fdc8ab820f087b7bf9a4c8">pila::pila</a></div><div class="ttdeci">pila()</div><div class="ttdoc">Constructor de pila. </div><div class="ttdef"><b>Definition:</b> <a href="pila_8hpp_source.html#l00022">pila.hpp:22</a></div></div>
+<div class="ttc" id="classpila_html_a6024dd235a660c7806e47a36194b97cc"><div class="ttname"><a href="classpila.html#a6024dd235a660c7806e47a36194b97cc">pila::desapilar</a></div><div class="ttdeci">TIPO desapilar()</div><div class="ttdoc">Realiza la operación POP, eliminando el último elemento de la pila. </div><div class="ttdef"><b>Definition:</b> <a href="pila_8hpp_source.html#l00049">pila.hpp:49</a></div></div>
+<div class="ttc" id="classLista_html_aa23f3bd8ec8de6a913cc9cd876ef82b6"><div class="ttname"><a href="classLista.html#aa23f3bd8ec8de6a913cc9cd876ef82b6">Lista::suprimir_final</a></div><div class="ttdeci">tipo suprimir_final()</div><div class="ttdoc">Funcion para suprimir al final de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00424">lista.hpp:424</a></div></div>
+<div class="ttc" id="classpila_html"><div class="ttname"><a href="classpila.html">pila</a></div><div class="ttdoc">Clase que contiene las operaciones de una pila, haciendo uso de templates para evitar limitaciones co...</div><div class="ttdef"><b>Definition:</b> <a href="pila_8hpp_source.html#l00009">pila.hpp:9</a></div></div>
+<div class="ttc" id="classpila_html_aadc65c1c0f7d355204aa80d0ca10b688"><div class="ttname"><a href="classpila.html#aadc65c1c0f7d355204aa80d0ca10b688">pila::apilar</a></div><div class="ttdeci">void apilar(TIPO v)</div><div class="ttdoc">Realiza la operación PUSH, agregando un elemento al final de la pila. </div><div class="ttdef"><b>Definition:</b> <a href="pila_8hpp_source.html#l00044">pila.hpp:44</a></div></div>
+<div class="ttc" id="classLista_html"><div class="ttname"><a href="classLista.html">Lista</a></div><div class="ttdoc">Clase TDA Lista con diversas operaciones. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00050">lista.hpp:50</a></div></div>
+<div class="ttc" id="classpila_html_a1c4a98c4932e4b2f7c174921c2443e8a"><div class="ttname"><a href="classpila.html#a1c4a98c4932e4b2f7c174921c2443e8a">pila::vacio</a></div><div class="ttdeci">bool vacio()</div><div class="ttdoc">Nos indica si la pila está vacía. </div><div class="ttdef"><b>Definition:</b> <a href="pila_8hpp_source.html#l00039">pila.hpp:39</a></div></div>
+<div class="ttc" id="classLista_html_a4ff75a84824729ce5af9d9f5d184020a"><div class="ttname"><a href="classLista.html#a4ff75a84824729ce5af9d9f5d184020a">Lista::insertar_final</a></div><div class="ttdeci">bool insertar_final(tipo destino)</div><div class="ttdoc">Funcion para insertar al final de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8hpp_source.html#l00375">lista.hpp:375</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

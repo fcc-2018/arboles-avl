@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cola_3c_20tipo_20_3e',['cola&lt; TIPO &gt;',['../classnodo.html#ab6f31a6b425c314a481175b5254170ab',1,'nodo']]]
+  ['iterator',['iterator',['../classLista_1_1iterator.html#a67171474c4da6cc8efe0c7fafefd2b2d',1,'Lista::iterator']]]
 ];

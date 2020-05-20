@@ -1,8 +1,8 @@
 #include <string>
 #define GRAFO_H
 #include <iostream>
-#include "lista.h"
-#include "cola.h"
+#include "lista.hpp"
+#include "cola.hpp"
 #include <map>
 #include <set>
 #include <fstream>
@@ -10,7 +10,7 @@
 using namespace std;
 
 /*!
-*\file grafo.h
+*\file grafo.hpp
 *@brief Definición de la clase Grafo, Vertice, Arista, Etiqueta, y la implementación de sus métodos.
 */
 
