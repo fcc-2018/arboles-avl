@@ -1,8 +1,8 @@
 <map id="lista.hpp" name="lista.hpp">
 <area shape="rect" id="node2" href="$grafo_8hpp.html" title="Definición de la clase Grafo, Vertice, Arista, Etiqueta, y la implementación de sus métodos..." alt="" coords="5,155,81,181"/>
-<area shape="rect" id="node6" href="$cola_8hpp.html" title="Definicion de la clase cola. " alt="" coords="31,80,101,107"/>
-<area shape="rect" id="node7" href="$pila_8hpp.html" title="Definición de la clase nodo, pila, y la implementación de sus métodos, haciendo uso de templates..." alt="" coords="106,155,173,181"/>
+<area shape="rect" id="node6" href="$cola_8hpp.html" title="Definicion de la clase cola y la implementación de sus métodos, haciendo uso de templates. " alt="" coords="31,80,101,107"/>
+<area shape="rect" id="node7" href="$pila_8hpp.html" title="Definición de la clase pila y la implementación de sus métodos, haciendo uso de templates. " alt="" coords="106,155,173,181"/>
 <area shape="rect" id="node3" href="$arbol_8hpp.html" title="Definción de clase Arbol e implementación de sus métodos. " alt="" coords="54,229,129,256"/>
 <area shape="rect" id="node4" href="$arbolAVL_8hpp.html" title="Cabecera de la clase ArbolAVL e implementación de sus métodos. " alt="" coords="41,304,141,331"/>
-<area shape="rect" id="node5" href="$main_8cpp_source.html" title="main.cpp" alt="" coords="54,379,129,405"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Aplicación de los métodos de las clases Menu y ArbolAVL para la demostración de su funcionamiento..." alt="" coords="54,379,129,405"/>
 </map>
