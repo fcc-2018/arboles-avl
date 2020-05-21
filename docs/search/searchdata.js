@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "adefnopstv",
   6: "p",
   7: "io",
-  8: "e"
+  8: "p"
 };
 
 var indexSectionNames =

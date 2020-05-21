@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['equipo_203_20_2d_20integrantes',['Equipo 3 - Integrantes',['../index.html',1,'']]]
+  ['presentación_20del_20trabajo',['Presentación del trabajo',['../index.html',1,'']]]
 ];
