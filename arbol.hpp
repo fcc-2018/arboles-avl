@@ -11,18 +11,6 @@
  * \brief Definción de clase Arbol e implementación de sus métodos
  * */
 
-
-/*! \mainpage Equipo 3 - Integrantes 
-   *
-   * \section intro_sec -  
-   * \subsection rralex Batres Pedroza Alejandro          201836943
-   * \subsection yorch Garcia Gonzalez Jorge             201847512
-   * \subsection sebas Mendez Mendez Sebastian           201836190
-   * \subsection yo Segura Cuanalo Ricardo Alejandro  201848777
-   *
-*/
-
-
 /*!
  * @class Arbol
  * @brief Implementación de un árbol binario con listas de adyacencia.

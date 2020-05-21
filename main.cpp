@@ -2,6 +2,27 @@
 #include "arbolAVL.hpp"
 #include "menu.hpp"
 
+// * ![Árbol de ejemplo 1](./img/ex1.png)
+
+/*! \mainpage Presentación del trabajo
+ * 
+ * <table style="width: 650px;">
+ * <tr><td style="padding: 15px;"><center><img src="./img/fcc_logo.png"></center><td style="padding: 15px;"><center><img src="./img/BUAP_logo.png"></center>
+ * <tr><td align="center" style="padding: 5px; font-size: 15px;"><i><b>Facultad de Ciencias de la Computación</b></i><td align="center" style="padding: 5px; font-size: 15px;"><i><b>Benemértia Universidad Autónoma de Puebla</b></i>
+ * <tr><td colspan="2" align="center" style="padding: 5px;"><b>Profesora</b> María del Carmen Santiago Díaz
+ * <tr><td colspan="2" align="center" style="padding: 5px;">Estructuras de Datos
+ * <tr><td colspan="2" align="center" style="padding: 5px; font-size: 20px;"><i><b>Documentación de clases y presentación de clase ArbolAVL</b></i>
+ * </table>
+ * <br>
+ * <table class="team" style="width: 650px; border: 2px black solid;">
+ * <tr><th colspan="2" style="background: black; color: white;">Integrantes del equipo 3
+ * <tr><td style="border: 1px black solid; padding: 2px;">Batres Pedroza Alejandro<td style="border: 1px black solid; padding: 2px;">201836943
+ * <tr><td style="border: 1px black solid; padding: 2px;">García González Jorge<td style="border: 1px black solid; padding: 2px;">201847512
+ * <tr><td style="border: 1px black solid; padding: 2px;">Méndez Méndez Sebastián<td style="border: 1px black solid; padding: 2px;">201836190
+ * <tr><td style="border: 1px black solid; padding: 2px;">Segura Cuanalo Ricardo Alejandro<td style="border: 1px black solid; padding: 2px;">201848777
+ * </table>
+ *
+*/
 /*!
  * \file main.cpp
  * \brief Aplicación de los métodos de las clases Menu y ArbolAVL para la
