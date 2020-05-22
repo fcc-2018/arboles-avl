@@ -520,7 +520,7 @@ std::string Lista<tipo>::obtener_nombre(int indice){
 
 template <typename tipo>
 tipo Lista<tipo>::obtener(int indice){
-	if(indice < 0 || indice > tam) return NULL;
+	if(indice < 0 || indice > tam-1) return NULL;
 	pNodo aux = lista;
 	int i = 0;
 	while(aux != NULL && i < indice) {
