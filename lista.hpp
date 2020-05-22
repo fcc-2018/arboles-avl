@@ -1,10 +1,3 @@
-/*
-    * Integrantes del equipo *
-    * Batres Pedroza Alejandro          201836943
-    * Garcia Gonzalez Jorge             201847512
-    * Mendez Mendez Sebastian           201836190
-    * Segura Cuanalo Ricardo Alejandro  201848777
-*/
 /*Objetivo: Hacer la implementacion del tipo de dato abstracto lista de forma dinamica que construye apartir de nodos
 los metodos de esta practica 
 */

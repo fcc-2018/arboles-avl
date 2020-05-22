@@ -1,11 +1,5 @@
-/*
-    * Integrantes del equipo 
-    * Batres Pedroza Alejandro          201836943
-    * Garcia Gonzalez Jorge             201847512
-    * Mendez Mendez Sebastian           201836190
-    * Segura Cuanalo Ricardo Alejandro  201848777
-*/
-
+#include <iostream>
+#include "lista.hpp"
 
 /**
   * \file cola.hpp
@@ -15,9 +9,6 @@
   * @title Clase Cola 
   * @author Team JAVASTANTICO
   */
-
-#include <iostream>
-#include "lista.hpp"
 
 /**
   * @class cola

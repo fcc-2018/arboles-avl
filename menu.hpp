@@ -182,7 +182,7 @@ class Menu{
 			std::cout<< "\n\nPresione de nuevo ... Ya sabe como es esto\n\n";
 			getchar(); getchar();
 		}while(!salir);
-		imprimir_opcion("Vuelve pronto prro jsjsjs xD");
+		imprimir_opcion("Gracias por su preferencia ;*");
 	}
 
 	private:

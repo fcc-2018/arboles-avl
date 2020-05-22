@@ -2,6 +2,14 @@
 #include "arbolAVL.hpp"
 #include "menu.hpp"
 
+/*
+    * Integrantes del equipo 
+    * Batres Pedroza Alejandro          201836943
+    * Garcia Gonzalez Jorge             201847512
+    * Mendez Mendez Sebastian           201836190
+    * Segura Cuanalo Ricardo Alejandro  201848777
+*/
+
 /*! \mainpage Presentación del trabajo
  * 
  * <center>
