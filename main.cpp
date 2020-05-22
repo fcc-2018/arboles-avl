@@ -35,6 +35,9 @@
  * podría ayudar al usuario a emplear nuestros algoritmos para diferentes tareas. Esto se pretende lograr, utilizando descripciones concisas para los
  * métodos empleados, los parámetros de estos y las variables que contiene cada clase utilizada en el código.
  * </div>
+ * <div style="text-align:center; margin-top: 1rem; margin-bottom: 4rem;">
+ * <p>Ejecutables: <a href="http://github.com/fcc-2018/arboles-avl/ejecutables/raw/master/arbolAVL.exe">Windows</a> -- <a href="http://github.com/fcc-2018/arboles-avl/ejecutables/raw/master/arbolAVL">Linux</a></p>
+ * </div>
  * </center>
  *
 */
